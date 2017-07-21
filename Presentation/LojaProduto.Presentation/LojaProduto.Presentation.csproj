@@ -1,0 +1,417 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AD4EBF20-AB6F-4B4E-B8AF-E8AC11025F95}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LojaProduto.Presentation</RootNamespace>
+    <AssemblyName>LojaProduto.Presentation</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Castle.Core, Version=3.3.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Castle.Core.3.3.3\lib\net45\Castle.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Common.Logging, Version=3.3.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Common.Logging.3.3.1\lib\net40\Common.Logging.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Common.Logging.Core, Version=3.3.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Common.Logging.Core.3.3.1\lib\net40\Common.Logging.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Common.Logging.Log4Net1213, Version=3.3.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Common.Logging.Log4Net1213.3.3.1\lib\net40\Common.Logging.Log4Net1213.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.14.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\log4net.2.0.4\lib\net45-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.ProcessingObjectModel.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.WebForms.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MvcSiteMapProvider, Version=4.6.22.0, Culture=neutral, PublicKeyToken=1923abe4657913cc, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MvcSiteMapProvider.MVC5.Core.4.6.22\lib\net45\MvcSiteMapProvider.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MvcSiteMapProvider.WebActivator, Version=4.6.22.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MvcSiteMapProvider.MVC5.4.6.22\lib\net45\MvcSiteMapProvider.WebActivator.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NVelocity, Version=1.1.1.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Castle.NVelocity.1.1.1\lib\net40\NVelocity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SCA.Comum, Version=2.2.6.21387, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SCA.WebControls.Mvc.1.0.0\lib\SCA.Comum.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SCA.Dominio.DataTransferObject, Version=2.2.6.21387, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SCA.WebControls.Mvc.1.0.0\lib\SCA.Dominio.DataTransferObject.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SCA.Servicos.Spec, Version=2.2.6.21387, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SCA.WebControls.Mvc.1.0.0\lib\SCA.Servicos.Spec.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SCA.WebControls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SCA.WebControls.Mvc.1.0.0\lib\SCA.WebControls.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SLA.Comum, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SCA.WebControls.Mvc.1.0.0\lib\SLA.Comum.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SLA.Servicos.Spec, Version=1.0.5.11263, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SCA.WebControls.Mvc.1.0.0\lib\SLA.Servicos.Spec.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Spring.Aop, Version=2.0.1.45000, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Spring.Aop.2.0.1\lib\net45\Spring.Aop.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Spring.Core, Version=2.0.1.45000, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Spring.Core.2.0.1\lib\net45\Spring.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SQFramework.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=279f7c3070cb17ae, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SQFramework.Core.1.0.6\lib\SQFramework.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SQFramework.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=91406e718e3a7677, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SQFramework.Data.1.0.1\lib\SQFramework.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SQFramework.IO, Version=1.0.0.0, Culture=neutral, PublicKeyToken=660d747fef03d356, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SQFramework.IO.1.0.0\lib\SQFramework.IO.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SQFramework.Net, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6c95fa61d39cc52f, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SQFramework.Net.1.0.0\lib\SQFramework.Net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SQFramework.Security, Version=1.0.0.0, Culture=neutral, PublicKeyToken=89eee30fea252792, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SQFramework.Security.1.0.0\lib\SQFramework.Security.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SQFramework.Spring, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cf7b902065a697b9, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SQFramework.Spring.1.0.2\lib\net40\SQFramework.Spring.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SQFramework.Templates.NVelocity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=665ace7f7282a7c5, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SQFramework.Templates.NVelocity.1.0.0\lib\SQFramework.Templates.NVelocity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SQFramework.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=010e260258039cfc, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SQFramework.Web.Mvc.1.0.1\lib\net45\SQFramework.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="Utilitarios, Version=1.2.28.19135, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SCA.WebControls.Mvc.1.0.0\lib\Utilitarios.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WebActivatorEx, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\WebActivatorEx.2.0.6\lib\net40\WebActivatorEx.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WebGrease, Version=1.6.5135.21930, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\ModelBinderConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\SCASiteMapConfig.cs" />
+    <Compile Include="Controllers\Base\CustomController.cs" />
+    <Compile Include="Controllers\Base\SCAController.cs" />
+    <Compile Include="Controllers\CategoriaController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\Pedido\PedidoController.cs" />
+    <Compile Include="Controllers\Produto\ProdutoController.cs" />
+    <Compile Include="Filters\CustomErrorHandlerAttribute.cs" />
+    <Compile Include="Filters\SCAAuthorizeAttribute.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\HtmlHelperExtensions.cs" />
+    <Compile Include="Models\ListaProdutos.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\Default\css\bootstrap-theme.css" />
+    <Content Include="App_Themes\Default\css\bootstrap-theme.min.css" />
+    <Content Include="App_Themes\Default\css\bootstrap.css" />
+    <Content Include="App_Themes\Default\css\bootstrap.min.css" />
+    <Content Include="App_Themes\Default\css\site.css" />
+    <Content Include="App_Themes\Default\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="App_Themes\Default\images\ajax-loader.gif" />
+    <Content Include="App_Themes\Default\images\bg.png" />
+    <Content Include="App_Themes\Default\images\bg_03.png" />
+    <Content Include="App_Themes\Default\images\br-gov_03.png" />
+    <Content Include="App_Themes\Default\images\consultar.png" />
+    <Content Include="App_Themes\Default\images\gradient-header_02.png" />
+    <Content Include="App_Themes\Default\images\gradient_03.png" />
+    <Content Include="App_Themes\Default\images\grid3-hrow.gif" />
+    <Content Include="App_Themes\Default\images\header-antt_05.png" />
+    <Content Include="App_Themes\Default\images\limpar.png" />
+    <Content Include="App_Themes\Default\images\logo.png" />
+    <Content Include="App_Themes\Default\images\paginadorD.png" />
+    <Content Include="App_Themes\Default\images\paginadorDf.png" />
+    <Content Include="App_Themes\Default\images\round-bottom_06.png" />
+    <Content Include="App_Themes\Default\images\round-top_03.png" />
+    <Content Include="App_Themes\Default\images\separador-duplo.gif" />
+    <Content Include="App_Themes\Default\images\separador-simples.png" />
+    <Content Include="Content\jquery-chosen\chosen-sprite%402x.png" />
+    <Content Include="Content\jquery-chosen\chosen-sprite.png" />
+    <Content Include="Content\jquery-chosen\chosen.min.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\bootbox.js" />
+    <Content Include="Scripts\globalize\cultures\globalize.culture.pt-BR.js" />
+    <Content Include="Scripts\globalize\globalize.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.custom.js" />
+    <Content Include="Scripts\jquery.columns.paginator.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="App_Themes\Default\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="App_Themes\Default\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="App_Themes\Default\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="App_Themes\Default\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="App_Themes\Default\css\bootstrap-theme.css.map" />
+    <Content Include="App_Themes\Default\css\bootstrap.css.map" />
+    <Content Include="Mvc.sitemap" />
+    <None Include="MvcSiteMapSchema.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\jquery-chosen\chosen.jquery.min.js" />
+    <Content Include="Scripts\jquery-ui\datepicker-pt-BR.js" />
+    <Content Include="Content\jquery-ui\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\jquery-ui\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\jquery-ui\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\jquery-ui\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\jquery-ui\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\jquery-ui\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\jquery-ui\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\jquery-ui\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\jquery-ui\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\jquery-ui\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\jquery-ui\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\jquery-ui\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\jquery-ui\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\jquery-ui\jquery-ui.min.css" />
+    <Content Include="Scripts\jquery-ui\jquery-ui.min.js" />
+    <Content Include="Content\jquery-ui\jquery-ui.structure.min.css" />
+    <Content Include="Content\jquery-ui\jquery-ui.theme.min.css" />
+    <Content Include="Scripts\jquery.columns.js" />
+    <Content Include="Scripts\jquery.mask.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.addin.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.globalize.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\maskedinput-binder.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\ajax.utils.js" />
+    <Content Include="Scripts\mustache-wax.js" />
+    <Content Include="Scripts\mustache.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.matchmedia.addListener.js" />
+    <Content Include="Scripts\respond.matchmedia.addListener.min.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\util.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Shared\_Portal.cshtml" />
+    <Content Include="Views\Shared\_UserInfo.cshtml" />
+    <Content Include="Views\Shared\_Pagination.cshtml" />
+    <Content Include="Views\Home\AccessDenied.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\SiteMapNodeModelList.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\SiteMapNodeModel.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\MenuHelperModel.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\Boolean.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\DateTime.cshtml" />
+    <Content Include="Views\Categoria\Detalhar.cshtml" />
+    <Content Include="Views\Categoria\Index.cshtml" />
+    <Content Include="Views\Produto\Form.cshtml" />
+    <Content Include="Views\Shared\BaseTemplate\_MenuInverse.cshtml" />
+    <Content Include="Views\Pedido\Index.cshtml" />
+    <Content Include="Views\Produto\ListaProdutos.cshtml" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\LojaProduto.Common\LojaProduto.Common.csproj">
+      <Project>{f0f04c1e-9f2d-4c05-8c82-894844ec8ae1}</Project>
+      <Name>LojaProduto.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Services\LojaProduto.Services.Spec\LojaProduto.Services.Spec.csproj">
+      <Project>{1b030810-5179-466f-8cff-df57a5b5e571}</Project>
+      <Name>LojaProduto.Services.Spec</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>63484</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/LojaProduto.Presentation</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

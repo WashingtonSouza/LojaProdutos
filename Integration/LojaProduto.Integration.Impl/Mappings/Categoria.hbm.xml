@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="true" namespace="LojaProduto.Domain.Entities" assembly="LojaProduto.Domain">
+    <class name="Categoria" table="dbo.Categoria" lazy="true">
+
+        <id name="id" column="Id" type="int" access="field" unsaved-value="0">
+            <generator class="identity" />
+        </id>
+
+        <property name="codigoIntegracao" column="Codigo" type="string" access="field" not-null="true" length="10" />
+        <property name="nome" column="Nome" type="string" access="field" not-null="true" length="50" />
+
+        <bag name="produtos" cascade="all-delete-orphan" access="field" lazy="true" inverse="true">
+            <key column="CategoriaId" not-null="true" />
+            <one-to-many class="Produto" />
+        </bag>
+
+    </class>
+</hibernate-mapping>

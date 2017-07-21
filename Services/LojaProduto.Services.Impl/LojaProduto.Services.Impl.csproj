@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{48ECB7D5-F29B-45D7-93D5-39E51127F9CB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LojaProduto.Services.Impl</RootNamespace>
+    <AssemblyName>LojaProduto.Services.Impl</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Common.Logging, Version=3.3.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Common.Logging.3.3.1\lib\net40\Common.Logging.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Common.Logging.Core, Version=3.3.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Common.Logging.Core.3.3.1\lib\net40\Common.Logging.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Common.Logging.Log4Net1213, Version=3.3.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Common.Logging.Log4Net1213.3.3.1\lib\net40\Common.Logging.Log4Net1213.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.14.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\log4net.2.0.4\lib\net45-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.ProcessingObjectModel.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.WebForms.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NVelocity, Version=1.1.1.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Castle.NVelocity.1.1.1\lib\net40\NVelocity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Spring.Aop, Version=2.0.1.45000, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Spring.Aop.2.0.1\lib\net45\Spring.Aop.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Spring.Core, Version=2.0.1.45000, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Spring.Core.2.0.1\lib\net45\Spring.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Spring.Data, Version=2.0.1.45000, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Spring.Data.2.0.1\lib\net45\Spring.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SQFramework.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=279f7c3070cb17ae, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SQFramework.Core.1.0.6\lib\SQFramework.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SQFramework.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=91406e718e3a7677, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SQFramework.Data.1.0.1\lib\SQFramework.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SQFramework.Net, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6c95fa61d39cc52f, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SQFramework.Net.1.0.0\lib\SQFramework.Net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SQFramework.Security, Version=1.0.0.0, Culture=neutral, PublicKeyToken=89eee30fea252792, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SQFramework.Security.1.0.0\lib\SQFramework.Security.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SQFramework.Spring, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cf7b902065a697b9, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SQFramework.Spring.1.0.2\lib\net40\SQFramework.Spring.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SQFramework.Templates.NVelocity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=665ace7f7282a7c5, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SQFramework.Templates.NVelocity.1.0.0\lib\SQFramework.Templates.NVelocity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SQFramework.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=010e260258039cfc, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SQFramework.Web.Mvc.1.0.1\lib\net45\SQFramework.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WebGrease, Version=1.6.5135.21930, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\CadastroService.cs" />
+    <Compile Include="Services\ContextAspect.cs" />
+    <Compile Include="Services\ServiceBase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Config\Aspects.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="Reports\Categoria.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Config\Services.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\LojaProduto.Common\LojaProduto.Common.csproj">
+      <Project>{f0f04c1e-9f2d-4c05-8c82-894844ec8ae1}</Project>
+      <Name>LojaProduto.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Domain\LojaProduto.Domain\LojaProduto.Domain.csproj">
+      <Project>{53b9e3ea-bfca-4efc-a131-d398a0b46022}</Project>
+      <Name>LojaProduto.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Integration\LojaProduto.Integration.Spec\LojaProduto.Integration.Spec.csproj">
+      <Project>{9a0bd3c8-c33a-4054-a27d-1a487bbc2df1}</Project>
+      <Name>LojaProduto.Integration.Spec</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LojaProduto.Services.Spec\LojaProduto.Services.Spec.csproj">
+      <Project>{1b030810-5179-466f-8cff-df57a5b5e571}</Project>
+      <Name>LojaProduto.Services.Spec</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Config\Database.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Config\Integration.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Config\Hosts.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

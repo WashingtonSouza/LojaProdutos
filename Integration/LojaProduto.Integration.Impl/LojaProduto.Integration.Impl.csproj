@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7BBC2423-4C22-4AD3-B259-4C8EB30EAA5D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LojaProduto.Integration.Impl</RootNamespace>
+    <AssemblyName>LojaProduto.Integration.Impl</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Common.Logging, Version=3.3.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Common.Logging.3.3.1\lib\net40\Common.Logging.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Common.Logging.Core, Version=3.3.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Common.Logging.Core.3.3.1\lib\net40\Common.Logging.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Common.Logging.Log4Net1213, Version=3.3.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Common.Logging.Log4Net1213.3.3.1\lib\net40\Common.Logging.Log4Net1213.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Iesi.Collections, Version=4.0.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Iesi.Collections.4.0.1.4000\lib\net40\Iesi.Collections.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.14.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\log4net.2.0.4\lib\net45-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NHibernate, Version=4.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\NHibernate.4.0.4.4000\lib\net40\NHibernate.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NVelocity, Version=1.1.1.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Castle.NVelocity.1.1.1\lib\net40\NVelocity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Spring.Aop, Version=2.0.1.45000, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Spring.Aop.2.0.1\lib\net45\Spring.Aop.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Spring.Core, Version=2.0.1.45000, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Spring.Core.2.0.1\lib\net45\Spring.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Spring.Data, Version=2.0.1.45000, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Spring.Data.2.0.1\lib\net45\Spring.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Spring.Data.NHibernate4, Version=2.0.1.45000, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Spring.Data.NHibernate4.2.0.1\lib\net45\Spring.Data.NHibernate4.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SQFramework.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=279f7c3070cb17ae, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SQFramework.Core.1.0.6\lib\SQFramework.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SQFramework.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=91406e718e3a7677, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SQFramework.Data.1.0.1\lib\SQFramework.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SQFramework.Data.Hibernate, Version=1.0.0.0, Culture=neutral, PublicKeyToken=97569e2ffadfe929, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SQFramework.Data.Hibernate.1.0.0\lib\SQFramework.Data.Hibernate.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SQFramework.Security, Version=1.0.0.0, Culture=neutral, PublicKeyToken=89eee30fea252792, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SQFramework.Security.1.0.0\lib\SQFramework.Security.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SQFramework.Spring, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cf7b902065a697b9, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SQFramework.Spring.1.0.2\lib\net40\SQFramework.Spring.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SQFramework.Spring.Data.Hibernate, Version=1.0.0.0, Culture=neutral, PublicKeyToken=24ac70790e66c6a0, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SQFramework.Spring.Data.Hibernate.1.0.4\lib\net40\SQFramework.Spring.Data.Hibernate.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SQFramework.Templates.NVelocity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=665ace7f7282a7c5, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SQFramework.Templates.NVelocity.1.0.0\lib\SQFramework.Templates.NVelocity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CategoriaRepository.cs" />
+    <Compile Include="ClienteRepository.cs" />
+    <Compile Include="EnderecoRepository.cs" />
+    <Compile Include="FornecedorRepository.cs" />
+    <Compile Include="ItensPedidoRepository.cs" />
+    <Compile Include="PedidoRepository.cs" />
+    <Compile Include="ProdutoRepository.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\LojaProduto.Common\LojaProduto.Common.csproj">
+      <Project>{f0f04c1e-9f2d-4c05-8c82-894844ec8ae1}</Project>
+      <Name>LojaProduto.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Domain\LojaProduto.Domain\LojaProduto.Domain.csproj">
+      <Project>{53b9e3ea-bfca-4efc-a131-d398a0b46022}</Project>
+      <Name>LojaProduto.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LojaProduto.Integration.Spec\LojaProduto.Integration.Spec.csproj">
+      <Project>{9a0bd3c8-c33a-4054-a27d-1a487bbc2df1}</Project>
+      <Name>LojaProduto.Integration.Spec</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\ItensPedido.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\Categoria.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\Cliente.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\Endereco.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\Fornecedor.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\Pedido.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mappings\Produto.hbm.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

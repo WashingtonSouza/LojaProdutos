@@ -1,0 +1,13 @@
+﻿@using LojaProduto.Presentation.Helpers;
+
+@if (Request.IsAuthenticated)
+{
+    <ul class="nav navbar-nav navbar-right">
+        <li class="inactive">
+            @Html.ConfirmationLink("Portal Sistemas", "PortalSistemas", "Home", "Portal de Sistemas", "Deseja realmente sair para o portal de sistemas?")
+        </li>
+        <li>
+            @Html.ConfirmationLink("Sair", "Logoff", "Home", "Sair", "Deseja terminar a sessão?")
+        </li>
+    </ul>
+}

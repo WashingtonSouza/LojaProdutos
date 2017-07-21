@@ -1,0 +1,10 @@
+﻿@using SCA.WebControls
+
+@if (Request.IsAuthenticated && SCAApplicationContext.Usuario != null)
+{
+    <span class="nome-user">Bem - vindo(a) @SCAApplicationContext.Usuario.Nome</span>
+}
+else
+{
+    <span class="nome-user">&nbsp;</span>
+}

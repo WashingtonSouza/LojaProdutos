@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{192EE908-4BC2-4C97-B089-0017A77538A8}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LojaProduto.Services.ConsoleHost</RootNamespace>
+    <AssemblyName>LojaProduto.Services.ConsoleHost</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Common.Logging, Version=3.3.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Common.Logging.3.3.1\lib\net40\Common.Logging.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Common.Logging.Core, Version=3.3.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Common.Logging.Core.3.3.1\lib\net40\Common.Logging.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Common.Logging.Log4Net1213, Version=3.3.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Common.Logging.Log4Net1213.3.3.1\lib\net40\Common.Logging.Log4Net1213.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Iesi.Collections, Version=4.0.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Iesi.Collections.4.0.1.4000\lib\net40\Iesi.Collections.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.14.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\log4net.2.0.4\lib\net45-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NHibernate, Version=4.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\NHibernate.4.0.4.4000\lib\net40\NHibernate.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NHibernate.Caches.SysCache, Version=4.0.0.4000, Culture=neutral, PublicKeyToken=6876f2ea66c9f443, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\NHibernate.Caches.SysCache.4.0.0.4000\lib\net40\NHibernate.Caches.SysCache.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NVelocity, Version=1.1.1.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Castle.NVelocity.1.1.1\lib\net40\NVelocity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Spring.Aop, Version=2.0.1.45000, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Spring.Aop.2.0.1\lib\net45\Spring.Aop.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Spring.Core, Version=2.0.1.45000, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Spring.Core.2.0.1\lib\net45\Spring.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Spring.Data, Version=2.0.1.45000, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Spring.Data.2.0.1\lib\net45\Spring.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Spring.Data.NHibernate4, Version=2.0.1.45000, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Spring.Data.NHibernate4.2.0.1\lib\net45\Spring.Data.NHibernate4.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Spring.Services, Version=2.0.1.45000, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Spring.Services.2.0.1\lib\net45\Spring.Services.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SQFramework.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=279f7c3070cb17ae, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\SQFramework.Core.1.0.6\lib\SQFramework.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SQFramework.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=91406e718e3a7677, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\SQFramework.Data.1.0.1\lib\SQFramework.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SQFramework.IO, Version=1.0.0.0, Culture=neutral, PublicKeyToken=660d747fef03d356, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\SQFramework.IO.1.0.0\lib\SQFramework.IO.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SQFramework.Net, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6c95fa61d39cc52f, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\SQFramework.Net.1.0.0\lib\SQFramework.Net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SQFramework.Security, Version=1.0.0.0, Culture=neutral, PublicKeyToken=89eee30fea252792, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\SQFramework.Security.1.0.0\lib\SQFramework.Security.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SQFramework.Spring, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cf7b902065a697b9, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\SQFramework.Spring.1.0.2\lib\net40\SQFramework.Spring.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SQFramework.Templates.NVelocity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=665ace7f7282a7c5, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\SQFramework.Templates.NVelocity.1.0.0\lib\SQFramework.Templates.NVelocity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Integration\LojaProduto.Integration.Impl\LojaProduto.Integration.Impl.csproj">
+      <Project>{7bbc2423-4c22-4ad3-b259-4c8eb30eaa5d}</Project>
+      <Name>LojaProduto.Integration.Impl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\LojaProduto.Services.Impl\LojaProduto.Services.Impl.csproj">
+      <Project>{48ecb7d5-f29b-45d7-93d5-39e51127f9cb}</Project>
+      <Name>LojaProduto.Services.Impl</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\Log.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

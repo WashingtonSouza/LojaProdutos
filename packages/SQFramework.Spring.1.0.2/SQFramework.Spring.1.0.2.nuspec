@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>SQFramework.Spring</id>
+    <version>1.0.2</version>
+    <title>SQFramework.Spring</title>
+    <authors>marcos.queiroga</authors>
+    <owners>marcos.queiroga</owners>
+    <projectUrl>http://www.squadra.com.br/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>SQFramework.Spring</description>
+    <dependencies>
+      <group targetFramework=".NETFramework4.0">
+        <dependency id="Common.Logging" version="3.1.0" />
+        <dependency id="Spring.Aop" version="2.0.0" />
+        <dependency id="SQFramework.Data" version="1.0.1" />
+        <dependency id="SQFramework.Security" version="1.0.0" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

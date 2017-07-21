@@ -1,0 +1,65 @@
+﻿@model SQFramework.Data.Pagging.PageMessage
+
+@{
+    int pageCount = (int)Math.Ceiling((decimal)Model.RowsCount / Model.PageSize);
+    int previousPage = Model.ActualPage - 1;
+    int nextPage = Model.ActualPage + 1;
+    int pageRadius = 10;
+    int startPage = (Model.ActualPage - pageRadius / 2);
+
+    if ((startPage + pageRadius - 1) > pageCount)
+    {
+        startPage = pageCount - pageRadius + 1;
+    }
+
+    startPage = (startPage < 1 ? 1 : startPage);
+
+    int endPage = (startPage + pageRadius - 1);
+
+    if (endPage > pageCount)
+    {
+        endPage = pageCount;
+    }
+
+    var indexes = new List<int>();
+    for (var i = startPage; i <= endPage; i++)
+    {
+        indexes.Add(i);
+    }
+    <nav class="text-center">
+        <ul class="pagination">
+            <li><span class="glyphicon">@Model.ActualPage de @pageCount</span></li>
+            @if (previousPage < 1)
+            {
+                <li class="disabled"><span class="glyphicon glyphicon-step-backward btn btn-link"></span></li>
+                <li class="disabled"><span class="glyphicon glyphicon-chevron-left btn btn-link"></span></li>
+            }
+            else
+            {
+                <li><span class="ui-table-control-next glyphicon glyphicon-step-backward btn btn-link" data-columns-page="1"></span></li>
+                <li><span class="ui-table-control-next glyphicon glyphicon-chevron-left btn btn-link" data-columns-page="@previousPage"></span></li>
+            }
+            @foreach (var item in indexes)
+            {
+                if (item == Model.ActualPage)
+                {
+                    <li class="active"><span class="ui-table-control-next glyphicon btn btn-link" data-columns-page="@item">@item</span></li>
+                }
+                else
+                {
+                    <li><span class="ui-table-control-next glyphicon btn btn-link" data-columns-page="@item">@item</span></li>
+                }
+            }
+            @if (nextPage > pageCount)
+            {
+                <li class="disabled"><span class="glyphicon glyphicon-chevron-right btn btn-link"></span></li>
+                <li class="disabled"><span class="glyphicon glyphicon-step-forward btn btn-link"></span></li>
+            }
+            else
+            {
+                <li><span class="ui-table-control-next glyphicon glyphicon-chevron-right btn btn-link" data-columns-page="@nextPage"></span></li>
+                <li><span class="ui-table-control-next glyphicon glyphicon-step-forward btn btn-link" data-columns-page="@pageCount"></span></li>
+            }
+        </ul>
+    </nav>
+}

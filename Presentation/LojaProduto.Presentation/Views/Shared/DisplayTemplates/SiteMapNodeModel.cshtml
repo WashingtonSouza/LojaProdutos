@@ -1,0 +1,36 @@
+﻿@model MvcSiteMapProvider.Web.Html.Models.SiteMapNodeModel
+
+@using System.Web.Mvc.Html
+@using MvcSiteMapProvider.Web.Html.Models
+
+@if (Model.IsCurrentNode && Model.SourceMetadata["HtmlHelper"].ToString() != "MvcSiteMapProvider.Web.Html.MenuHelper")
+{
+    <text>@Model.Title</text>
+}
+else
+{
+    string url = Model.IsClickable ? Model.Url : "#";
+
+    if (Model.Children.Any())
+    {
+        if (string.IsNullOrEmpty(Model.Description))
+        {
+            <a href="@url" class="dropdown-toggle" data-toggle="dropdown">@Model.Title</a>
+        }
+        else
+        {
+            <a href="@url" class="dropdown-toggle" data-toggle="dropdown" title="@Model.Description">@Model.Title</a>
+        }
+    }
+    else
+    {
+        if (string.IsNullOrEmpty(Model.Description))
+        {
+            <a href='@url'>@Model.Title</a>
+        }
+        else
+        {
+            <a href='@url' title="@Model.Description">@Model.Title</a>
+        }
+    }
+}

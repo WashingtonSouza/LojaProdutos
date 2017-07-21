@@ -1,0 +1,109 @@
+﻿@model LojaProduto.Presentation.Models.ListaProdutos
+
+@using LojaProduto.Presentation.Helpers
+@using LojaProduto.Common
+
+
+<div class="container geral">
+    <div class="row">
+        <div id="top">
+            <div class="col-md-2">
+                <h2>Produtos</h2>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12 row">
+        <div class="input-group h2">
+            <input name="data[search]" class="form-control" id="search" type="text" placeholder="Pesquisar Itens" data-name="pesquisaProduto">
+            
+            <span class="input-group-btn">
+                <button class="btn btn-primary" type="submit" id="btnPesquisar">
+                    <span class="glyphicon glyphicon-search"></span>
+                </button>
+            </span>
+        </div>
+    </div>
+    <div class="row">
+        <!-- Modal -->
+        <div class="modal fade" id="modal-SolicitarPedido" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="modalLabel">Adicionar Item</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/produtos/foto1-verde.png" alt="Fuzzy Cardigan" class="img-thumbnail img-responsive">
+                        <div>
+                            <table>
+                                <tr><td><label data-name="nome-produto"></label></td></tr>
+                                <tr><td><label data-name="categoria-produto"></label></td></tr>
+                                <tr><td><label data-name="preco-produto"></label></td></tr>
+                                <tr>
+                                    <td><label>Quantidade:</label></td>
+                                    <td><input data-name="quantidadeItens" class="form-control" type="text" placeholder="Quantidade Produtos" id="quantidadeItens" /></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="modal-footer" data-name="adicionar-quantidade">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal" data-name="adiciona" id="adiciona">Adicionar ao Pedido</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- /.modal -->
+        <br />
+        @foreach (var produto in Model.Produtos)
+            {
+            <div class="col-xs-4">
+                <div class="row well well-sm">
+                    <div class="pull-right">
+                        <dl>
+                            <dt data-name="nome-produto">@produto.Nome</dt>
+                            <dd data-name="categoria-produto">@produto.Categoria.Nome</dd>
+                            <dt data-name="preco-produto">@produto.PrecoProduto</dt>
+                            <dt>
+                                <a class="btn btn-success btn-xs" data-name="adicionar-pedido" data-toggle="modal" data-target="#modal-SolicitarPedido">Adicionar ao Pedido</a>
+                            </dt>
+                        </dl>
+                    </div>
+                    <div class="pull-left">
+                        <img src="img/produtos/foto1-verde.png" alt="Fuzzy Cardigan" class="img-thumbnail img-responsive">
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<script type="text/javascript">
+
+    $(document).ready(function() {
+
+        $("[data-name='adicionar-pedido']").click(function () {
+            var nomeProduto = $(this).parent().parent().find("[data-name='nome-produto']").text();
+            var categoriaProduto = $(this).parent().parent().find("[data-name='categoria-produto']").text();
+            var precoProduto = $(this).parent().parent().find("[data-name='preco-produto']").text();
+
+            $("#modal-SolicitarPedido [data-name='nome-produto']").text(nomeProduto);
+            $("#modal-SolicitarPedido [data-name='categoria-produto']").text(categoriaProduto);
+            $("#modal-SolicitarPedido [data-name='preco-produto']").text(precoProduto);
+            $("#quantidadeItens").val('');
+
+            $("[data-name='adiciona']").click(function () {
+                var quantidadeItens = $(this).parent().find("[data-name='quantidadeItens']").text();
+            });
+        });
+
+        $("#btnPesquisar").click(function () {
+
+            var nomeProduto = $("#search").val();
+            window.location.href = "ListaProdutos?query=" + nomeProduto;
+
+        });
+
+    });
+
+</script>
+

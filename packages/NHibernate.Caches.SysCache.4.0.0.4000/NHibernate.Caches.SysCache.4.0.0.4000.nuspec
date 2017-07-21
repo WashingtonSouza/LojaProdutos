@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>NHibernate.Caches.SysCache</id>
+    <version>4.0.0.4000</version>
+    <title>NHibernate.Caches.SysCache</title>
+    <authors>NHibernate.org</authors>
+    <owners>NHibernate.org</owners>
+    <projectUrl>https://github.com/diegose/NHibernate.Diegose</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Cache provider for NHibernate using ASP.NET Cache object.</description>
+    <copyright>Copyright 2013</copyright>
+    <tags>nhibernate cache</tags>
+    <dependencies>
+      <dependency id="NHibernate" version="4.0.0.4000" />
+    </dependencies>
+  </metadata>
+</package>

@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<objects xmlns="http://www.springframework.net" xmlns:aop="http://www.springframework.net/aop" xmlns:db="http://www.springframework.net/database" xmlns:tx="http://www.springframework.net/tx">
+
+    <object type="Spring.Objects.Factory.Config.PropertyPlaceholderConfigurer, Spring.Core">
+        <property name="ConfigSections">
+            <list>
+                <value>antt.databases/LojaProduto</value>
+            </list>
+        </property>
+    </object>
+
+    <db:provider id="DbProvider" connectionString="Data Source=${db.datasource};Initial Catalog=${db.database};User ID=${db.user};Password=${db.password};Persist Security Info=True;Connect Timeout=60;" provider="System.Data.SqlClient" />
+
+    <object id="TransactionManager" type="Spring.Data.NHibernate.HibernateTransactionManager, Spring.Data.NHibernate4">
+        <property name="DbProvider" ref="DbProvider" />
+        <property name="SessionFactory" ref="SessionFactory" />
+        <property name="DefaultTimeout" value="3600" />
+    </object>
+
+    <tx:attribute-driven transaction-manager="TransactionManager" />
+
+    <object id="SessionFactory" type="Spring.Data.NHibernate.LocalSessionFactoryObject, Spring.Data.NHibernate4">
+        <property name="DbProvider" ref="DbProvider" />
+        <property name="MappingAssemblies">
+            <list>
+                <value>LojaProduto.Integration.Impl</value>
+            </list>
+        </property>
+        <property name="HibernateProperties">
+            <dictionary>
+                <entry key="hibernate.connection.provider" value="NHibernate.Connection.DriverConnectionProvider" />
+                <entry key="dialect" value="NHibernate.Dialect.MsSql2008Dialect" />
+                <entry key="connection.driver_class" value="NHibernate.Driver.SqlClientDriver" />
+                <entry key="connection.isolation" value="ReadUncommitted" />
+                <entry key="show_sql" value="false" />
+                <entry key="command_timeout" value="360" />
+                <entry key="cache.provider_class" value="NHibernate.Caches.SysCache.SysCacheProvider, NHibernate.Caches.SysCache" />
+                <entry key="cache.use_second_level_cache" value="false" />
+                <entry key="cache.use_query_cache" value="true" />
+            </dictionary>
+        </property>
+    </object>
+
+    <object id="HibernateTemplate" type="Spring.Data.NHibernate.Generic.HibernateTemplate">
+        <property name="SessionFactory" ref="SessionFactory" />
+        <property name="TemplateFlushMode" value="Auto" />
+        <property name="CacheQueries" value="true" />
+    </object>
+
+    <object id="HibernateTemplateNonGeneric" type="Spring.Data.NHibernate.HibernateTemplate">
+        <property name="SessionFactory" ref="SessionFactory" />
+        <property name="TemplateFlushMode" value="Auto" />
+        <property name="CacheQueries" value="true" />
+    </object>
+
+    <object id="AdoTemplate" type="Spring.Data.Generic.AdoTemplate">
+        <property name="DbProvider" ref="DbProvider" />
+        <property name="CommandTimeout" value="1200" />
+    </object>
+
+</objects>

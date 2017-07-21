@@ -1,0 +1,111 @@
+﻿@using LojaProduto.Presentation.Helpers
+@using LojaProduto.Common
+
+@{
+    ViewBag.Title = "Consultar Categoria";
+}
+
+<div class="container geral">
+    <div class="row">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Consultar Categoria</h3>
+            </div>
+            <div class="panel-body">
+                <div class="form-horizontal">
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-12">
+                            @Html.Button("btn-pesquisar", IconType.Pesquisar)
+                            @Html.ActionLink(@Url.Action("Detalhar"), IconType.Novo)
+                            @Html.Button("btn-limpar", IconType.Limpar)
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-antt dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i aria-hidden="true" class="glyphicon glyphicon-download-alt"></i> Exportar <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><button type="button" id="btn-exportar-pdf" class="btn btn-link" data-report-type="2">PDF</button></li>
+                                    <li><button type="button" id="btn-exportar-excel" class="btn btn-link" data-report-type="0">Excel</button></li>
+                                    <li><button type="button" id="btn-exportar-word" class="btn btn-link" data-report-type="3">Word</button></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="list-data" />
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts
+{
+    <script type="text/javascript">
+        $(function () {
+
+            $("#btn-pesquisar").click(function () {
+
+                try { $('#list-data').columns('destroy'); } catch (e) { }
+
+                $.ajax({
+                    type: 'POST',
+                    url: '@Url.Action("Index")',
+                    data: { 'startIndex': 0, 'pageSize': 10, 'orderProperty': 'CodigoIntegracao' },
+                    dataType: 'json',
+                    cache: false,
+                    async: true,
+                    error: function (xhr) {
+                        showMessage(xhr.responseJSON);
+                    },
+                    success: function (json) {
+                        $('#list-data').columns({
+                            data: json.Entities,
+                            rowsCount: json.RowsCount,
+                            startIndex: json.StartIndex,
+                            pageSize: json.PageSize,
+                            size: json.PageSize,
+                            total: json.Entities.length,
+                            url: "@Url.Action("Index")",
+                            sortBy: "CodigoIntegracao",
+                            schema: [
+                                { "header": "Código Integração", "key": "CodigoIntegracao", "template": "{{CodigoIntegracao}}" },
+                                { "header": "Nome", "key": "Nome", "template": "{{Nome}}" },
+                                { "header": "Alterar", "template": "<a class='glyphicon glyphicon-pencil btn btn-link' href='@Url.Action("Detalhar")/{{Id}}'></a>" },
+                                { "header": "Excluir", "template": "<a class='glyphicon glyphicon-remove btn btn-link confirm-delete' href='@Url.Action("Excluir")/{{Id}}'></a>" }
+                            ],
+                            sortableFields: ["CodigoIntegracao", "Nome"],
+                            plugins: ["paginator"]
+                        });
+
+                        $('#list-data a.confirm-delete').click(function (event) {
+                            event.preventDefault();
+                            showConfirmDelete($(this), $('#list-data ul.pagination li.active span'));
+                            return false;
+                        });
+                    }
+                });
+
+                return false;
+            });
+
+            $("#btn-limpar").click(function () {
+                try { $('#list-data').columns('destroy'); } catch (e) { }
+
+            });
+
+            $("#btn-exportar-pdf, #btn-exportar-excel, #btn-exportar-word").click(function () {
+                var reportType = $(this).attr('data-report-type');
+                var orderProperty = 'CodigoIntegracao';
+                var orderAscending = true;
+
+                if ($('#list-data > *').length > 0) {
+                    var columns = $('#list-data').columns('getObject');
+                    orderProperty = columns.sortBy;
+                    orderAscending = !columns.reverse;
+                }
+
+                window.location = '@Url.Action("ExportReport")?' + $.param({ 'reportType': reportType, 'orderProperty': orderProperty, 'orderAscending': orderAscending });
+            });
+
+        });
+    </script>
+}

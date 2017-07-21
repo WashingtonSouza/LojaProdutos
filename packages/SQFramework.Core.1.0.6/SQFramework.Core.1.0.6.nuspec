@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>SQFramework.Core</id>
+    <version>1.0.6</version>
+    <title>SQFramework.Core</title>
+    <authors>marcos.queiroga</authors>
+    <owners>marcos.queiroga</owners>
+    <projectUrl>http://www.squadra.com.br/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>SQFramework.Core</description>
+    <dependencies>
+      <group targetFramework=".NETFramework4.0">
+        <dependency id="Common.Logging" version="3.1.0" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

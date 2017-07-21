@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="true" namespace="LojaProduto.Domain.Entities" assembly="LojaProduto.Domain">
+    <class name="ItensPedido" table="dbo.ItensPedido" lazy="true">
+
+        <id name="id" column="Id" type="int" access="field" unsaved-value="0">
+            <generator class="identity" />
+        </id>
+
+        <property name="quantidadeProduto" column="QuantidadeProduto" type="int" access="field" not-null="true" />
+        <property name="totalItemPedido" column="TotalItemPedido" type="decimal" access="field" not-null="true" />
+
+        <many-to-one name="pedido" column="PedidoId" access="field" class="Pedido" not-null="true" />
+        <many-to-one name="produto" column="ProdutoId" access="field" class="Produto" not-null="true" />
+
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="true" namespace="LojaProduto.Domain.Entities" assembly="LojaProduto.Domain">
+    <class name="Pedido" table="dbo.Pedido" lazy="true">
+
+        <id name="id" column="Id" type="int" access="field" unsaved-value="0">
+            <generator class="identity" />
+        </id>
+
+        <property name="codigo" column="Codigo" type="string" access="field" not-null="true" length="10" />
+        <property name="dataElaboracao" column="DataElaboracao" type="DateTime" access="field" not-null="true" />
+        <property name="valorTotalPedido" column="ValorTotalPedido" type="decimal" access="field" not-null="true" />
+        <property name="statusPedido" column="statusPedido" type="int" access="field" not-null="true" />
+        <property name="tipoVenda" column="TipoVenda" type="int" access="field" not-null="true" />
+        <property name="totalParcelas" column="TotalParcelas" type="decimal" access="field" not-null="true" />
+
+        <many-to-one name="cliente" column="ClienteId" access="field" class="Cliente" not-null="true" />
+
+        <bag name="itensPedidos" cascade="all-delete-orphan" access="field" lazy="true" inverse="true">
+            <key column="PedidoId" not-null="true" />
+            <one-to-many class="ItensPedido" />
+        </bag>
+
+    </class>
+</hibernate-mapping>

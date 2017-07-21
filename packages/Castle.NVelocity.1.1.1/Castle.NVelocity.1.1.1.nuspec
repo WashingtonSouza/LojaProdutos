@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Castle.NVelocity</id>
+    <version>1.1.1</version>
+    <authors>Castle Project Contributors</authors>
+    <owners>alexey.petriashev,Castle Project Contributors</owners>
+    <projectUrl>http://www.castleproject.org/others/nvelocity/index.html</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>NVelocity is a port of the excellent Apache Jakarta Velocity project. It is a very simple, easy to learn and extensible template engine.
+
+Due to the lack of releases, support and bug fixes on the original port, the Castle Team decided to fork the project, bringing it to our code repository, fixing the bugs and improving it with more features.</description>
+    <summary>NVelocity is very simple, easy to learn and extensible template engine. It's Castle Team fork of original NVelocity.</summary>
+    <releaseNotes>1.1.1 (2010-10-12)
+==================
+- Included the NET40 (CP) binaries on the release package</releaseNotes>
+    <language>en-US</language>
+    <tags>nvelocity template templateengine</tags>
+  </metadata>
+</package>

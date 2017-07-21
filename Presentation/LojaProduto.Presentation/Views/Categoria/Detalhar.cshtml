@@ -1,0 +1,54 @@
+﻿@model LojaProduto.Services.Spec.DataTransferObjects.DTOCategoria
+
+@using LojaProduto.Presentation.Helpers
+@using LojaProduto.Common
+
+@{
+    ViewBag.Title = "Categoria";
+}
+
+<div class="container geral">
+    <div class="row">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Categoria</h3>
+            </div>
+            @using (Ajax.BeginForm("Salvar", new AjaxOptions
+            {
+                Confirm = "{ \"title\": \"Salvar\", \"message\": \"Deseja realmente salvar?\" }",
+                OnComplete = "showMessage(xhr.responseJSON)"
+            }))
+            {
+                @Html.AntiForgeryToken()
+                @Html.HiddenFor(model => model.Id)
+
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12">
+                            <div class="form-group">
+                                <div class="col-sm12">
+                                    @Html.LabelFor(model => model.CodigoIntegracao) *
+                                    @Html.ValidationMessageFor(model => model.CodigoIntegracao)
+                                    @Html.TextBoxFor(model => model.CodigoIntegracao, new { @class = "form-control", @title = "Código Integração", @maxlength = "10" })
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm12">
+                                    @Html.LabelFor(model => model.Nome) *
+                                    @Html.ValidationMessageFor(model => model.Nome)
+                                    @Html.TextBoxFor(model => model.Nome, new { @class = "form-control", @title = "Nome", @maxlength = "50" })
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row pull-right">
+                        <div class="col-xs-12">
+                            @Html.Button("btn-salvar", IconType.Salvar, "Salvar", true)
+                            @Html.ActionLink(@Url.Action("Index"), IconType.Voltar)
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>

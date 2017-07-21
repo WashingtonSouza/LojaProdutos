@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Microsoft.Report.Viewer</id>
+    <version>11.0.0.0</version>
+    <title>Microsoft Report Viewer</title>
+    <authors>Microsoft</authors>
+    <owners>Microsoft</owners>
+    <projectUrl>http://msdn.microsoft.com/en-us/library/bb885185.aspx</projectUrl>
+    <iconUrl>http://msdn.microsoft.com/en-us/library/bb885185.aspx</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>My package description.</description>
+    <summary>ReportViewer is a freely redistributable control that enables embedding reports in applications developed using the .NET Framework. Reports are designed with drag-and-drop simplicity using Report Desi</summary>
+  </metadata>
+</package>

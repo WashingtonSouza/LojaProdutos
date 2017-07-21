@@ -1,0 +1,141 @@
+2017-07-18 10:34:41,167 [8] ERROR Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] -    GetObjectInternal: error obtaining object SessionFactory
+2017-07-18 10:34:41,419 [8] ERROR Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - GetObjectInternal: error obtaining object TransactionManager
+2017-07-18 10:38:41,211 [24] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute query: SELECT this_.Id as Id6_0_, this_.CodigoProduto as CodigoPr2_6_0_, this_.Nome as Nome6_0_, this_.DataFabricacao as DataFabr4_6_0_, this_.DataVencimento as DataVenc5_6_0_, this_.PrecoProduto as PrecoPro6_6_0_, this_.QuantidadeEmEstoque as Quantida7_6_0_, this_.CategoriaId as Categori8_6_0_, this_.FornecedorId as Forneced9_6_0_ FROM dbo.Produto this_
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'QuantidadeEmEstoque'.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   em System.Data.SqlClient.SqlDataReader.get_MetaData()
+   em System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   em System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   em System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   em System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   em NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+ClientConnectionId:326ee5b2-b5f3-45e4-8a34-8b9ec15804a0
+Error Number:207,State:1,Class:16
+2017-07-18 10:38:41,358 [24] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Invalid column name 'QuantidadeEmEstoque'.
+2017-07-18 10:38:41,379 [24] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Invalid column name 'QuantidadeEmEstoque'.
+2017-07-18 10:38:41,381 [24] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Invalid column name 'QuantidadeEmEstoque'.
+2017-07-18 10:39:09,980 [24] ERROR LojaProduto.Services.Impl.Services.ContextAspect [(null)] - Spring.Data.BadSqlGrammarException: Hibernate operation: could not execute query
+[ SELECT this_.Id as Id6_0_, this_.CodigoProduto as CodigoPr2_6_0_, this_.Nome as Nome6_0_, this_.DataFabricacao as DataFabr4_6_0_, this_.DataVencimento as DataVenc5_6_0_, this_.PrecoProduto as PrecoPro6_6_0_, this_.QuantidadeEmEstoque as Quantida7_6_0_, this_.CategoriaId as Categori8_6_0_, this_.FornecedorId as Forneced9_6_0_ FROM dbo.Produto this_ ]
+[SQL: SELECT this_.Id as Id6_0_, this_.CodigoProduto as CodigoPr2_6_0_, this_.Nome as Nome6_0_, this_.DataFabricacao as DataFabr4_6_0_, this_.DataVencimento as DataVenc5_6_0_, this_.PrecoProduto as PrecoPro6_6_0_, this_.QuantidadeEmEstoque as Quantida7_6_0_, this_.CategoriaId as Categori8_6_0_, this_.FornecedorId as Forneced9_6_0_ FROM dbo.Produto this_]; bad SQL grammar [SELECT this_.Id as Id6_0_, this_.CodigoProduto as CodigoPr2_6_0_, this_.Nome as Nome6_0_, this_.DataFabricacao as DataFabr4_6_0_, this_.DataVencimento as DataVenc5_6_0_, this_.PrecoProduto as PrecoPro6_6_0_, this_.QuantidadeEmEstoque as Quantida7_6_0_, this_.CategoriaId as Categori8_6_0_, this_.FornecedorId as Forneced9_6_0_ FROM dbo.Produto this_]; Invalid column name 'QuantidadeEmEstoque'. ---> System.Data.SqlClient.SqlException: Invalid column name 'QuantidadeEmEstoque'.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   em System.Data.SqlClient.SqlDataReader.get_MetaData()
+   em System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   em System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   em System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   em System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   em NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   em NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   em NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer)
+   em NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer)
+   em NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters, IResultTransformer forcedResultTransformer)
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em Spring.Data.NHibernate.Generic.HibernateTemplate.ExecuteFind[T](IFindHibernateCallback`1 action, Boolean exposeNativeSession) na c:\_prj\spring-net\src\Spring\Spring.Data.NHibernate\Data\NHibernate\Generic\HibernateTemplate.cs:linha 1236
+   em Spring.Data.NHibernate.Generic.HibernateTemplate.LoadAll[T]() na c:\_prj\spring-net\src\Spring\Spring.Data.NHibernate\Data\NHibernate\Generic\HibernateTemplate.cs:linha 703
+   em SQFramework.Spring.Data.Hibernate.RepositoryBase`1.ListAll()
+   em LojaProduto.Services.Impl.Services.CadastroService.ListarProdutos() na d:\Projetos\LojaProdutos\Services\LojaProduto.Services.Impl\Services\CadastroService.cs:linha 75
+   em _dynamic_LojaProduto.Services.Impl.Services.CadastroService.ListarProdutos(Object , Object[] )
+   em Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments) na c:\_prj\spring-net\src\Spring\Spring.Core\Reflection\Dynamic\DynamicMethod.cs:linha 162
+   em Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint() na c:\_prj\spring-net\src\Spring\Spring.Aop\Aop\Framework\DynamicMethodInvocation.cs:linha 109
+   em Spring.Aop.Framework.AbstractMethodInvocation.Proceed() na c:\_prj\spring-net\src\Spring\Spring.Aop\Aop\Framework\AbstractMethodInvocation.cs:linha 266
+   em Spring.Transaction.Interceptor.TransactionInterceptor.Invoke(IMethodInvocation invocation) na c:\_prj\spring-net\src\Spring\Spring.Data\Transaction\Interceptor\TransactionInterceptor.cs:linha 79
+   em Spring.Aop.Framework.AbstractMethodInvocation.Proceed() na c:\_prj\spring-net\src\Spring\Spring.Aop\Aop\Framework\AbstractMethodInvocation.cs:linha 291
+   em SQFramework.Spring.Services.Aspects.ContextAspect.Invoke(IMethodInvocation invocation)
+2017-07-18 11:31:24,179 [20] ERROR LojaProduto.Services.Impl.Services.ContextAspect [(null)] - System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em LojaProduto.Services.Impl.Services.CadastroService.SalvarProduto(DTOProduto dto) na d:\Projetos\LojaProdutos\Services\LojaProduto.Services.Impl\Services\CadastroService.cs:linha 33
+   em _dynamic_LojaProduto.Services.Impl.Services.CadastroService.SalvarProduto(Object , Object[] )
+   em Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments) na c:\_prj\spring-net\src\Spring\Spring.Core\Reflection\Dynamic\DynamicMethod.cs:linha 162
+   em Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint() na c:\_prj\spring-net\src\Spring\Spring.Aop\Aop\Framework\DynamicMethodInvocation.cs:linha 109
+   em Spring.Aop.Framework.AbstractMethodInvocation.Proceed() na c:\_prj\spring-net\src\Spring\Spring.Aop\Aop\Framework\AbstractMethodInvocation.cs:linha 266
+   em Spring.Transaction.Interceptor.TransactionInterceptor.Invoke(IMethodInvocation invocation) na c:\_prj\spring-net\src\Spring\Spring.Data\Transaction\Interceptor\TransactionInterceptor.cs:linha 79
+   em Spring.Aop.Framework.AbstractMethodInvocation.Proceed() na c:\_prj\spring-net\src\Spring\Spring.Aop\Aop\Framework\AbstractMethodInvocation.cs:linha 291
+   em SQFramework.Spring.Services.Aspects.ContextAspect.Invoke(IMethodInvocation invocation)
+2017-07-21 17:28:17,702 [14] ERROR LojaProduto.Services.Impl.Services.ContextAspect [(null)] - Spring.Data.NHibernate.HibernateSystemException: Could not find a setter for property 'this' in class 'LojaProduto.Domain.Entities.Produto' ---> NHibernate.PropertyNotFoundException: Could not find a setter for property 'this' in class 'LojaProduto.Domain.Entities.Produto'
+   em NHibernate.Properties.ChainedPropertyAccessor.GetSetter(Type theClass, String propertyName)
+   em NHibernate.Transform.AliasToBeanResultTransformer.TransformTuple(Object[] tuple, String[] aliases)
+   em NHibernate.Loader.Criteria.CriteriaLoader.GetResultColumnOrRow(Object[] row, IResultTransformer customResultTransformer, IDataReader rs, ISessionImplementor session)
+   em NHibernate.Loader.Loader.GetRowFromResultSet(IDataReader resultSet, ISessionImplementor session, QueryParameters queryParameters, LockMode[] lockModeArray, EntityKey optionalObjectKey, IList hydratedObjects, EntityKey[] keys, Boolean returnProxies, IResultTransformer forcedResultTransformer)
+   em NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer)
+   em NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer)
+   em NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters, IResultTransformer forcedResultTransformer)
+   em NHibernate.Loader.Loader.ListIgnoreQueryCache(ISessionImplementor session, QueryParameters queryParameters)
+   em NHibernate.Loader.Loader.List(ISessionImplementor session, QueryParameters queryParameters, ISet`1 querySpaces, IType[] resultTypes)
+   em NHibernate.Impl.SessionImpl.List(CriteriaImpl criteria, IList results)
+   em _dynamic_NHibernate.Impl.SessionImpl.List(Object , Object[] )
+   em Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments) na c:\_prj\spring-net\src\Spring\Spring.Core\Reflection\Dynamic\DynamicMethod.cs:linha 162
+   em Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint() na c:\_prj\spring-net\src\Spring\Spring.Aop\Aop\Framework\DynamicMethodInvocation.cs:linha 109
+   em Spring.Aop.Framework.AbstractMethodInvocation.Proceed() na c:\_prj\spring-net\src\Spring\Spring.Aop\Aop\Framework\AbstractMethodInvocation.cs:linha 266
+   em Spring.Data.NHibernate.CloseSuppressingMethodInterceptor.Invoke(IMethodInvocation invocation) na c:\_prj\spring-net\src\Spring\Spring.Data.NHibernate\Data\NHibernate\HibernateAccessor.cs:linha 718
+   em Spring.Aop.Framework.AbstractMethodInvocation.Proceed() na c:\_prj\spring-net\src\Spring\Spring.Aop\Aop\Framework\AbstractMethodInvocation.cs:linha 291
+   em Spring.Aop.Framework.DynamicProxy.AdvisedProxy.Invoke(Object proxy, Object target, Type targetType, MethodInfo targetMethod, MethodInfo proxyMethod, Object[] args, IList interceptors) na c:\_prj\spring-net\src\Spring\Spring.Aop\Aop\Framework\DynamicProxy\AdvisedProxy.cs:linha 210
+   em CompositionAopProxy_98087ae000834c63b8410c10ce27c0ac.List(CriteriaImpl criteria, IList results)
+   em NHibernate.Impl.CriteriaImpl.List(IList results)
+   em NHibernate.Impl.CriteriaImpl.List[T]()
+   em SQFramework.Spring.Data.Hibernate.RepositoryBase`1.<>c__DisplayClass12`1.<List>b__11(ISession session)
+   em Spring.Data.NHibernate.Generic.ExecuteHibernateCallbackUsingDelegate`1.DoInHibernate(ISession session) na c:\_prj\spring-net\src\Spring\Spring.Data.NHibernate\Data\NHibernate\Generic\HibernateTemplate.cs:linha 1356
+   em Spring.Data.NHibernate.Generic.HibernateTemplate.Execute[T](IHibernateCallback`1 action, Boolean exposeNativeSession) na c:\_prj\spring-net\src\Spring\Spring.Data.NHibernate\Data\NHibernate\Generic\HibernateTemplate.cs:linha 1155
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em Spring.Data.NHibernate.Generic.HibernateTemplate.Execute[T](IHibernateCallback`1 action, Boolean exposeNativeSession) na c:\_prj\spring-net\src\Spring\Spring.Data.NHibernate\Data\NHibernate\Generic\HibernateTemplate.cs:linha 1173
+   em Spring.Data.NHibernate.Generic.HibernateTemplate.Execute[T](IHibernateCallback`1 action) na c:\_prj\spring-net\src\Spring\Spring.Data.NHibernate\Data\NHibernate\Generic\HibernateTemplate.cs:linha 1126
+   em Spring.Data.NHibernate.Generic.HibernateTemplate.Execute[T](HibernateDelegate`1 del) na c:\_prj\spring-net\src\Spring\Spring.Data.NHibernate\Data\NHibernate\Generic\HibernateTemplate.cs:linha 1086
+   em SQFramework.Spring.Data.Hibernate.RepositoryBase`1.List[V](DetachedCriteria criteria)
+   em LojaProduto.Integration.Impl.ProdutoRepository.PesquisarProdutos(String pesquisa) na D:\Projetos\LojaProdutos\Integration\LojaProduto.Integration.Impl\ProdutoRepository.cs:linha 29
+   em LojaProduto.Services.Impl.Services.CadastroService.PesquisarProdutos(String pesquisa) na D:\Projetos\LojaProdutos\Services\LojaProduto.Services.Impl\Services\CadastroService.cs:linha 413
+   em _dynamic_LojaProduto.Services.Impl.Services.CadastroService.PesquisarProdutos(Object , Object[] )
+   em Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments) na c:\_prj\spring-net\src\Spring\Spring.Core\Reflection\Dynamic\DynamicMethod.cs:linha 162
+   em Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint() na c:\_prj\spring-net\src\Spring\Spring.Aop\Aop\Framework\DynamicMethodInvocation.cs:linha 109
+   em Spring.Aop.Framework.AbstractMethodInvocation.Proceed() na c:\_prj\spring-net\src\Spring\Spring.Aop\Aop\Framework\AbstractMethodInvocation.cs:linha 266
+   em Spring.Transaction.Interceptor.TransactionInterceptor.Invoke(IMethodInvocation invocation) na c:\_prj\spring-net\src\Spring\Spring.Data\Transaction\Interceptor\TransactionInterceptor.cs:linha 79
+   em Spring.Aop.Framework.AbstractMethodInvocation.Proceed() na c:\_prj\spring-net\src\Spring\Spring.Aop\Aop\Framework\AbstractMethodInvocation.cs:linha 291
+   em SQFramework.Spring.Services.Aspects.ContextAspect.Invoke(IMethodInvocation invocation)
+2017-07-21 17:31:26,014 [19] ERROR LojaProduto.Services.Impl.Services.ContextAspect [(null)] - Spring.Data.NHibernate.HibernateSystemException: Could not find a setter for property 'this' in class 'LojaProduto.Domain.Entities.Produto' ---> NHibernate.PropertyNotFoundException: Could not find a setter for property 'this' in class 'LojaProduto.Domain.Entities.Produto'
+   em NHibernate.Properties.ChainedPropertyAccessor.GetSetter(Type theClass, String propertyName)
+   em NHibernate.Transform.AliasToBeanResultTransformer.TransformTuple(Object[] tuple, String[] aliases)
+   em NHibernate.Loader.Criteria.CriteriaLoader.GetResultColumnOrRow(Object[] row, IResultTransformer customResultTransformer, IDataReader rs, ISessionImplementor session)
+   em NHibernate.Loader.Loader.GetRowFromResultSet(IDataReader resultSet, ISessionImplementor session, QueryParameters queryParameters, LockMode[] lockModeArray, EntityKey optionalObjectKey, IList hydratedObjects, EntityKey[] keys, Boolean returnProxies, IResultTransformer forcedResultTransformer)
+   em NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer)
+   em NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer)
+   em NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters, IResultTransformer forcedResultTransformer)
+   em NHibernate.Loader.Loader.ListIgnoreQueryCache(ISessionImplementor session, QueryParameters queryParameters)
+   em NHibernate.Loader.Loader.List(ISessionImplementor session, QueryParameters queryParameters, ISet`1 querySpaces, IType[] resultTypes)
+   em NHibernate.Impl.SessionImpl.List(CriteriaImpl criteria, IList results)
+   em _dynamic_NHibernate.Impl.SessionImpl.List(Object , Object[] )
+   em Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments) na c:\_prj\spring-net\src\Spring\Spring.Core\Reflection\Dynamic\DynamicMethod.cs:linha 162
+   em Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint() na c:\_prj\spring-net\src\Spring\Spring.Aop\Aop\Framework\DynamicMethodInvocation.cs:linha 109
+   em Spring.Aop.Framework.AbstractMethodInvocation.Proceed() na c:\_prj\spring-net\src\Spring\Spring.Aop\Aop\Framework\AbstractMethodInvocation.cs:linha 266
+   em Spring.Data.NHibernate.CloseSuppressingMethodInterceptor.Invoke(IMethodInvocation invocation) na c:\_prj\spring-net\src\Spring\Spring.Data.NHibernate\Data\NHibernate\HibernateAccessor.cs:linha 718
+   em Spring.Aop.Framework.AbstractMethodInvocation.Proceed() na c:\_prj\spring-net\src\Spring\Spring.Aop\Aop\Framework\AbstractMethodInvocation.cs:linha 291
+   em Spring.Aop.Framework.DynamicProxy.AdvisedProxy.Invoke(Object proxy, Object target, Type targetType, MethodInfo targetMethod, MethodInfo proxyMethod, Object[] args, IList interceptors) na c:\_prj\spring-net\src\Spring\Spring.Aop\Aop\Framework\DynamicProxy\AdvisedProxy.cs:linha 210
+   em CompositionAopProxy_98087ae000834c63b8410c10ce27c0ac.List(CriteriaImpl criteria, IList results)
+   em NHibernate.Impl.CriteriaImpl.List(IList results)
+   em NHibernate.Impl.CriteriaImpl.List[T]()
+   em SQFramework.Spring.Data.Hibernate.RepositoryBase`1.<>c__DisplayClass12`1.<List>b__11(ISession session)
+   em Spring.Data.NHibernate.Generic.ExecuteHibernateCallbackUsingDelegate`1.DoInHibernate(ISession session) na c:\_prj\spring-net\src\Spring\Spring.Data.NHibernate\Data\NHibernate\Generic\HibernateTemplate.cs:linha 1356
+   em Spring.Data.NHibernate.Generic.HibernateTemplate.Execute[T](IHibernateCallback`1 action, Boolean exposeNativeSession) na c:\_prj\spring-net\src\Spring\Spring.Data.NHibernate\Data\NHibernate\Generic\HibernateTemplate.cs:linha 1155
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em Spring.Data.NHibernate.Generic.HibernateTemplate.Execute[T](IHibernateCallback`1 action, Boolean exposeNativeSession) na c:\_prj\spring-net\src\Spring\Spring.Data.NHibernate\Data\NHibernate\Generic\HibernateTemplate.cs:linha 1173
+   em Spring.Data.NHibernate.Generic.HibernateTemplate.Execute[T](IHibernateCallback`1 action) na c:\_prj\spring-net\src\Spring\Spring.Data.NHibernate\Data\NHibernate\Generic\HibernateTemplate.cs:linha 1126
+   em Spring.Data.NHibernate.Generic.HibernateTemplate.Execute[T](HibernateDelegate`1 del) na c:\_prj\spring-net\src\Spring\Spring.Data.NHibernate\Data\NHibernate\Generic\HibernateTemplate.cs:linha 1086
+   em SQFramework.Spring.Data.Hibernate.RepositoryBase`1.List[V](DetachedCriteria criteria)
+   em LojaProduto.Integration.Impl.ProdutoRepository.PesquisarProdutos(String pesquisa) na D:\Projetos\LojaProdutos\Integration\LojaProduto.Integration.Impl\ProdutoRepository.cs:linha 29
+   em LojaProduto.Services.Impl.Services.CadastroService.PesquisarProdutos(String pesquisa) na D:\Projetos\LojaProdutos\Services\LojaProduto.Services.Impl\Services\CadastroService.cs:linha 413
+   em _dynamic_LojaProduto.Services.Impl.Services.CadastroService.PesquisarProdutos(Object , Object[] )
+   em Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments) na c:\_prj\spring-net\src\Spring\Spring.Core\Reflection\Dynamic\DynamicMethod.cs:linha 162
+   em Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint() na c:\_prj\spring-net\src\Spring\Spring.Aop\Aop\Framework\DynamicMethodInvocation.cs:linha 109
+   em Spring.Aop.Framework.AbstractMethodInvocation.Proceed() na c:\_prj\spring-net\src\Spring\Spring.Aop\Aop\Framework\AbstractMethodInvocation.cs:linha 266
+   em Spring.Transaction.Interceptor.TransactionInterceptor.Invoke(IMethodInvocation invocation) na c:\_prj\spring-net\src\Spring\Spring.Data\Transaction\Interceptor\TransactionInterceptor.cs:linha 79
+   em Spring.Aop.Framework.AbstractMethodInvocation.Proceed() na c:\_prj\spring-net\src\Spring\Spring.Aop\Aop\Framework\AbstractMethodInvocation.cs:linha 291
+   em SQFramework.Spring.Services.Aspects.ContextAspect.Invoke(IMethodInvocation invocation)

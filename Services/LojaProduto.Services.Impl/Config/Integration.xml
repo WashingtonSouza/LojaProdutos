@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<objects xmlns="http://www.springframework.net" xmlns:aop="http://www.springframework.net/aop" xmlns:db="http://www.springframework.net/database" xmlns:tx="http://www.springframework.net/tx">
+    <object id="CategoriaRepository" singleton="true" type="LojaProduto.Integration.Impl.CategoriaRepository, LojaProduto.Integration.Impl">
+        <property name="HibernateTemplate" ref="HibernateTemplate" />
+    </object>
+    <object id="ClienteRepository" singleton="true" type="LojaProduto.Integration.Impl.ClienteRepository, LojaProduto.Integration.Impl">
+        <property name="HibernateTemplate" ref="HibernateTemplate" />
+    </object>
+    <object id="EnderecoRepository" singleton="true" type="LojaProduto.Integration.Impl.EnderecoRepository, LojaProduto.Integration.Impl">
+        <property name="HibernateTemplate" ref="HibernateTemplate" />
+    </object>
+    <object id="FornecedorRepository" singleton="true" type="LojaProduto.Integration.Impl.FornecedorRepository, LojaProduto.Integration.Impl">
+        <property name="HibernateTemplate" ref="HibernateTemplate" />
+    </object>
+    <object id="ItensPedidoRepository" singleton="true" type="LojaProduto.Integration.Impl.ItensPedidoRepository, LojaProduto.Integration.Impl">
+        <property name="HibernateTemplate" ref="HibernateTemplate" />
+    </object>
+    <object id="PedidoRepository" singleton="true" type="LojaProduto.Integration.Impl.PedidoRepository, LojaProduto.Integration.Impl">
+        <property name="HibernateTemplate" ref="HibernateTemplate" />
+    </object>
+    <object id="ProdutoRepository" singleton="true" type="LojaProduto.Integration.Impl.ProdutoRepository, LojaProduto.Integration.Impl">
+        <property name="HibernateTemplate" ref="HibernateTemplate" />
+    </object>
+</objects>

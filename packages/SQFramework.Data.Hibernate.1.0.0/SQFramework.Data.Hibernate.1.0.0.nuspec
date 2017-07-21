@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>SQFramework.Data.Hibernate</id>
+    <version>1.0.0</version>
+    <title>SQFramework.Data.Hibernate</title>
+    <authors>marcos.queiroga</authors>
+    <owners>marcos.queiroga</owners>
+    <projectUrl>http://www.squadra.com.br/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>SQFramework.Data.Hibernate</description>
+    <dependencies>
+      <group targetFramework=".NETFramework4.0">
+        <dependency id="NHibernate" version="4.0.3.4000" />
+        <dependency id="SQFramework.Core" version="1.0.0" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

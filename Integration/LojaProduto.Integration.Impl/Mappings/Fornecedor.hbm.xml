@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="true" namespace="LojaProduto.Domain.Entities" assembly="LojaProduto.Domain">
+    <class name="Fornecedor" table="dbo.Fornecedor" lazy="true">
+
+        <id name="id" column="Id" type="int" access="field" unsaved-value="0">
+            <generator class="identity" />
+        </id>
+
+        <property name="nome" column="Nome" type="string" access="field" not-null="true" length="50" />
+        <property name="codigo" column="Codigo" type="string" access="field" not-null="true" length="20" />
+        <property name="telefone" column="Telefone" type="int" access="field" not-null="true" />
+        <property name="nomeFantasia" column="NomeFantasia" type="string" access="field" not-null="true" length="100" />
+        <property name="cnpj" column="Cnpj" type="string" access="field" not-null="true" length="11" />
+
+        <many-to-one name="endereco" column="EnderecoId" access="field" class="Endereco" not-null="true" />
+
+        <bag name="produtos" cascade="all-delete-orphan" access="field" lazy="true" inverse="true">
+            <key column="FornecedorId" not-null="true" />
+            <one-to-many class="Produto" />
+        </bag>
+
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,119 @@
+﻿@model LojaProduto.Services.Spec.DataTransferObjects.DTOProduto
+
+@using LojaProduto.Presentation.Helpers
+@using LojaProduto.Common
+
+@*@{
+    ViewBag.Title = "Produto";
+}*@
+
+@using (Html.BeginForm("Cadastro", "Produto", FormMethod.Post))
+{
+    <div class="container geral">
+        <div class="row">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <ul class="list-inline" name="cadastros">
+                        <li class="alert-info nav-pills"><h3 class="panel-title">@Html.ActionLink("Produto", "Form", "Produto")</h3></li>
+                        <li class="alert-info nav-pills"><h3 class="panel-title">@Html.ActionLink("Categoria", "#", "#")</h3></li>
+                        <li class="alert-info nav-pills"><h3 class="panel-title">@Html.ActionLink("Cliente", "#", "#")</h3></li>
+                        <li class="alert-info nav-pills"><h3 class="panel-title">@Html.ActionLink("Fornecedor", "#", "#")</h3></li>
+                    </ul>
+                    
+                </div>
+                @using (Ajax.BeginForm("Salvar", new AjaxOptions
+                {
+                    Confirm = "{ \"title\": \"Salvar\", \"message\": \"Deseja realmente salvar?\" }",
+                    OnComplete = "showMessage(xhr.responseJSON)"
+                }))
+                {
+                    @Html.AntiForgeryToken()
+                    @Html.HiddenFor(model => model.Id)
+
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12">
+                                <div class="form-group">
+                                    <div class="col-sm12">
+                                        @Html.LabelFor(model => model.Nome, "Nome:") *
+                                        @Html.ValidationMessageFor(model => model.Nome)
+                                        @Html.TextBoxFor(model => model.Nome, new { @class = "form-control", @maxlength = "50" })
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm12">
+                                        @Html.LabelFor(model => model.CodigoProduto, "Código do Produto:") *
+                                        @Html.ValidationMessageFor(model => model.CodigoProduto)
+                                        @Html.TextBoxFor(model => model.CodigoProduto, new { @class = "form-control", @maxlength = "10" })
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm12">
+                                        @Html.LabelFor(model => model.PrecoProduto, "Preço:") *
+                                        @Html.ValidationMessageFor(model => model.PrecoProduto)
+                                        @Html.TextBoxFor(model => model.PrecoProduto, new { @class = "form-control", @maxlength = "50" })
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm12">
+                                        @Html.LabelFor(model => model.Categoria.Nome, "Categoria do Produto") *
+                                        @Html.ValidationMessageFor(model => model.Categoria.Nome)
+                                        <select id="categoria" name="CategoriaId" class="form-control">
+                                            @{
+                                                /*if (Model.Categoria != null)
+                                                {
+                                                    foreach (var categoria in Model.Categoria.Nome)
+                                                    {
+                                                        <option value="@Model.Categoria.Id" selected="@Model.Categoria.Id.Equals(Model.Categoria.Id)">
+                                                            @Model.Categoria.Nome
+                                                        </option>
+                                                    }
+                                                }*/
+                                            }
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm12">
+                                        @Html.LabelFor(model => model.DataFabricacao, "Data de Fabricação :") *
+                                        @Html.ValidationMessageFor(model => model.DataFabricacao)
+                                        @Html.TextBoxFor(model => model.DataFabricacao, new { @class = "form-control", @maxlength = "10" })
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm12">
+                                        @Html.LabelFor(model => model.DataVencimento, "Data de Vencimento :") *
+                                        @Html.ValidationMessageFor(model => model.DataVencimento)
+                                        @Html.TextBoxFor(model => model.DataVencimento, new { @class = "form-control", @maxlength = "10" })
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm12">
+                                        @Html.LabelFor(model => model.Fornecedor, "Fornecedor:") *
+                                        @Html.ValidationMessageFor(model => model.Fornecedor)
+                                        @Html.TextBoxFor(model => model.Fornecedor, new { @class = "form-control", @maxlength = "50" })
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm12">
+                                        @Html.LabelFor(model => model.ImagemProduto, "Upload Imagem")
+                                        @*<input type="file" class="form-control"/>*@
+                                        @Html.TextBoxFor(model => model.ImagemProduto, new { type = "file", @class = "btn btn-default btn-file" })
+                                        @*<input type="file" id="@Model.CodigoProduto" name="Anexo" class="form-control" />*@
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row pull-right">
+                            <div class="col-xs-12">
+                                @Html.Button("btn-salvar", IconType.Salvar, "Salvar", true)
+                                @Html.ActionLink(@Url.Action("Index"), IconType.Voltar)
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+
+ }
