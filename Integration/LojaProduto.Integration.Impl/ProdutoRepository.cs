@@ -28,7 +28,7 @@ namespace LojaProduto.Integration.Impl
                 criteria.Add(Restrictions.Like("nome", pesquisa));
             
             var result = this.List<Produto>(criteria);
-
+              
             return result;
         }
     }
