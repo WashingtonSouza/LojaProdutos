@@ -23,13 +23,14 @@ namespace LojaProduto.Integration.Impl
         public IList<Produto> PesquisarProdutos(string pesquisa)
         {
             var criteria = DetachedCriteria.For<Produto>();
+            var resultado = "%" + pesquisa + "%";
 
             if (!string.IsNullOrEmpty(pesquisa))
-                criteria.Add(Restrictions.Like("nome", pesquisa));
+                criteria.Add(Restrictions.Like("nome", resultado));
             
             var result = this.List<Produto>(criteria);
               
             return result;
-        }
+        }        
     }
 }

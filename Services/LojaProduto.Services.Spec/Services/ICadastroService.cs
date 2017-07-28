@@ -111,6 +111,9 @@ namespace LojaProduto.Services.Spec.Services
         PageMessage<DTOCliente> ListarClientes(int startIndex, int pageSize, string orderProperty, bool orderAscending);
 
         [OperationContract]
+        DTOCliente PesquisaCliente(string cpf, string codigo);
+
+        [OperationContract]
         DTOCategoria SalvarCategoria(DTOCategoria dto);
 
         [OperationContract]

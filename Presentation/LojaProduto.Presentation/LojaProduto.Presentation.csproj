@@ -235,6 +235,7 @@
     <Compile Include="Controllers\Base\SCAController.cs" />
     <Compile Include="Controllers\CategoriaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ItemPedido\ItemPedidoController.cs" />
     <Compile Include="Controllers\Pedido\PedidoController.cs" />
     <Compile Include="Controllers\Produto\ProdutoController.cs" />
     <Compile Include="Filters\CustomErrorHandlerAttribute.cs" />
@@ -366,7 +367,9 @@
     <Content Include="Views\Pedido\Index.cshtml" />
     <Content Include="Views\Produto\ListaProdutos.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Views\ItemPedido\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>

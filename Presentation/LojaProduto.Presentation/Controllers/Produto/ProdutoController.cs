@@ -22,11 +22,11 @@ namespace LojaProduto.Presentation.Controllers
             return View();
         }
 
-        //[Route("Produtos", Name = "ListaProdutos")]
         public ActionResult ListaProdutos(string query)
         {
             ListaProdutos model = new ListaProdutos();
 
+            model.TextoDePesquisa = query;
             if (query != null)
             {
                 var result = GetCadastroService().PesquisarProdutos(query);
@@ -40,7 +40,7 @@ namespace LojaProduto.Presentation.Controllers
                 model.Produtos = result.ToList();
 
                 return View(model);// Json(result, JsonRequestBehavior.DenyGet);   
-            }               
+            }
         }
 
         public ActionResult CadastrarProduto(DTOProduto produto)

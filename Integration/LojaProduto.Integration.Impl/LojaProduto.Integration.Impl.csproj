@@ -138,6 +138,10 @@
       <Project>{53b9e3ea-bfca-4efc-a131-d398a0b46022}</Project>
       <Name>LojaProduto.Domain</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\Services\LojaProduto.Services.Spec\LojaProduto.Services.Spec.csproj">
+      <Project>{1B030810-5179-466F-8CFF-DF57A5B5E571}</Project>
+      <Name>LojaProduto.Services.Spec</Name>
+    </ProjectReference>
     <ProjectReference Include="..\LojaProduto.Integration.Spec\LojaProduto.Integration.Spec.csproj">
       <Project>{9a0bd3c8-c33a-4054-a27d-1a487bbc2df1}</Project>
       <Name>LojaProduto.Integration.Spec</Name>

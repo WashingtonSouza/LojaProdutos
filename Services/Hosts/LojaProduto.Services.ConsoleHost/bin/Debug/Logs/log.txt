@@ -139,3 +139,7 @@ Error Number:207,State:1,Class:16
    em Spring.Transaction.Interceptor.TransactionInterceptor.Invoke(IMethodInvocation invocation) na c:\_prj\spring-net\src\Spring\Spring.Data\Transaction\Interceptor\TransactionInterceptor.cs:linha 79
    em Spring.Aop.Framework.AbstractMethodInvocation.Proceed() na c:\_prj\spring-net\src\Spring\Spring.Aop\Aop\Framework\AbstractMethodInvocation.cs:linha 291
    em SQFramework.Spring.Services.Aspects.ContextAspect.Invoke(IMethodInvocation invocation)
+2017-07-24 18:15:20,969 [1] ERROR Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] -    GetObjectInternal: error obtaining object SessionFactory
+2017-07-24 18:15:21,604 [1] ERROR Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - GetObjectInternal: error obtaining object TransactionManager
+2017-07-24 18:15:59,108 [1] ERROR Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] -    GetObjectInternal: error obtaining object SessionFactory
+2017-07-24 18:15:59,162 [1] ERROR Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - GetObjectInternal: error obtaining object TransactionManager

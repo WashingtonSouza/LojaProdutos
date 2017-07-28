@@ -24,19 +24,20 @@
                         </td>
                         <td>
                             <dl class="pull-left">
-                                <dt>Nome produto</dt>
-                                <dd>Categoria </dd>
+                                <dt>@Html.Label("Nome produto")</dt>
+                                <dd>@Html.Label("Categoria") </dd>
                             </dl>
                         </td>
                         <td class="pull-right ">
-                            <label>Preco</label>
+                            @Html.Label("Preço:")
+                            @*<label>Preco</label>*@
                         </td>
                         <td class="pull-right ">
                             <input name="quantidadeItens" class="form-control" type="text" placeholder="Quantidade Produtos" />
                         </td>
 
                         <td class="pull-right ">
-                            <label>Preco</label>
+                            <label>@Html.Label("Preço:")</label>
                         </td>
                     </tr>
                 </tbody>
@@ -49,7 +50,7 @@
                 <select id="categoria" name="CategoriaId" class="form-control"></select>
                 <table>
                     <tr>
-                        <td>Total:</td>
+                        <td>@Html.Label("Total:")</td>
                         <td>ValorDoTotal</td>
                     </tr>
                 </table>

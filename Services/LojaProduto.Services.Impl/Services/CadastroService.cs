@@ -408,16 +408,13 @@ namespace LojaProduto.Services.Impl.Services
         [Transaction(TransactionPropagation.Required, ReadOnly = true)]
         public IList<DTOProduto> PesquisarProdutos(string pesquisa)
         {
-            //Produto.GetRepository().ListAll().TransformList<DTOProduto>();
-
             return Produto.GetRepository().PesquisarProdutos(pesquisa).TransformList<DTOProduto>();
+        }
 
-
-
-            //var list = Produto.GetRepository().PesquisarProdutos(pesquisa).TransformList<DTOProduto>();
-
-            //return this.List<DTOProduto>(list);
-                //ListAll().TransformList<DTOProduto>();
+        [Transaction(TransactionPropagation.Required, ReadOnly = true)]
+        public DTOCliente PesquisaCliente(string cpf, string codigo)
+        {
+            return Cliente.GetRepository().PesquisaCliente(cpf, codigo).Transform<DTOCliente>();
         }
     }
 }

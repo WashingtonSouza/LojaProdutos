@@ -1507,3 +1507,1651 @@ Exception rethrown at [0]:
    em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
    em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
    em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-24 11:35:22,903 [35] ERROR System.Web.Mvc.Controller - controller: Produto - action: Index
+System.InvalidOperationException: A exibição 'Index' ou seu master não foi encontrada ou nenhum mecanismo de exibição oferece suporte para os locais pesquisados. Os seguintes locais foram pesquisados: 
+~/Views/Produto/Index.aspx
+~/Views/Produto/Index.ascx
+~/Views/Shared/Index.aspx
+~/Views/Shared/Index.ascx
+~/Views/Produto/Index.cshtml
+~/Views/Produto/Index.vbhtml
+~/Views/Shared/Index.cshtml
+~/Views/Shared/Index.vbhtml
+   em System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-24 11:35:35,671 [35] ERROR System.Web.Mvc.Controller - controller: Produto - action: Index
+System.InvalidOperationException: A exibição 'Index' ou seu master não foi encontrada ou nenhum mecanismo de exibição oferece suporte para os locais pesquisados. Os seguintes locais foram pesquisados: 
+~/Views/Produto/Index.aspx
+~/Views/Produto/Index.ascx
+~/Views/Shared/Index.aspx
+~/Views/Shared/Index.ascx
+~/Views/Produto/Index.cshtml
+~/Views/Produto/Index.vbhtml
+~/Views/Shared/Index.cshtml
+~/Views/Shared/Index.vbhtml
+   em System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-24 12:05:58,404 [59] ERROR System.Web.Mvc.Controller - controller: Produto - action: ListaProdutos
+System.Web.HttpParseException (0x80004005): "" placeholder="" is not valid at the start of a code block.  Only identifiers, keywords, comments, "(" and "{" are valid.
+
+   em System.Web.WebPages.Razor.RazorBuildProvider.EnsureGeneratedCode()
+   em System.Web.WebPages.Razor.RazorBuildProvider.get_CodeCompilerType()
+   em System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   em System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   em System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   em System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   em System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   em System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-24 12:06:54,327 [92] ERROR System.Web.Mvc.Controller - controller: Produto - action: ListaProdutos
+System.Web.HttpParseException (0x80004005): "" placeholder="" is not valid at the start of a code block.  Only identifiers, keywords, comments, "(" and "{" are valid.
+
+   em System.Web.WebPages.Razor.RazorBuildProvider.EnsureGeneratedCode()
+   em System.Web.WebPages.Razor.RazorBuildProvider.get_CodeCompilerType()
+   em System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   em System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   em System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   em System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   em System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   em System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-24 15:42:54,864 [6] ERROR System.Web.Mvc.Controller - controller: Produto - action: ListaProdutos
+System.TimeoutException: A operação de abertura não foi concluída dentro do tempo limite alocado de 00:00:00.0199060. O tempo alocado para essa operação pode ter sido uma parte de um tempo limite maior. ---> System.TimeoutException: Tempo limite de abertura atingido depois de 00:00:00.0199060 ao estabelecer uma sessão de transporte com net.tcp://localhost:9000/LojaProduto.Services/CadastroService. O tempo alocado para essa operação pode ter sido uma parte de um tempo limite maior. ---> System.TimeoutException: A conexão via net.tcp://localhost:9000/LojaProduto.Services/CadastroService esgotou o tempo limite após 00:00:00.0199060. Foram feitas tentativas de conexão a 1 de 2 endereços disponíveis (::1). Verifique o RemoteAddress do seu canal e verifique se os registros DNS desse ponto de extremidade correspondem a Endereços IP válidos. O tempo alocado para essa operação pode ter sido uma parte de um tempo limite maior. ---> System.Net.Sockets.SocketException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente [::1]:9000
+   em System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   em System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   em System.ServiceModel.Channels.SocketConnectionInitiator.Connect(Uri uri, TimeSpan timeout)
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.ServiceModel.Channels.SocketConnectionInitiator.CreateTimeoutException(Uri uri, TimeSpan timeout, IPAddress[] addresses, Int32 invalidAddressCount, SocketException innerException)
+   em System.ServiceModel.Channels.SocketConnectionInitiator.Connect(Uri uri, TimeSpan timeout)
+   em System.ServiceModel.Channels.BufferedConnectionInitiator.Connect(Uri uri, TimeSpan timeout)
+   em System.ServiceModel.Channels.ConnectionPoolHelper.EstablishConnection(TimeSpan timeout)
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.ServiceModel.Channels.ConnectionPoolHelper.EstablishConnection(TimeSpan timeout)
+   em System.ServiceModel.Channels.ClientFramingDuplexSessionChannel.OnOpen(TimeSpan timeout)
+   --- Fim do rastreamento de pilha de exceções internas ---
+
+Server stack trace: 
+   em System.ServiceModel.Channels.ClientFramingDuplexSessionChannel.OnOpen(TimeSpan timeout)
+   em System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   em System.ServiceModel.Channels.ReliableChannelBinder`1.ChannelSynchronizer.SyncWaiter.TryGetChannel()
+   em System.ServiceModel.Channels.ReliableChannelBinder`1.ChannelSynchronizer.SyncWaiter.TryWait(TChannel& channel)
+   em System.ServiceModel.Channels.ReliableChannelBinder`1.ChannelSynchronizer.TryGetChannel(Boolean canGetChannel, Boolean canCauseFault, TimeSpan timeout, MaskingMode maskingMode, TChannel& channel)
+   em System.ServiceModel.Channels.ReliableChannelBinder`1.Send(Message message, TimeSpan timeout, MaskingMode maskingMode)
+   em System.ServiceModel.Channels.SendReceiveReliableRequestor.OnRequest(Message request, TimeSpan timeout, Boolean last)
+   em System.ServiceModel.Channels.ReliableRequestor.Request(TimeSpan timeout)
+   em System.ServiceModel.Channels.ClientReliableSession.Open(TimeSpan timeout)
+   em System.ServiceModel.Channels.ClientReliableDuplexSessionChannel.OnOpen(TimeSpan timeout)
+   em System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannel.OnOpen(TimeSpan timeout)
+   em System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannel.CallOpenOnce.System.ServiceModel.Channels.ServiceChannel.ICallOnce.Call(ServiceChannel channel, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannel.CallOnceManager.CallOnce(TimeSpan timeout, CallOnceManager cascade)
+   em System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   em System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   em System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   em System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   em LojaProduto.Services.Spec.Services.ICadastroService.ListarProdutos()
+   em LojaProduto.Presentation.Controllers.ProdutoController.ListaProdutos(String query) na D:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Controllers\Produto\ProdutoController.cs:linha 39
+   em lambda_method(Closure , ControllerBase , Object[] )
+   em System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   em System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-24 15:44:47,146 [8] ERROR System.Web.Mvc.Controller - controller: Produto - action: ListaProdutos
+System.Web.HttpParseException (0x80004005): "class" is a reserved word and cannot be used in implicit expressions.  An explicit expression ("@()") must be used.
+
+   em System.Web.WebPages.Razor.RazorBuildProvider.EnsureGeneratedCode()
+   em System.Web.WebPages.Razor.RazorBuildProvider.get_CodeCompilerType()
+   em System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   em System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   em System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   em System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   em System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   em System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-24 15:44:53,359 [6] ERROR System.Web.Mvc.Controller - controller: Produto - action: ListaProdutos
+System.Web.HttpParseException (0x80004005): "class" is a reserved word and cannot be used in implicit expressions.  An explicit expression ("@()") must be used.
+
+   em System.Web.WebPages.Razor.RazorBuildProvider.EnsureGeneratedCode()
+   em System.Web.WebPages.Razor.RazorBuildProvider.get_CodeCompilerType()
+   em System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   em System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   em System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   em System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   em System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   em System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-24 15:44:53,626 [6] ERROR System.Web.Mvc.Controller - controller: Produto - action: ListaProdutos
+System.Web.HttpParseException (0x80004005): "class" is a reserved word and cannot be used in implicit expressions.  An explicit expression ("@()") must be used.
+
+   em System.Web.WebPages.Razor.RazorBuildProvider.EnsureGeneratedCode()
+   em System.Web.WebPages.Razor.RazorBuildProvider.get_CodeCompilerType()
+   em System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   em System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   em System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   em System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   em System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   em System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-24 15:47:38,041 [20] ERROR System.Web.Mvc.Controller - controller: Produto - action: ListaProdutos
+System.Web.HttpCompileException (0x80004005): d:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Views\Produto\ListaProdutos.cshtml(39): error CS1973: 'System.Web.Mvc.HtmlHelper<LojaProduto.Presentation.Models.ListaProdutos>' não possui um método aplicável nomeado 'Label', mas aparenta possuir um método de extensão com esse nome. Os métodos de extensão não podem ser expedidos dinamicamente. Considere converter os argumentos dinâmicos ou chamar o método de extensão sem a sintaxe do método.
+   em System.Web.Compilation.AssemblyBuilder.Compile()
+   em System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   em System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   em System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   em System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-24 15:49:05,739 [27] ERROR System.Web.Mvc.Controller - controller: Produto - action: ListaProdutos
+System.Web.HttpCompileException (0x80004005): d:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Views\Produto\ListaProdutos.cshtml(39): error CS1973: 'System.Web.Mvc.HtmlHelper<LojaProduto.Presentation.Models.ListaProdutos>' não possui um método aplicável nomeado 'Label', mas aparenta possuir um método de extensão com esse nome. Os métodos de extensão não podem ser expedidos dinamicamente. Considere converter os argumentos dinâmicos ou chamar o método de extensão sem a sintaxe do método.
+   em System.Web.Compilation.AssemblyBuilder.Compile()
+   em System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   em System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   em System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   em System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-24 15:53:35,047 [39] ERROR System.Web.Mvc.Controller - controller: Produto - action: ListaProdutos
+System.Web.HttpCompileException (0x80004005): d:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Views\Produto\ListaProdutos.cshtml(39): error CS1973: 'System.Web.Mvc.HtmlHelper<LojaProduto.Presentation.Models.ListaProdutos>' não possui um método aplicável nomeado 'Label', mas aparenta possuir um método de extensão com esse nome. Os métodos de extensão não podem ser expedidos dinamicamente. Considere converter os argumentos dinâmicos ou chamar o método de extensão sem a sintaxe do método.
+   em System.Web.Compilation.AssemblyBuilder.Compile()
+   em System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   em System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   em System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   em System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-24 15:53:37,719 [35] ERROR System.Web.Mvc.Controller - controller: Produto - action: ListaProdutos
+System.Web.HttpCompileException (0x80004005): d:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Views\Produto\ListaProdutos.cshtml(39): error CS1973: 'System.Web.Mvc.HtmlHelper<LojaProduto.Presentation.Models.ListaProdutos>' não possui um método aplicável nomeado 'Label', mas aparenta possuir um método de extensão com esse nome. Os métodos de extensão não podem ser expedidos dinamicamente. Considere converter os argumentos dinâmicos ou chamar o método de extensão sem a sintaxe do método.
+   em System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   em System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   em System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   em System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-24 16:06:10,836 [65] ERROR System.Web.Mvc.Controller - controller: Produto - action: ListaProdutos
+System.Web.HttpCompileException (0x80004005): d:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Views\Produto\ListaProdutos.cshtml(39): error CS1973: 'System.Web.Mvc.HtmlHelper<LojaProduto.Presentation.Models.ListaProdutos>' não possui um método aplicável nomeado 'Label', mas aparenta possuir um método de extensão com esse nome. Os métodos de extensão não podem ser expedidos dinamicamente. Considere converter os argumentos dinâmicos ou chamar o método de extensão sem a sintaxe do método.
+   em System.Web.Compilation.AssemblyBuilder.Compile()
+   em System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   em System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   em System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   em System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-24 16:06:14,048 [63] ERROR System.Web.Mvc.Controller - controller: Produto - action: ListaProdutos
+System.Web.HttpCompileException (0x80004005): d:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Views\Produto\ListaProdutos.cshtml(39): error CS1973: 'System.Web.Mvc.HtmlHelper<LojaProduto.Presentation.Models.ListaProdutos>' não possui um método aplicável nomeado 'Label', mas aparenta possuir um método de extensão com esse nome. Os métodos de extensão não podem ser expedidos dinamicamente. Considere converter os argumentos dinâmicos ou chamar o método de extensão sem a sintaxe do método.
+   em System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   em System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   em System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   em System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-24 16:12:09,768 [78] ERROR System.Web.Mvc.Controller - controller: Produto - action: ListaProdutos
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em ASP._Page_Views_Produto_ListaProdutos_cshtml.Execute() na d:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Views\Produto\ListaProdutos.cshtml:linha 39
+   em System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   em System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   em System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   em System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-24 16:19:28,508 [74] ERROR System.Web.Mvc.Controller - controller: Produto - action: ListaProdutos
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em ASP._Page_Views_Produto_ListaProdutos_cshtml.Execute() na d:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Views\Produto\ListaProdutos.cshtml:linha 39
+   em System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   em System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   em System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   em System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-24 16:19:28,514 [86] ERROR System.Web.Mvc.Controller - controller: Produto - action: ListaProdutos
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em ASP._Page_Views_Produto_ListaProdutos_cshtml.Execute() na d:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Views\Produto\ListaProdutos.cshtml:linha 39
+   em System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   em System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   em System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   em System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-24 16:19:28,536 [84] ERROR System.Web.Mvc.Controller - controller: Produto - action: ListaProdutos
+System.TimeoutException: A operação de abertura não foi concluída dentro do tempo limite alocado de 00:00:00. O tempo alocado para essa operação pode ter sido uma parte de um tempo limite maior. ---> System.TimeoutException: Tempo limite de abertura atingido depois de 00:00:00 ao estabelecer uma sessão de transporte com net.tcp://localhost:9000/LojaProduto.Services/CadastroService. O tempo alocado para essa operação pode ter sido uma parte de um tempo limite maior. ---> System.TimeoutException: A conexão via net.tcp://localhost:9000/LojaProduto.Services/CadastroService esgotou o tempo limite após 00:00:00. Foram feitas tentativas de conexão a 0 de 2 endereços disponíveis (). Verifique o RemoteAddress do seu canal e verifique se os registros DNS desse ponto de extremidade correspondem a Endereços IP válidos. O tempo alocado para essa operação pode ter sido uma parte de um tempo limite maior.
+   em System.ServiceModel.Channels.SocketConnectionInitiator.CreateTimeoutException(Uri uri, TimeSpan timeout, IPAddress[] addresses, Int32 invalidAddressCount, SocketException innerException)
+   em System.ServiceModel.Channels.SocketConnectionInitiator.Connect(Uri uri, TimeSpan timeout)
+   em System.ServiceModel.Channels.BufferedConnectionInitiator.Connect(Uri uri, TimeSpan timeout)
+   em System.ServiceModel.Channels.ConnectionPoolHelper.EstablishConnection(TimeSpan timeout)
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.ServiceModel.Channels.ConnectionPoolHelper.EstablishConnection(TimeSpan timeout)
+   em System.ServiceModel.Channels.ClientFramingDuplexSessionChannel.OnOpen(TimeSpan timeout)
+   --- Fim do rastreamento de pilha de exceções internas ---
+
+Server stack trace: 
+   em System.ServiceModel.Channels.ClientFramingDuplexSessionChannel.OnOpen(TimeSpan timeout)
+   em System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   em System.ServiceModel.Channels.ReliableChannelBinder`1.ChannelSynchronizer.SyncWaiter.TryGetChannel()
+   em System.ServiceModel.Channels.ReliableChannelBinder`1.ChannelSynchronizer.SyncWaiter.TryWait(TChannel& channel)
+   em System.ServiceModel.Channels.ReliableChannelBinder`1.ChannelSynchronizer.TryGetChannel(Boolean canGetChannel, Boolean canCauseFault, TimeSpan timeout, MaskingMode maskingMode, TChannel& channel)
+   em System.ServiceModel.Channels.ReliableChannelBinder`1.Send(Message message, TimeSpan timeout, MaskingMode maskingMode)
+   em System.ServiceModel.Channels.SendReceiveReliableRequestor.OnRequest(Message request, TimeSpan timeout, Boolean last)
+   em System.ServiceModel.Channels.ReliableRequestor.Request(TimeSpan timeout)
+   em System.ServiceModel.Channels.ClientReliableSession.Open(TimeSpan timeout)
+   em System.ServiceModel.Channels.ClientReliableDuplexSessionChannel.OnOpen(TimeSpan timeout)
+   em System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannel.OnOpen(TimeSpan timeout)
+   em System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannel.CallOpenOnce.System.ServiceModel.Channels.ServiceChannel.ICallOnce.Call(ServiceChannel channel, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannel.CallOnceManager.CallOnce(TimeSpan timeout, CallOnceManager cascade)
+   em System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   em System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   em System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   em System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   em LojaProduto.Services.Spec.Services.ICadastroService.ListarProdutos()
+   em LojaProduto.Presentation.Controllers.ProdutoController.ListaProdutos(String query) na D:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Controllers\Produto\ProdutoController.cs:linha 39
+   em lambda_method(Closure , ControllerBase , Object[] )
+   em System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   em System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-24 16:31:19,503 [105] ERROR System.Web.Mvc.Controller - controller: Produto - action: ListaProdutos
+System.MissingMethodException: Método não encontrado: 'System.String LojaProduto.Presentation.Models.ListaProdutos.get_TextoDePesquisa()'.
+   em ASP._Page_Views_Produto_ListaProdutos_cshtml.Execute()
+   em System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   em System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   em System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   em System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-24 16:38:32,981 [25] ERROR System.Web.Mvc.Controller - controller: Produto - action: Index
+System.InvalidOperationException: A exibição 'Index' ou seu master não foi encontrada ou nenhum mecanismo de exibição oferece suporte para os locais pesquisados. Os seguintes locais foram pesquisados: 
+~/Views/Produto/Index.aspx
+~/Views/Produto/Index.ascx
+~/Views/Shared/Index.aspx
+~/Views/Shared/Index.ascx
+~/Views/Produto/Index.cshtml
+~/Views/Produto/Index.vbhtml
+~/Views/Shared/Index.cshtml
+~/Views/Shared/Index.vbhtml
+   em System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-24 18:23:26,204 [6] ERROR System.Web.Mvc.Controller - controller: Produto - action: ListaProdutos
+System.TimeoutException: A operação de abertura não foi concluída dentro do tempo limite alocado de 00:00:00.0000030. O tempo alocado para essa operação pode ter sido uma parte de um tempo limite maior. ---> System.TimeoutException: Tempo limite de abertura atingido depois de 00:00:00.0000030 ao estabelecer uma sessão de transporte com net.tcp://localhost:9000/LojaProduto.Services/CadastroService. O tempo alocado para essa operação pode ter sido uma parte de um tempo limite maior. ---> System.TimeoutException: A conexão via net.tcp://localhost:9000/LojaProduto.Services/CadastroService esgotou o tempo limite após 00:00:00.0000030. Foram feitas tentativas de conexão a 1 de 2 endereços disponíveis (::1). Verifique o RemoteAddress do seu canal e verifique se os registros DNS desse ponto de extremidade correspondem a Endereços IP válidos. O tempo alocado para essa operação pode ter sido uma parte de um tempo limite maior. ---> System.Net.Sockets.SocketException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente [::1]:9000
+   em System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   em System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   em System.ServiceModel.Channels.SocketConnectionInitiator.Connect(Uri uri, TimeSpan timeout)
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.ServiceModel.Channels.SocketConnectionInitiator.CreateTimeoutException(Uri uri, TimeSpan timeout, IPAddress[] addresses, Int32 invalidAddressCount, SocketException innerException)
+   em System.ServiceModel.Channels.SocketConnectionInitiator.Connect(Uri uri, TimeSpan timeout)
+   em System.ServiceModel.Channels.BufferedConnectionInitiator.Connect(Uri uri, TimeSpan timeout)
+   em System.ServiceModel.Channels.ConnectionPoolHelper.EstablishConnection(TimeSpan timeout)
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.ServiceModel.Channels.ConnectionPoolHelper.EstablishConnection(TimeSpan timeout)
+   em System.ServiceModel.Channels.ClientFramingDuplexSessionChannel.OnOpen(TimeSpan timeout)
+   --- Fim do rastreamento de pilha de exceções internas ---
+
+Server stack trace: 
+   em System.ServiceModel.Channels.ClientFramingDuplexSessionChannel.OnOpen(TimeSpan timeout)
+   em System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   em System.ServiceModel.Channels.ReliableChannelBinder`1.ChannelSynchronizer.SyncWaiter.TryGetChannel()
+   em System.ServiceModel.Channels.ReliableChannelBinder`1.ChannelSynchronizer.SyncWaiter.TryWait(TChannel& channel)
+   em System.ServiceModel.Channels.ReliableChannelBinder`1.ChannelSynchronizer.TryGetChannel(Boolean canGetChannel, Boolean canCauseFault, TimeSpan timeout, MaskingMode maskingMode, TChannel& channel)
+   em System.ServiceModel.Channels.ReliableChannelBinder`1.Send(Message message, TimeSpan timeout, MaskingMode maskingMode)
+   em System.ServiceModel.Channels.SendReceiveReliableRequestor.OnRequest(Message request, TimeSpan timeout, Boolean last)
+   em System.ServiceModel.Channels.ReliableRequestor.Request(TimeSpan timeout)
+   em System.ServiceModel.Channels.ClientReliableSession.Open(TimeSpan timeout)
+   em System.ServiceModel.Channels.ClientReliableDuplexSessionChannel.OnOpen(TimeSpan timeout)
+   em System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannel.OnOpen(TimeSpan timeout)
+   em System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannel.CallOpenOnce.System.ServiceModel.Channels.ServiceChannel.ICallOnce.Call(ServiceChannel channel, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannel.CallOnceManager.CallOnce(TimeSpan timeout, CallOnceManager cascade)
+   em System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   em System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   em System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   em System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   em LojaProduto.Services.Spec.Services.ICadastroService.PesquisarProdutos(String pesquisa)
+   em LojaProduto.Presentation.Controllers.ProdutoController.ListaProdutos(String query) na D:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Controllers\Produto\ProdutoController.cs:linha 33
+   em lambda_method(Closure , ControllerBase , Object[] )
+   em System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   em System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-24 18:48:43,618 [8] ERROR System.Web.Mvc.Controller - controller: Produto - action: ListaProdutos
+System.Web.HttpCompileException (0x80004005): d:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Views\Produto\ListaProdutos.cshtml(17): error CS0746: Declarador de membro de tipo anônimo inválido. Membros de tipo anônimo devem ser declarados com uma atribuição de membro, nome simples ou acesso de membro.
+   em System.Web.Compilation.AssemblyBuilder.Compile()
+   em System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   em System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   em System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   em System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-25 10:12:00,898 [24] ERROR System.Web.Mvc.Controller - controller: Produto - action: ListaProdutos
+System.Web.HttpParseException (0x80004005): "class" is a reserved word and cannot be used in implicit expressions.  An explicit expression ("@()") must be used.
+
+   em System.Web.WebPages.Razor.RazorBuildProvider.EnsureGeneratedCode()
+   em System.Web.WebPages.Razor.RazorBuildProvider.get_CodeCompilerType()
+   em System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   em System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   em System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   em System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   em System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   em System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-25 11:11:24,359 [46] ERROR System.Web.Mvc.Controller - controller: Produto - action: ListaProdutos
+System.Web.HttpCompileException (0x80004005): d:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Views\Produto\ListaProdutos.cshtml(35): error CS1501: Nenhuma sobrecarga para o método 'LabelFor' aceita 0 argumentos
+   em System.Web.Compilation.AssemblyBuilder.Compile()
+   em System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   em System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   em System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   em System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-25 11:11:51,626 [76] ERROR System.Web.Mvc.Controller - controller: Produto - action: ListaProdutos
+System.Web.HttpCompileException (0x80004005): d:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Views\Produto\ListaProdutos.cshtml(35): error CS1501: Nenhuma sobrecarga para o método 'LabelFor' aceita 0 argumentos
+   em System.Web.Compilation.AssemblyBuilder.Compile()
+   em System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   em System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   em System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   em System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-25 11:11:55,030 [42] ERROR System.Web.Mvc.Controller - controller: Produto - action: ListaProdutos
+System.Web.HttpCompileException (0x80004005): d:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Views\Produto\ListaProdutos.cshtml(35): error CS1501: Nenhuma sobrecarga para o método 'LabelFor' aceita 0 argumentos
+   em System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   em System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   em System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   em System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-25 11:11:55,353 [97] ERROR System.Web.Mvc.Controller - controller: Produto - action: ListaProdutos
+System.Web.HttpCompileException (0x80004005): d:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Views\Produto\ListaProdutos.cshtml(35): error CS1501: Nenhuma sobrecarga para o método 'LabelFor' aceita 0 argumentos
+   em System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   em System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   em System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   em System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-25 11:11:55,447 [42] ERROR System.Web.Mvc.Controller - controller: Produto - action: ListaProdutos
+System.Web.HttpCompileException (0x80004005): d:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Views\Produto\ListaProdutos.cshtml(35): error CS1501: Nenhuma sobrecarga para o método 'LabelFor' aceita 0 argumentos
+   em System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   em System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   em System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   em System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-25 11:11:55,544 [97] ERROR System.Web.Mvc.Controller - controller: Produto - action: ListaProdutos
+System.Web.HttpCompileException (0x80004005): d:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Views\Produto\ListaProdutos.cshtml(35): error CS1501: Nenhuma sobrecarga para o método 'LabelFor' aceita 0 argumentos
+   em System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   em System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   em System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   em System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-25 11:12:05,403 [76] ERROR System.Web.Mvc.Controller - controller: Produto - action: ListaProdutos
+System.Web.HttpCompileException (0x80004005): d:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Views\Produto\ListaProdutos.cshtml(35): error CS1501: Nenhuma sobrecarga para o método 'LabelFor' aceita 0 argumentos
+   em System.Web.Compilation.AssemblyBuilder.Compile()
+   em System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   em System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   em System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   em System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-25 11:16:30,705 [26] ERROR System.Web.Mvc.Controller - controller: Produto - action: ListaProdutos
+System.Web.HttpParseException (0x80004005): An opening "(" is missing the corresponding closing ")".
+
+   em System.Web.WebPages.Razor.RazorBuildProvider.EnsureGeneratedCode()
+   em System.Web.WebPages.Razor.RazorBuildProvider.get_CodeCompilerType()
+   em System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   em System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   em System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   em System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   em System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   em System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-25 11:20:23,361 [74] ERROR System.Web.Mvc.Controller - controller: Produto - action: ListaProdutos
+System.Web.HttpCompileException (0x80004005): d:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Views\Produto\ListaProdutos.cshtml(36): error CS1501: Nenhuma sobrecarga para o método 'LabelFor' aceita 0 argumentos
+   em System.Web.Compilation.AssemblyBuilder.Compile()
+   em System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   em System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   em System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   em System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-25 11:26:24,414 [16] ERROR System.Web.Mvc.Controller - controller: Produto - action: ListaProdutos
+System.Web.HttpCompileException (0x80004005): d:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Views\Produto\ListaProdutos.cshtml(36): error CS1061: 'LojaProduto.Presentation.Models.ListaProdutos' não contém uma definição para 'Nome' e nenhum método de extensão 'Nome' aceita que um primeiro argumento de tipo 'LojaProduto.Presentation.Models.ListaProdutos' seja encontrado (você não está usando uma diretriz ou referência de assembly?)
+   em System.Web.Compilation.AssemblyBuilder.Compile()
+   em System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   em System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   em System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   em System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-25 11:29:19,972 [22] ERROR System.Web.Mvc.Controller - controller: Produto - action: ListaProdutos
+System.Web.HttpCompileException (0x80004005): d:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Views\Produto\ListaProdutos.cshtml(58): error CS0135: 'Model' está em conflito com a declaração 'System.Web.Mvc.WebViewPage<TModel>.Model'
+   em System.Web.Compilation.AssemblyBuilder.Compile()
+   em System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   em System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   em System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   em System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-25 11:31:19,589 [17] ERROR System.Web.Mvc.Controller - controller: Produto - action: ListaProdutos
+System.ArgumentNullException: Valor não pode ser nulo.
+Nome do parâmetro: expression
+   em System.Web.Mvc.ModelMetadata.FromStringExpression(String expression, ViewDataDictionary viewData, ModelMetadataProvider metadataProvider)
+   em System.Web.Mvc.Html.LabelExtensions.Label(HtmlHelper html, String expression, Object htmlAttributes)
+   em ASP._Page_Views_Produto_ListaProdutos_cshtml.Execute() na d:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Views\Produto\ListaProdutos.cshtml:linha 37
+   em System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   em System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   em System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   em System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-25 11:33:05,181 [44] ERROR System.Web.Mvc.Controller - controller: Produto - action: ListaProdutos
+System.ArgumentNullException: Valor não pode ser nulo.
+Nome do parâmetro: expression
+   em System.Web.Mvc.ModelMetadata.FromStringExpression(String expression, ViewDataDictionary viewData, ModelMetadataProvider metadataProvider)
+   em System.Web.Mvc.Html.LabelExtensions.Label(HtmlHelper html, String expression, Object htmlAttributes)
+   em ASP._Page_Views_Produto_ListaProdutos_cshtml.Execute() na d:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Views\Produto\ListaProdutos.cshtml:linha 37
+   em System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   em System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   em System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   em System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-25 11:37:18,353 [12] ERROR System.Web.Mvc.Controller - controller: Produto - action: ListaProdutos
+System.Web.HttpCompileException (0x80004005): d:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Views\Produto\ListaProdutos.cshtml(36): error CS0746: Declarador de membro de tipo anônimo inválido. Membros de tipo anônimo devem ser declarados com uma atribuição de membro, nome simples ou acesso de membro.
+   em System.Web.Compilation.AssemblyBuilder.Compile()
+   em System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   em System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   em System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   em System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-25 11:42:13,177 [59] ERROR System.Web.Mvc.Controller - controller: Produto - action: ListaProdutos
+System.ArgumentNullException: Valor não pode ser nulo.
+Nome do parâmetro: expression
+   em System.Web.Mvc.ModelMetadata.FromStringExpression(String expression, ViewDataDictionary viewData, ModelMetadataProvider metadataProvider)
+   em System.Web.Mvc.Html.LabelExtensions.Label(HtmlHelper html, String expression, Object htmlAttributes)
+   em ASP._Page_Views_Produto_ListaProdutos_cshtml.Execute() na d:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Views\Produto\ListaProdutos.cshtml:linha 37
+   em System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   em System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   em System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   em System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-25 11:46:29,745 [7] ERROR System.Web.Mvc.Controller - controller: Produto - action: ListaProdutos
+System.ArgumentNullException: Valor não pode ser nulo.
+Nome do parâmetro: expression
+   em System.Web.Mvc.ModelMetadata.FromStringExpression(String expression, ViewDataDictionary viewData, ModelMetadataProvider metadataProvider)
+   em System.Web.Mvc.Html.LabelExtensions.Label(HtmlHelper html, String expression, Object htmlAttributes)
+   em ASP._Page_Views_Produto_ListaProdutos_cshtml.Execute() na d:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Views\Produto\ListaProdutos.cshtml:linha 37
+   em System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   em System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   em System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   em System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-25 11:50:45,159 [26] ERROR System.Web.Mvc.Controller - controller: Produto - action: Index
+System.InvalidOperationException: A exibição 'Index' ou seu master não foi encontrada ou nenhum mecanismo de exibição oferece suporte para os locais pesquisados. Os seguintes locais foram pesquisados: 
+~/Views/Produto/Index.aspx
+~/Views/Produto/Index.ascx
+~/Views/Shared/Index.aspx
+~/Views/Shared/Index.ascx
+~/Views/Produto/Index.cshtml
+~/Views/Produto/Index.vbhtml
+~/Views/Shared/Index.cshtml
+~/Views/Shared/Index.vbhtml
+   em System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-25 11:50:58,230 [26] ERROR System.Web.Mvc.Controller - controller: Produto - action: Index
+System.InvalidOperationException: A exibição 'Index' ou seu master não foi encontrada ou nenhum mecanismo de exibição oferece suporte para os locais pesquisados. Os seguintes locais foram pesquisados: 
+~/Views/Produto/Index.aspx
+~/Views/Produto/Index.ascx
+~/Views/Shared/Index.aspx
+~/Views/Shared/Index.ascx
+~/Views/Produto/Index.cshtml
+~/Views/Produto/Index.vbhtml
+~/Views/Shared/Index.cshtml
+~/Views/Shared/Index.vbhtml
+   em System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-25 11:50:59,170 [30] ERROR System.Web.Mvc.Controller - controller: Produto - action: Index
+System.InvalidOperationException: A exibição 'Index' ou seu master não foi encontrada ou nenhum mecanismo de exibição oferece suporte para os locais pesquisados. Os seguintes locais foram pesquisados: 
+~/Views/Produto/Index.aspx
+~/Views/Produto/Index.ascx
+~/Views/Shared/Index.aspx
+~/Views/Shared/Index.ascx
+~/Views/Produto/Index.cshtml
+~/Views/Produto/Index.vbhtml
+~/Views/Shared/Index.cshtml
+~/Views/Shared/Index.vbhtml
+   em System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-25 11:50:59,327 [12] ERROR System.Web.Mvc.Controller - controller: Produto - action: Index
+System.InvalidOperationException: A exibição 'Index' ou seu master não foi encontrada ou nenhum mecanismo de exibição oferece suporte para os locais pesquisados. Os seguintes locais foram pesquisados: 
+~/Views/Produto/Index.aspx
+~/Views/Produto/Index.ascx
+~/Views/Shared/Index.aspx
+~/Views/Shared/Index.ascx
+~/Views/Produto/Index.cshtml
+~/Views/Produto/Index.vbhtml
+~/Views/Shared/Index.cshtml
+~/Views/Shared/Index.vbhtml
+   em System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-25 11:50:59,483 [13] ERROR System.Web.Mvc.Controller - controller: Produto - action: Index
+System.InvalidOperationException: A exibição 'Index' ou seu master não foi encontrada ou nenhum mecanismo de exibição oferece suporte para os locais pesquisados. Os seguintes locais foram pesquisados: 
+~/Views/Produto/Index.aspx
+~/Views/Produto/Index.ascx
+~/Views/Shared/Index.aspx
+~/Views/Shared/Index.ascx
+~/Views/Produto/Index.cshtml
+~/Views/Produto/Index.vbhtml
+~/Views/Shared/Index.cshtml
+~/Views/Shared/Index.vbhtml
+   em System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-25 11:50:59,659 [26] ERROR System.Web.Mvc.Controller - controller: Produto - action: Index
+System.InvalidOperationException: A exibição 'Index' ou seu master não foi encontrada ou nenhum mecanismo de exibição oferece suporte para os locais pesquisados. Os seguintes locais foram pesquisados: 
+~/Views/Produto/Index.aspx
+~/Views/Produto/Index.ascx
+~/Views/Shared/Index.aspx
+~/Views/Shared/Index.ascx
+~/Views/Produto/Index.cshtml
+~/Views/Produto/Index.vbhtml
+~/Views/Shared/Index.cshtml
+~/Views/Shared/Index.vbhtml
+   em System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-25 12:28:25,611 [54] ERROR System.Web.Mvc.Controller - controller: Produto - action: ListaProdutos
+System.ArgumentNullException: Valor não pode ser nulo.
+Nome do parâmetro: expression
+   em System.Web.Mvc.ModelMetadata.FromStringExpression(String expression, ViewDataDictionary viewData, ModelMetadataProvider metadataProvider)
+   em System.Web.Mvc.Html.LabelExtensions.Label(HtmlHelper html, String expression, Object htmlAttributes)
+   em ASP._Page_Views_Produto_ListaProdutos_cshtml.Execute() na d:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Views\Produto\ListaProdutos.cshtml:linha 37
+   em System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   em System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   em System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   em System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-25 12:31:02,825 [56] ERROR System.Web.Mvc.Controller - controller: Produto - action: ListaProdutos
+System.Web.HttpParseException (0x80004005): Encountered end tag "div" with no matching start tag.  Are your start/end tags properly balanced?
+
+   em System.Web.WebPages.Razor.RazorBuildProvider.EnsureGeneratedCode()
+   em System.Web.WebPages.Razor.RazorBuildProvider.get_CodeCompilerType()
+   em System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   em System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   em System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   em System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   em System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   em System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-25 13:44:58,522 [10] ERROR System.Web.Mvc.Controller - controller: Produto - action: ListaProdutos
+System.ArgumentNullException: Valor não pode ser nulo.
+Nome do parâmetro: expression
+   em System.Web.Mvc.ModelMetadata.FromStringExpression(String expression, ViewDataDictionary viewData, ModelMetadataProvider metadataProvider)
+   em System.Web.Mvc.Html.LabelExtensions.Label(HtmlHelper html, String expression, Object htmlAttributes)
+   em ASP._Page_Views_Produto_ListaProdutos_cshtml.Execute() na d:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Views\Produto\ListaProdutos.cshtml:linha 37
+   em System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   em System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   em System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   em System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-25 13:46:04,332 [9] ERROR System.Web.Mvc.Controller - controller: Produto - action: ListaProdutos
+System.ArgumentNullException: Valor não pode ser nulo.
+Nome do parâmetro: expression
+   em System.Web.Mvc.ModelMetadata.FromStringExpression(String expression, ViewDataDictionary viewData, ModelMetadataProvider metadataProvider)
+   em System.Web.Mvc.Html.LabelExtensions.Label(HtmlHelper html, String expression, Object htmlAttributes)
+   em ASP._Page_Views_Produto_ListaProdutos_cshtml.Execute() na d:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Views\Produto\ListaProdutos.cshtml:linha 37
+   em System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   em System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   em System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   em System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-25 13:52:26,877 [50] ERROR System.Web.Mvc.Controller - controller: Produto - action: ListaProdutos
+System.Web.HttpCompileException (0x80004005): d:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Views\Produto\ListaProdutos.cshtml(45): error CS0136: Uma variável local denominada 'Model' não pode ser declarada neste escopo porque daria um significado diferente a 'Model', que já esta sendo usado em um escopo 'pai ou atual' para denotar algo diferente
+   em System.Web.Compilation.AssemblyBuilder.Compile()
+   em System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   em System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   em System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   em System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-25 13:54:11,302 [52] ERROR System.Web.Mvc.Controller - controller: Produto - action: ListaProdutos
+System.ArgumentNullException: Valor não pode ser nulo.
+Nome do parâmetro: expression
+   em System.Web.Mvc.ModelMetadata.FromStringExpression(String expression, ViewDataDictionary viewData, ModelMetadataProvider metadataProvider)
+   em System.Web.Mvc.Html.LabelExtensions.Label(HtmlHelper html, String expression, Object htmlAttributes)
+   em ASP._Page_Views_Produto_ListaProdutos_cshtml.Execute() na d:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Views\Produto\ListaProdutos.cshtml:linha 36
+   em System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   em System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   em System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   em System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-25 14:00:01,220 [14] ERROR System.Web.Mvc.Controller - controller: Produto - action: ListaProdutos
+System.Web.HttpParseException (0x80004005): A space or line break was encountered after the "@" character.  Only valid identifiers, keywords, comments, "(" and "{" are valid at the start of a code block and they must occur immediately following "@" with no space in between.
+
+   em System.Web.WebPages.Razor.RazorBuildProvider.EnsureGeneratedCode()
+   em System.Web.WebPages.Razor.RazorBuildProvider.get_CodeCompilerType()
+   em System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   em System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   em System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   em System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   em System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   em System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-26 13:58:33,707 [26] ERROR System.Web.Mvc.Controller - controller: Produto - action: ListaProdutos
+System.Web.HttpCompileException (0x80004005): d:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Views\Produto\ListaProdutos.cshtml(42): error CS1003: Erro de sintaxe: ',' esperado
+   em System.Web.Compilation.AssemblyBuilder.Compile()
+   em System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   em System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   em System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   em System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-26 14:06:11,394 [48] ERROR System.Web.Mvc.Controller - controller: Produto - action: ListaProdutos
+System.Web.HttpCompileException (0x80004005): d:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Views\Produto\ListaProdutos.cshtml(44): error CS1519: Token ')' inválido na declaração de membro class, struct ou interface
+   em System.Web.Compilation.AssemblyBuilder.Compile()
+   em System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   em System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   em System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   em System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-26 14:40:05,433 [29] ERROR System.Web.Mvc.Controller - controller: Produto - action: ListaProdutos
+System.Web.HttpParseException (0x80004005): "class" is a reserved word and cannot be used in implicit expressions.  An explicit expression ("@()") must be used.
+
+   em System.Web.WebPages.Razor.RazorBuildProvider.EnsureGeneratedCode()
+   em System.Web.WebPages.Razor.RazorBuildProvider.get_CodeCompilerType()
+   em System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   em System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   em System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   em System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   em System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   em System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-26 18:16:50,436 [77] ERROR System.Web.Mvc.Controller - controller: Produto - action: ListaProdutos
+System.Web.HttpCompileException (0x80004005): d:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Views\Produto\ListaProdutos.cshtml(43): error CS1003: Erro de sintaxe: ',' esperado
+   em System.Web.Compilation.AssemblyBuilder.Compile()
+   em System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   em System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   em System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   em System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-27 11:14:48,550 [40] ERROR System.Web.Mvc.Controller - controller: Produto - action: ListaProdutos
+System.TimeoutException: A operação de abertura não foi concluída dentro do tempo limite alocado de 00:00:00.0007150. O tempo alocado para essa operação pode ter sido uma parte de um tempo limite maior. ---> System.TimeoutException: Tempo limite de abertura atingido depois de 00:00:00.0007150 ao estabelecer uma sessão de transporte com net.tcp://localhost:9000/LojaProduto.Services/CadastroService. O tempo alocado para essa operação pode ter sido uma parte de um tempo limite maior. ---> System.TimeoutException: A conexão via net.tcp://localhost:9000/LojaProduto.Services/CadastroService esgotou o tempo limite após 00:00:00.0007150. Foram feitas tentativas de conexão a 1 de 2 endereços disponíveis (::1). Verifique o RemoteAddress do seu canal e verifique se os registros DNS desse ponto de extremidade correspondem a Endereços IP válidos. O tempo alocado para essa operação pode ter sido uma parte de um tempo limite maior. ---> System.Net.Sockets.SocketException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente [::1]:9000
+   em System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   em System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   em System.ServiceModel.Channels.SocketConnectionInitiator.Connect(Uri uri, TimeSpan timeout)
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.ServiceModel.Channels.SocketConnectionInitiator.CreateTimeoutException(Uri uri, TimeSpan timeout, IPAddress[] addresses, Int32 invalidAddressCount, SocketException innerException)
+   em System.ServiceModel.Channels.SocketConnectionInitiator.Connect(Uri uri, TimeSpan timeout)
+   em System.ServiceModel.Channels.BufferedConnectionInitiator.Connect(Uri uri, TimeSpan timeout)
+   em System.ServiceModel.Channels.ConnectionPoolHelper.EstablishConnection(TimeSpan timeout)
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.ServiceModel.Channels.ConnectionPoolHelper.EstablishConnection(TimeSpan timeout)
+   em System.ServiceModel.Channels.ClientFramingDuplexSessionChannel.OnOpen(TimeSpan timeout)
+   --- Fim do rastreamento de pilha de exceções internas ---
+
+Server stack trace: 
+   em System.ServiceModel.Channels.ClientFramingDuplexSessionChannel.OnOpen(TimeSpan timeout)
+   em System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   em System.ServiceModel.Channels.ReliableChannelBinder`1.ChannelSynchronizer.SyncWaiter.TryGetChannel()
+   em System.ServiceModel.Channels.ReliableChannelBinder`1.ChannelSynchronizer.SyncWaiter.TryWait(TChannel& channel)
+   em System.ServiceModel.Channels.ReliableChannelBinder`1.ChannelSynchronizer.TryGetChannel(Boolean canGetChannel, Boolean canCauseFault, TimeSpan timeout, MaskingMode maskingMode, TChannel& channel)
+   em System.ServiceModel.Channels.ReliableChannelBinder`1.Send(Message message, TimeSpan timeout, MaskingMode maskingMode)
+   em System.ServiceModel.Channels.SendReceiveReliableRequestor.OnRequest(Message request, TimeSpan timeout, Boolean last)
+   em System.ServiceModel.Channels.ReliableRequestor.Request(TimeSpan timeout)
+   em System.ServiceModel.Channels.ClientReliableSession.Open(TimeSpan timeout)
+   em System.ServiceModel.Channels.ClientReliableDuplexSessionChannel.OnOpen(TimeSpan timeout)
+   em System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannel.OnOpen(TimeSpan timeout)
+   em System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannel.CallOpenOnce.System.ServiceModel.Channels.ServiceChannel.ICallOnce.Call(ServiceChannel channel, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannel.CallOnceManager.CallOnce(TimeSpan timeout, CallOnceManager cascade)
+   em System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   em System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   em System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   em System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   em LojaProduto.Services.Spec.Services.ICadastroService.ListarProdutos()
+   em LojaProduto.Presentation.Controllers.ProdutoController.ListaProdutos(String query) na D:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Controllers\Produto\ProdutoController.cs:linha 40
+   em lambda_method(Closure , ControllerBase , Object[] )
+   em System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   em System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-27 12:29:35,882 [100] ERROR System.Web.Mvc.Controller - controller: Produto - action: ListaProdutos
+System.Web.HttpCompileException (0x80004005): d:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Views\Produto\ListaProdutos.cshtml(86): error CS1928: 'System.Web.Mvc.HtmlHelper<LojaProduto.Presentation.Models.ListaProdutos>' não contém uma definição para 'Label' e a melhor sobrecarga de método de extensão 'System.Web.Mvc.Html.LabelExtensions.Label(System.Web.Mvc.HtmlHelper, string)' tem alguns argumentos inválidos
+   em System.Web.Compilation.AssemblyBuilder.Compile()
+   em System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   em System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   em System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   em System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-27 14:07:47,603 [50] ERROR System.Web.Mvc.Controller - controller: Pedido - action: Pedido
+System.InvalidOperationException: A exibição 'Pedido' ou seu master não foi encontrada ou nenhum mecanismo de exibição oferece suporte para os locais pesquisados. Os seguintes locais foram pesquisados: 
+~/Views/Pedido/Pedido.aspx
+~/Views/Pedido/Pedido.ascx
+~/Views/Shared/Pedido.aspx
+~/Views/Shared/Pedido.ascx
+~/Views/Pedido/Pedido.cshtml
+~/Views/Pedido/Pedido.vbhtml
+~/Views/Shared/Pedido.cshtml
+~/Views/Shared/Pedido.vbhtml
+   em System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-27 14:09:31,988 [59] ERROR System.Web.Mvc.Controller - controller: Pedido - action: Pedido
+System.InvalidOperationException: A exibição 'Pedido' ou seu master não foi encontrada ou nenhum mecanismo de exibição oferece suporte para os locais pesquisados. Os seguintes locais foram pesquisados: 
+~/Views/Pedido/Pedido.aspx
+~/Views/Pedido/Pedido.ascx
+~/Views/Shared/Pedido.aspx
+~/Views/Shared/Pedido.ascx
+~/Views/Pedido/Pedido.cshtml
+~/Views/Pedido/Pedido.vbhtml
+~/Views/Shared/Pedido.cshtml
+~/Views/Shared/Pedido.vbhtml
+   em System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-27 14:33:02,465 [121] ERROR System.Web.Mvc.Controller - controller: Pedido - action: Pedido
+System.InvalidOperationException: A exibição 'Pedido' ou seu master não foi encontrada ou nenhum mecanismo de exibição oferece suporte para os locais pesquisados. Os seguintes locais foram pesquisados: 
+~/Views/Pedido/Pedido.aspx
+~/Views/Pedido/Pedido.ascx
+~/Views/Shared/Pedido.aspx
+~/Views/Shared/Pedido.ascx
+~/Views/Pedido/Pedido.cshtml
+~/Views/Pedido/Pedido.vbhtml
+~/Views/Shared/Pedido.cshtml
+~/Views/Shared/Pedido.vbhtml
+   em System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-27 14:35:28,449 [112] ERROR System.Web.Mvc.Controller - controller: Pedido - action: Pedido
+System.InvalidOperationException: A exibição 'Pedido' ou seu master não foi encontrada ou nenhum mecanismo de exibição oferece suporte para os locais pesquisados. Os seguintes locais foram pesquisados: 
+~/Views/Pedido/Pedido.aspx
+~/Views/Pedido/Pedido.ascx
+~/Views/Shared/Pedido.aspx
+~/Views/Shared/Pedido.ascx
+~/Views/Pedido/Pedido.cshtml
+~/Views/Pedido/Pedido.vbhtml
+~/Views/Shared/Pedido.cshtml
+~/Views/Shared/Pedido.vbhtml
+   em System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-27 15:06:52,436 [9] ERROR System.Web.Mvc.Controller - controller: Pedido - action: Pedido
+System.InvalidOperationException: A exibição 'Pedido' ou seu master não foi encontrada ou nenhum mecanismo de exibição oferece suporte para os locais pesquisados. Os seguintes locais foram pesquisados: 
+~/Views/Pedido/Pedido.aspx
+~/Views/Pedido/Pedido.ascx
+~/Views/Shared/Pedido.aspx
+~/Views/Shared/Pedido.ascx
+~/Views/Pedido/Pedido.cshtml
+~/Views/Pedido/Pedido.vbhtml
+~/Views/Shared/Pedido.cshtml
+~/Views/Shared/Pedido.vbhtml
+   em System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-27 15:26:24,001 [26] ERROR System.Web.Mvc.Controller - controller: Pedido - action: Pedido
+System.TimeoutException: Esta operação de solicitação enviada para net.tcp://localhost:9000/LojaProduto.Services/CadastroService não recebeu uma resposta no tempo limite configurado (00:05:00). O tempo alocado para essa operação pode ter sido uma parte de um tempo limite maior. Isso pode acontecer porque o serviço ainda está processando a operação ou porque o serviço não conseguiu enviar uma mensagem de resposta. Considere aumentar o tempo limite da operação (difundindo o canal/proxy para IContextChannel e definindo a propriedade OperationTimeout) e verificar se o serviço é capaz de conectar-se ao cliente.
+
+Server stack trace: 
+   em System.ServiceModel.Dispatcher.DuplexChannelBinder.Request(Message message, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   em System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   em System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   em System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   em LojaProduto.Services.Spec.Services.ICadastroService.ListarPedidos(Int32 startIndex, Int32 pageSize, String orderProperty, Boolean orderAscending)
+   em LojaProduto.Presentation.Controllers.Pedido.PedidoController.Pedido(Int32 startIndex, Int32 pageSize, String orderProperty, Boolean orderAscending) na D:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Controllers\Pedido\PedidoController.cs:linha 17
+   em lambda_method(Closure , ControllerBase , Object[] )
+   em System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   em System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-27 15:44:00,613 [28] ERROR System.Web.Mvc.Controller - controller: Pedido - action: Pedido
+System.ServiceModel.CommunicationException: O ponto de extremidade remoto não reconhece mais essa sequência. Isso ocorre provavelmente devido a uma anulação no ponto de extremidade remoto. O valor de wsrm:Identifier não é um identificador de Sequência conhecido. Falha na sessão confiável.
+
+Server stack trace: 
+   em System.Runtime.InputQueue`1.WaitQueueReader.Wait(TimeSpan timeout, T& value)
+   em System.Runtime.InputQueue`1.Dequeue(TimeSpan timeout, T& value)
+   em System.ServiceModel.Channels.InputQueueChannel`1.Dequeue(TimeSpan timeout, TDisposable& item)
+   em System.ServiceModel.Channels.DuplexChannel.TryReceive(TimeSpan timeout, Message& message)
+   em System.ServiceModel.Dispatcher.DuplexChannelBinder.Request(Message message, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   em System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   em System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   em System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   em LojaProduto.Services.Spec.Services.ICadastroService.ListarPedidos(Int32 startIndex, Int32 pageSize, String orderProperty, Boolean orderAscending)
+   em LojaProduto.Presentation.Controllers.Pedido.PedidoController.Pedido(Int32 startIndex, Int32 pageSize, String orderProperty, Boolean orderAscending) na D:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Controllers\Pedido\PedidoController.cs:linha 17
+   em lambda_method(Closure , ControllerBase , Object[] )
+   em System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   em System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-27 15:57:24,589 [32] ERROR System.Web.Mvc.Controller - controller: Produto - action: ListaProdutos
+System.Web.HttpParseException (0x80004005): Encountered end tag "div" with no matching start tag.  Are your start/end tags properly balanced?
+
+   em System.Web.WebPages.Razor.RazorBuildProvider.EnsureGeneratedCode()
+   em System.Web.WebPages.Razor.RazorBuildProvider.get_CodeCompilerType()
+   em System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   em System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   em System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   em System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   em System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   em System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   em System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-27 17:08:05,004 [9] ERROR System.Web.Mvc.Controller - controller: Pedido - action: Pedido
+System.InvalidOperationException: A exibição 'Pedido' ou seu master não foi encontrada ou nenhum mecanismo de exibição oferece suporte para os locais pesquisados. Os seguintes locais foram pesquisados: 
+~/Views/Pedido/Pedido.aspx
+~/Views/Pedido/Pedido.ascx
+~/Views/Shared/Pedido.aspx
+~/Views/Shared/Pedido.ascx
+~/Views/Pedido/Pedido.cshtml
+~/Views/Pedido/Pedido.vbhtml
+~/Views/Shared/Pedido.cshtml
+~/Views/Shared/Pedido.vbhtml
+   em System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-27 17:09:35,871 [8] ERROR System.Web.Mvc.Controller - controller: Pedido - action: Pedido
+System.InvalidOperationException: A exibição 'Pedido' ou seu master não foi encontrada ou nenhum mecanismo de exibição oferece suporte para os locais pesquisados. Os seguintes locais foram pesquisados: 
+~/Views/Pedido/Pedido.aspx
+~/Views/Pedido/Pedido.ascx
+~/Views/Shared/Pedido.aspx
+~/Views/Shared/Pedido.ascx
+~/Views/Pedido/Pedido.cshtml
+~/Views/Pedido/Pedido.vbhtml
+~/Views/Shared/Pedido.cshtml
+~/Views/Shared/Pedido.vbhtml
+   em System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-27 17:10:31,195 [5] ERROR System.Web.Mvc.Controller - controller: Pedido - action: Pedido
+System.InvalidOperationException: A exibição 'Pedido' ou seu master não foi encontrada ou nenhum mecanismo de exibição oferece suporte para os locais pesquisados. Os seguintes locais foram pesquisados: 
+~/Views/Pedido/Pedido.aspx
+~/Views/Pedido/Pedido.ascx
+~/Views/Shared/Pedido.aspx
+~/Views/Shared/Pedido.ascx
+~/Views/Pedido/Pedido.cshtml
+~/Views/Pedido/Pedido.vbhtml
+~/Views/Shared/Pedido.cshtml
+~/Views/Shared/Pedido.vbhtml
+   em System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-27 17:10:57,482 [15] ERROR System.Web.Mvc.Controller - controller: Pedido - action: Pedido
+System.InvalidOperationException: A exibição 'Pedido' ou seu master não foi encontrada ou nenhum mecanismo de exibição oferece suporte para os locais pesquisados. Os seguintes locais foram pesquisados: 
+~/Views/Pedido/Pedido.aspx
+~/Views/Pedido/Pedido.ascx
+~/Views/Shared/Pedido.aspx
+~/Views/Shared/Pedido.ascx
+~/Views/Pedido/Pedido.cshtml
+~/Views/Pedido/Pedido.vbhtml
+~/Views/Shared/Pedido.cshtml
+~/Views/Shared/Pedido.vbhtml
+   em System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-27 17:37:51,786 [31] ERROR System.Web.Mvc.Controller - controller: Pedido - action: Pedido
+System.InvalidOperationException: A exibição 'Pedido' ou seu master não foi encontrada ou nenhum mecanismo de exibição oferece suporte para os locais pesquisados. Os seguintes locais foram pesquisados: 
+~/Views/Pedido/Pedido.aspx
+~/Views/Pedido/Pedido.ascx
+~/Views/Shared/Pedido.aspx
+~/Views/Shared/Pedido.ascx
+~/Views/Pedido/Pedido.cshtml
+~/Views/Pedido/Pedido.vbhtml
+~/Views/Shared/Pedido.cshtml
+~/Views/Shared/Pedido.vbhtml
+   em System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-27 17:38:20,748 [39] ERROR System.Web.Mvc.Controller - controller: Pedido - action: Pedido
+System.InvalidOperationException: A exibição 'Pedido' ou seu master não foi encontrada ou nenhum mecanismo de exibição oferece suporte para os locais pesquisados. Os seguintes locais foram pesquisados: 
+~/Views/Pedido/Pedido.aspx
+~/Views/Pedido/Pedido.ascx
+~/Views/Shared/Pedido.aspx
+~/Views/Shared/Pedido.ascx
+~/Views/Pedido/Pedido.cshtml
+~/Views/Pedido/Pedido.vbhtml
+~/Views/Shared/Pedido.cshtml
+~/Views/Shared/Pedido.vbhtml
+   em System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-27 17:41:59,218 [30] ERROR System.Web.Mvc.Controller - controller: Pedido - action: Pedido
+System.InvalidOperationException: A exibição 'Pedido' ou seu master não foi encontrada ou nenhum mecanismo de exibição oferece suporte para os locais pesquisados. Os seguintes locais foram pesquisados: 
+~/Views/Pedido/Pedido.aspx
+~/Views/Pedido/Pedido.ascx
+~/Views/Shared/Pedido.aspx
+~/Views/Shared/Pedido.ascx
+~/Views/Pedido/Pedido.cshtml
+~/Views/Pedido/Pedido.vbhtml
+~/Views/Shared/Pedido.cshtml
+~/Views/Shared/Pedido.vbhtml
+   em System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-27 17:43:10,859 [12] ERROR System.Web.Mvc.Controller - controller: Pedido - action: Pedido
+System.InvalidOperationException: A exibição 'Pedido' ou seu master não foi encontrada ou nenhum mecanismo de exibição oferece suporte para os locais pesquisados. Os seguintes locais foram pesquisados: 
+~/Views/Pedido/Pedido.aspx
+~/Views/Pedido/Pedido.ascx
+~/Views/Shared/Pedido.aspx
+~/Views/Shared/Pedido.ascx
+~/Views/Pedido/Pedido.cshtml
+~/Views/Pedido/Pedido.vbhtml
+~/Views/Shared/Pedido.cshtml
+~/Views/Shared/Pedido.vbhtml
+   em System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-27 17:43:13,815 [7] ERROR System.Web.Mvc.Controller - controller: Pedido - action: Pedido
+System.InvalidOperationException: A exibição 'Pedido' ou seu master não foi encontrada ou nenhum mecanismo de exibição oferece suporte para os locais pesquisados. Os seguintes locais foram pesquisados: 
+~/Views/Pedido/Pedido.aspx
+~/Views/Pedido/Pedido.ascx
+~/Views/Shared/Pedido.aspx
+~/Views/Shared/Pedido.ascx
+~/Views/Pedido/Pedido.cshtml
+~/Views/Pedido/Pedido.vbhtml
+~/Views/Shared/Pedido.cshtml
+~/Views/Shared/Pedido.vbhtml
+   em System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-27 17:45:44,034 [9] ERROR System.Web.Mvc.Controller - controller: Pedido - action: Pedido
+System.InvalidOperationException: A exibição 'Pedido' ou seu master não foi encontrada ou nenhum mecanismo de exibição oferece suporte para os locais pesquisados. Os seguintes locais foram pesquisados: 
+~/Views/Pedido/Pedido.aspx
+~/Views/Pedido/Pedido.ascx
+~/Views/Shared/Pedido.aspx
+~/Views/Shared/Pedido.ascx
+~/Views/Pedido/Pedido.cshtml
+~/Views/Pedido/Pedido.vbhtml
+~/Views/Shared/Pedido.cshtml
+~/Views/Shared/Pedido.vbhtml
+   em System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-27 17:49:02,462 [30] ERROR System.Web.Mvc.Controller - controller: Pedido - action: Pedido
+System.InvalidOperationException: A exibição 'Pedido' ou seu master não foi encontrada ou nenhum mecanismo de exibição oferece suporte para os locais pesquisados. Os seguintes locais foram pesquisados: 
+~/Views/Pedido/Pedido.aspx
+~/Views/Pedido/Pedido.ascx
+~/Views/Shared/Pedido.aspx
+~/Views/Shared/Pedido.ascx
+~/Views/Pedido/Pedido.cshtml
+~/Views/Pedido/Pedido.vbhtml
+~/Views/Shared/Pedido.cshtml
+~/Views/Shared/Pedido.vbhtml
+   em System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-27 18:06:24,020 [69] ERROR System.Web.Mvc.Controller - controller: Pedido - action: Pedido
+System.InvalidOperationException: A exibição 'Pedido' ou seu master não foi encontrada ou nenhum mecanismo de exibição oferece suporte para os locais pesquisados. Os seguintes locais foram pesquisados: 
+~/Views/Pedido/Pedido.aspx
+~/Views/Pedido/Pedido.ascx
+~/Views/Shared/Pedido.aspx
+~/Views/Shared/Pedido.ascx
+~/Views/Pedido/Pedido.cshtml
+~/Views/Pedido/Pedido.vbhtml
+~/Views/Shared/Pedido.cshtml
+~/Views/Shared/Pedido.vbhtml
+   em System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-27 18:10:25,987 [61] ERROR System.Web.Mvc.Controller - controller: Pedido - action: Pedido
+System.InvalidOperationException: A exibição 'Pedido' ou seu master não foi encontrada ou nenhum mecanismo de exibição oferece suporte para os locais pesquisados. Os seguintes locais foram pesquisados: 
+~/Views/Pedido/Pedido.aspx
+~/Views/Pedido/Pedido.ascx
+~/Views/Shared/Pedido.aspx
+~/Views/Shared/Pedido.ascx
+~/Views/Pedido/Pedido.cshtml
+~/Views/Pedido/Pedido.vbhtml
+~/Views/Shared/Pedido.cshtml
+~/Views/Shared/Pedido.vbhtml
+   em System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-27 18:11:31,816 [61] ERROR System.Web.Mvc.Controller - controller: Pedido - action: Pedido
+System.InvalidOperationException: A exibição 'Pedido' ou seu master não foi encontrada ou nenhum mecanismo de exibição oferece suporte para os locais pesquisados. Os seguintes locais foram pesquisados: 
+~/Views/Pedido/Pedido.aspx
+~/Views/Pedido/Pedido.ascx
+~/Views/Shared/Pedido.aspx
+~/Views/Shared/Pedido.ascx
+~/Views/Pedido/Pedido.cshtml
+~/Views/Pedido/Pedido.vbhtml
+~/Views/Shared/Pedido.cshtml
+~/Views/Shared/Pedido.vbhtml
+   em System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-27 18:17:39,009 [63] ERROR System.Web.Mvc.Controller - controller: Pedido - action: Pedido
+System.ArgumentException: JSON primitivo inválido: idProduto.
+   em System.Web.Script.Serialization.JavaScriptObjectDeserializer.DeserializePrimitiveObject()
+   em System.Web.Script.Serialization.JavaScriptObjectDeserializer.DeserializeInternal(Int32 depth)
+   em System.Web.Script.Serialization.JavaScriptObjectDeserializer.BasicDeserialize(String input, Int32 depthLimit, JavaScriptSerializer serializer)
+   em System.Web.Script.Serialization.JavaScriptSerializer.Deserialize(JavaScriptSerializer serializer, String input, Type type, Int32 depthLimit)
+   em System.Web.Mvc.JsonValueProviderFactory.GetDeserializedObject(ControllerContext controllerContext)
+   em System.Web.Mvc.JsonValueProviderFactory.GetValueProvider(ControllerContext controllerContext)
+   em System.Web.Mvc.ValueProviderFactoryCollection.GetValueProvider(ControllerContext controllerContext)
+   em System.Web.Mvc.ControllerBase.get_ValueProvider()
+   em System.Web.Mvc.ControllerActionInvoker.GetParameterValue(ControllerContext controllerContext, ParameterDescriptor parameterDescriptor)
+   em System.Web.Mvc.ControllerActionInvoker.GetParameterValues(ControllerContext controllerContext, ActionDescriptor actionDescriptor)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__19(AsyncCallback asyncCallback, Object asyncState)
+2017-07-27 18:17:56,546 [63] ERROR System.Web.Mvc.Controller - controller: Pedido - action: Pedido
+System.ArgumentException: JSON primitivo inválido: idProduto.
+   em System.Web.Script.Serialization.JavaScriptObjectDeserializer.DeserializePrimitiveObject()
+   em System.Web.Script.Serialization.JavaScriptObjectDeserializer.DeserializeInternal(Int32 depth)
+   em System.Web.Script.Serialization.JavaScriptObjectDeserializer.BasicDeserialize(String input, Int32 depthLimit, JavaScriptSerializer serializer)
+   em System.Web.Script.Serialization.JavaScriptSerializer.Deserialize(JavaScriptSerializer serializer, String input, Type type, Int32 depthLimit)
+   em System.Web.Mvc.JsonValueProviderFactory.GetDeserializedObject(ControllerContext controllerContext)
+   em System.Web.Mvc.JsonValueProviderFactory.GetValueProvider(ControllerContext controllerContext)
+   em System.Web.Mvc.ValueProviderFactoryCollection.GetValueProvider(ControllerContext controllerContext)
+   em System.Web.Mvc.ControllerBase.get_ValueProvider()
+   em System.Web.Mvc.ControllerActionInvoker.GetParameterValue(ControllerContext controllerContext, ParameterDescriptor parameterDescriptor)
+   em System.Web.Mvc.ControllerActionInvoker.GetParameterValues(ControllerContext controllerContext, ActionDescriptor actionDescriptor)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__19(AsyncCallback asyncCallback, Object asyncState)
+2017-07-27 18:18:25,258 [45] ERROR System.Web.Mvc.Controller - controller: Pedido - action: Pedido
+System.ArgumentException: JSON primitivo inválido: idProduto.
+   em System.Web.Script.Serialization.JavaScriptObjectDeserializer.DeserializePrimitiveObject()
+   em System.Web.Script.Serialization.JavaScriptObjectDeserializer.DeserializeInternal(Int32 depth)
+   em System.Web.Script.Serialization.JavaScriptObjectDeserializer.BasicDeserialize(String input, Int32 depthLimit, JavaScriptSerializer serializer)
+   em System.Web.Script.Serialization.JavaScriptSerializer.Deserialize(JavaScriptSerializer serializer, String input, Type type, Int32 depthLimit)
+   em System.Web.Mvc.JsonValueProviderFactory.GetDeserializedObject(ControllerContext controllerContext)
+   em System.Web.Mvc.JsonValueProviderFactory.GetValueProvider(ControllerContext controllerContext)
+   em System.Web.Mvc.ValueProviderFactoryCollection.GetValueProvider(ControllerContext controllerContext)
+   em System.Web.Mvc.ControllerBase.get_ValueProvider()
+   em System.Web.Mvc.ControllerActionInvoker.GetParameterValue(ControllerContext controllerContext, ParameterDescriptor parameterDescriptor)
+   em System.Web.Mvc.ControllerActionInvoker.GetParameterValues(ControllerContext controllerContext, ActionDescriptor actionDescriptor)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__19(AsyncCallback asyncCallback, Object asyncState)
+2017-07-27 18:18:59,653 [59] ERROR System.Web.Mvc.Controller - controller: Pedido - action: Pedido
+System.ArgumentException: JSON primitivo inválido: idProduto.
+   em System.Web.Script.Serialization.JavaScriptObjectDeserializer.DeserializePrimitiveObject()
+   em System.Web.Script.Serialization.JavaScriptObjectDeserializer.DeserializeInternal(Int32 depth)
+   em System.Web.Script.Serialization.JavaScriptObjectDeserializer.BasicDeserialize(String input, Int32 depthLimit, JavaScriptSerializer serializer)
+   em System.Web.Script.Serialization.JavaScriptSerializer.Deserialize(JavaScriptSerializer serializer, String input, Type type, Int32 depthLimit)
+   em System.Web.Mvc.JsonValueProviderFactory.GetDeserializedObject(ControllerContext controllerContext)
+   em System.Web.Mvc.JsonValueProviderFactory.GetValueProvider(ControllerContext controllerContext)
+   em System.Web.Mvc.ValueProviderFactoryCollection.GetValueProvider(ControllerContext controllerContext)
+   em System.Web.Mvc.ControllerBase.get_ValueProvider()
+   em System.Web.Mvc.ControllerActionInvoker.GetParameterValue(ControllerContext controllerContext, ParameterDescriptor parameterDescriptor)
+   em System.Web.Mvc.ControllerActionInvoker.GetParameterValues(ControllerContext controllerContext, ActionDescriptor actionDescriptor)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__19(AsyncCallback asyncCallback, Object asyncState)
+2017-07-27 18:25:08,518 [55] ERROR System.Web.Mvc.Controller - controller: Pedido - action: Pedido
+System.InvalidOperationException: A exibição 'Pedido' ou seu master não foi encontrada ou nenhum mecanismo de exibição oferece suporte para os locais pesquisados. Os seguintes locais foram pesquisados: 
+~/Views/Pedido/Pedido.aspx
+~/Views/Pedido/Pedido.ascx
+~/Views/Shared/Pedido.aspx
+~/Views/Shared/Pedido.ascx
+~/Views/Pedido/Pedido.cshtml
+~/Views/Pedido/Pedido.vbhtml
+~/Views/Shared/Pedido.cshtml
+~/Views/Shared/Pedido.vbhtml
+   em System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-27 18:25:33,488 [61] ERROR System.Web.Mvc.Controller - controller: Pedido - action: Pedido
+System.InvalidOperationException: A exibição 'Pedido' ou seu master não foi encontrada ou nenhum mecanismo de exibição oferece suporte para os locais pesquisados. Os seguintes locais foram pesquisados: 
+~/Views/Pedido/Pedido.aspx
+~/Views/Pedido/Pedido.ascx
+~/Views/Shared/Pedido.aspx
+~/Views/Shared/Pedido.ascx
+~/Views/Pedido/Pedido.cshtml
+~/Views/Pedido/Pedido.vbhtml
+~/Views/Shared/Pedido.cshtml
+~/Views/Shared/Pedido.vbhtml
+   em System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-27 18:25:54,870 [61] ERROR System.Web.Mvc.Controller - controller: Pedido - action: Pedido
+System.InvalidOperationException: A exibição 'Pedido' ou seu master não foi encontrada ou nenhum mecanismo de exibição oferece suporte para os locais pesquisados. Os seguintes locais foram pesquisados: 
+~/Views/Pedido/Pedido.aspx
+~/Views/Pedido/Pedido.ascx
+~/Views/Shared/Pedido.aspx
+~/Views/Shared/Pedido.ascx
+~/Views/Pedido/Pedido.cshtml
+~/Views/Pedido/Pedido.vbhtml
+~/Views/Shared/Pedido.cshtml
+~/Views/Shared/Pedido.vbhtml
+   em System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-27 18:26:05,888 [46] ERROR System.Web.Mvc.Controller - controller: Pedido - action: Pedido
+System.InvalidOperationException: A exibição 'Pedido' ou seu master não foi encontrada ou nenhum mecanismo de exibição oferece suporte para os locais pesquisados. Os seguintes locais foram pesquisados: 
+~/Views/Pedido/Pedido.aspx
+~/Views/Pedido/Pedido.ascx
+~/Views/Shared/Pedido.aspx
+~/Views/Shared/Pedido.ascx
+~/Views/Pedido/Pedido.cshtml
+~/Views/Pedido/Pedido.vbhtml
+~/Views/Shared/Pedido.cshtml
+~/Views/Shared/Pedido.vbhtml
+   em System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-27 18:26:32,199 [46] ERROR System.Web.Mvc.Controller - controller: Pedido - action: Pedido
+System.InvalidOperationException: A exibição 'Pedido' ou seu master não foi encontrada ou nenhum mecanismo de exibição oferece suporte para os locais pesquisados. Os seguintes locais foram pesquisados: 
+~/Views/Pedido/Pedido.aspx
+~/Views/Pedido/Pedido.ascx
+~/Views/Shared/Pedido.aspx
+~/Views/Shared/Pedido.ascx
+~/Views/Pedido/Pedido.cshtml
+~/Views/Pedido/Pedido.vbhtml
+~/Views/Shared/Pedido.cshtml
+~/Views/Shared/Pedido.vbhtml
+   em System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-27 18:46:57,374 [12] ERROR System.Web.Mvc.Controller - controller: Pedido - action: Pedido
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em LojaProduto.Presentation.Controllers.Pedido.PedidoController.Pedido(Int32 idProduto, Int32 quantidadeProduto) na D:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Controllers\Pedido\PedidoController.cs:linha 19
+   em lambda_method(Closure , ControllerBase , Object[] )
+   em System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   em System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-27 18:49:52,727 [62] ERROR System.Web.Mvc.Controller - controller: Pedido - action: Pedido
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em LojaProduto.Presentation.Controllers.Pedido.PedidoController.Pedido(Int32 idProduto, Int32 quantidadeProduto) na D:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Controllers\Pedido\PedidoController.cs:linha 19
+   em lambda_method(Closure , ControllerBase , Object[] )
+   em System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   em System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-28 18:35:48,014 [13] ERROR System.Web.Mvc.Controller - controller: Pedido - action: Pedido
+System.TimeoutException: Esta operação de solicitação enviada para net.tcp://localhost:9000/LojaProduto.Services/CadastroService não recebeu uma resposta no tempo limite configurado (00:05:00). O tempo alocado para essa operação pode ter sido uma parte de um tempo limite maior. Isso pode acontecer porque o serviço ainda está processando a operação ou porque o serviço não conseguiu enviar uma mensagem de resposta. Considere aumentar o tempo limite da operação (difundindo o canal/proxy para IContextChannel e definindo a propriedade OperationTimeout) e verificar se o serviço é capaz de conectar-se ao cliente.
+
+Server stack trace: 
+   em System.ServiceModel.Dispatcher.DuplexChannelBinder.Request(Message message, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   em System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   em System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   em System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   em LojaProduto.Services.Spec.Services.ICadastroService.PesquisaCliente(String cpf, String codigo)
+   em LojaProduto.Presentation.Controllers.Pedido.PedidoController.Pedido(Int32 idProduto, Int32 quantidadeProduto) na D:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Controllers\Pedido\PedidoController.cs:linha 19
+   em lambda_method(Closure , ControllerBase , Object[] )
+   em System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   em System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-28 18:45:55,378 [32] ERROR System.Web.Mvc.Controller - controller: Pedido - action: Pedido
+System.ServiceModel.CommunicationException: A contagem máxima de novas tentativas foi excedida sem resposta a partir do ponto de extremidade remoto. Falha na sessão confiável. Em geral, isso indica que o ponto de extremidade remoto não está mais disponível. ---> System.ServiceModel.EndpointNotFoundException: Não foi possível a conexão com net.tcp://localhost:9000/LojaProduto.Services/CadastroService. A tentativa de conexão durou pelo período de tempo de 00:00:02. Código de erro TCP 10061: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente 127.0.0.1:9000.  ---> System.Net.Sockets.SocketException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente 127.0.0.1:9000
+   em System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   em System.ServiceModel.Channels.SocketConnectionInitiator.ConnectAsyncResult.OnConnect(IAsyncResult result)
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.Runtime.AsyncResult.End[TAsyncResult](IAsyncResult result)
+   em System.ServiceModel.Channels.ReliableOutputAsyncResult.OperationCallback(IAsyncResult result)
+   --- Fim do rastreamento de pilha de exceções internas ---
+
+Server stack trace: 
+   em System.Runtime.InputQueue`1.WaitQueueReader.Wait(TimeSpan timeout, T& value)
+   em System.Runtime.InputQueue`1.Dequeue(TimeSpan timeout, T& value)
+   em System.ServiceModel.Channels.InputQueueChannel`1.Dequeue(TimeSpan timeout, TDisposable& item)
+   em System.ServiceModel.Channels.DuplexChannel.TryReceive(TimeSpan timeout, Message& message)
+   em System.ServiceModel.Dispatcher.DuplexChannelBinder.Request(Message message, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   em System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   em System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   em System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   em LojaProduto.Services.Spec.Services.ICadastroService.SalvarPedido(DTOPedido dto)
+   em LojaProduto.Presentation.Controllers.Pedido.PedidoController.Pedido(Int32 idProduto, Int32 quantidadeProduto) na D:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Controllers\Pedido\PedidoController.cs:linha 25
+   em lambda_method(Closure , ControllerBase , Object[] )
+   em System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   em System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)

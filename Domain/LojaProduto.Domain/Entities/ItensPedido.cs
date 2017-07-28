@@ -42,5 +42,6 @@ namespace LojaProduto.Domain.Entities
         {
             this.produto = produto;
         }
+
     }
 }

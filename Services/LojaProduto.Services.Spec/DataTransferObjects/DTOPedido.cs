@@ -24,8 +24,10 @@ namespace LojaProduto.Services.Spec.DataTransferObjects
         [DataMember(), Required()]
         public decimal ValorTotalPedido { get; set; }
 
-        [DataMember(), Required()]
-        public int StatusPedido { get; set; }
+        [DataMember()] //, Required()
+        public int statusPedido { get; set; }
+
+        public EnumTipoPedido TipoPedido { get; set; }
 
         [DataMember(), Required()]
         public int TipoVenda { get; set; }
