@@ -8,6 +8,7 @@ using LojaProduto.Integration.Spec;
 using SQFramework.Data.Pagging;
 using SQFramework.Spring.Data.Hibernate;
 using NHibernate.Transform;
+using LojaProduto.Services.Spec.DataTransferObjects;
 
 namespace LojaProduto.Integration.Impl
 {
@@ -31,6 +32,6 @@ namespace LojaProduto.Integration.Impl
             var result = this.List<Produto>(criteria);
               
             return result;
-        }        
+        }
     }
 }

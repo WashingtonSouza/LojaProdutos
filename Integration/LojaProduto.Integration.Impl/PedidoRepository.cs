@@ -18,5 +18,15 @@ namespace LojaProduto.Integration.Impl
 
             return Page<Pedido>(criteria, startIndex, pageSize, orderProperty, orderAscending);
         }
+
+        public Pedido VerificaSePossuiPedidoAberto(int idCliente)
+        {
+            
+            var criteria = DetachedCriteria.For<Pedido>();
+            
+            criteria.Add(Restrictions.And(Expression.Eq("cliente.id", Convert.ToInt32(idCliente)), Expression.Eq("statusPedido", 1)));
+
+            return this.List<Pedido>(criteria).FirstOrDefault();
+        }
     }
 }

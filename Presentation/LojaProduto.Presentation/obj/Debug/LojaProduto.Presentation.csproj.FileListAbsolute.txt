@@ -43,8 +43,12 @@ D:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\bin\System.Web.We
 D:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\bin\Utilitarios.dll
 D:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\bin\WebActivatorEx.dll
 D:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\bin\WebGrease.dll
+D:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\bin\Microsoft.SqlServer.Types.dll
+D:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\bin\Microsoft.Web.Administration.dll
 D:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\bin\LojaProduto.Common.pdb
+D:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\bin\LojaProduto.Common.dll.config
 D:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\bin\LojaProduto.Services.Spec.pdb
+D:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\bin\LojaProduto.Services.Spec.dll.config
 D:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\bin\Antlr3.Runtime.pdb
 D:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\bin\Castle.Core.xml
 D:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\bin\Common.Logging.pdb
@@ -85,7 +89,3 @@ D:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\bin\pt-br\System.
 D:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\obj\Debug\LojaProduto.Presentation.csprojResolveAssemblyReference.cache
 D:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\obj\Debug\LojaProduto.Presentation.dll
 D:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\obj\Debug\LojaProduto.Presentation.pdb
-D:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\bin\Microsoft.SqlServer.Types.dll
-D:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\bin\Microsoft.Web.Administration.dll
-D:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\bin\LojaProduto.Common.dll.config
-D:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\bin\LojaProduto.Services.Spec.dll.config

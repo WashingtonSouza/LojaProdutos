@@ -11,17 +11,14 @@ namespace LojaProduto.Presentation.Controllers.ItemPedido
     public class ItemPedidoController : CustomController
     {
         // GET: ItemPedido
-        public ActionResult ItemPedido(int idProduto = 0, int quantidadeProduto = 0)
+        public ActionResult ItemPedido()
         {
-            DTOItensPedido itensPedido = new DTOItensPedido();
-            
-            itensPedido.Produto = GetCadastroService().ObterProduto(idProduto);            
-            itensPedido.QuantidadeProduto = quantidadeProduto;
-            itensPedido
+            DTOItensPedido itemPedido = new DTOItensPedido();
+            //itemPedido.Produto = GetCadastroService().ObterProduto(idProduto);
 
-
-
-            return Json(itensPedido, JsonRequestBehavior.DenyGet);
+            //GetCadastroService().AdicionaItemPedido(itemPedido, quantidadeProduto);
+            //return Json(itemPedido, JsonRequestBehavior.DenyGet);
+            return View();
         }
     }
 }

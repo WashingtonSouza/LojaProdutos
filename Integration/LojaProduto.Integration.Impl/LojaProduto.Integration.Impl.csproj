@@ -120,7 +120,7 @@
     <Compile Include="ClienteRepository.cs" />
     <Compile Include="EnderecoRepository.cs" />
     <Compile Include="FornecedorRepository.cs" />
-    <Compile Include="ItensPedidoRepository.cs" />
+    <Compile Include="ItemPedidoRepository.cs" />
     <Compile Include="PedidoRepository.cs" />
     <Compile Include="ProdutoRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -1,3 +1,4 @@
+D:\Projetos\LojaProdutos\Domain\LojaProduto.Domain\obj\Debug\LojaProduto.Domain.csprojResolveAssemblyReference.cache
 D:\Projetos\LojaProdutos\Domain\LojaProduto.Domain\bin\Debug\LojaProduto.Domain.dll.config
 D:\Projetos\LojaProdutos\Domain\LojaProduto.Domain\bin\Debug\LojaProduto.Domain.dll
 D:\Projetos\LojaProdutos\Domain\LojaProduto.Domain\bin\Debug\LojaProduto.Domain.pdb
@@ -14,7 +15,9 @@ D:\Projetos\LojaProdutos\Domain\LojaProduto.Domain\bin\Debug\SQFramework.Securit
 D:\Projetos\LojaProdutos\Domain\LojaProduto.Domain\bin\Debug\SQFramework.Spring.dll
 D:\Projetos\LojaProdutos\Domain\LojaProduto.Domain\bin\Debug\SQFramework.Templates.NVelocity.dll
 D:\Projetos\LojaProdutos\Domain\LojaProduto.Domain\bin\Debug\LojaProduto.Common.pdb
+D:\Projetos\LojaProdutos\Domain\LojaProduto.Domain\bin\Debug\LojaProduto.Common.dll.config
 D:\Projetos\LojaProdutos\Domain\LojaProduto.Domain\bin\Debug\LojaProduto.Integration.Spec.pdb
+D:\Projetos\LojaProdutos\Domain\LojaProduto.Domain\bin\Debug\LojaProduto.Integration.Spec.dll.config
 D:\Projetos\LojaProdutos\Domain\LojaProduto.Domain\bin\Debug\Common.Logging.pdb
 D:\Projetos\LojaProdutos\Domain\LojaProduto.Domain\bin\Debug\Common.Logging.xml
 D:\Projetos\LojaProdutos\Domain\LojaProduto.Domain\bin\Debug\Common.Logging.Core.pdb
@@ -29,8 +32,5 @@ D:\Projetos\LojaProdutos\Domain\LojaProduto.Domain\bin\Debug\SQFramework.Core.xm
 D:\Projetos\LojaProdutos\Domain\LojaProduto.Domain\bin\Debug\SQFramework.Security.pdb
 D:\Projetos\LojaProdutos\Domain\LojaProduto.Domain\bin\Debug\SQFramework.Spring.xml
 D:\Projetos\LojaProdutos\Domain\LojaProduto.Domain\bin\Debug\SQFramework.Templates.NVelocity.pdb
-D:\Projetos\LojaProdutos\Domain\LojaProduto.Domain\obj\Debug\LojaProduto.Domain.csprojResolveAssemblyReference.cache
 D:\Projetos\LojaProdutos\Domain\LojaProduto.Domain\obj\Debug\LojaProduto.Domain.dll
 D:\Projetos\LojaProdutos\Domain\LojaProduto.Domain\obj\Debug\LojaProduto.Domain.pdb
-D:\Projetos\LojaProdutos\Domain\LojaProduto.Domain\bin\Debug\LojaProduto.Common.dll.config
-D:\Projetos\LojaProdutos\Domain\LojaProduto.Domain\bin\Debug\LojaProduto.Integration.Spec.dll.config

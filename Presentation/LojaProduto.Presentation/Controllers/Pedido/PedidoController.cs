@@ -12,20 +12,12 @@ namespace LojaProduto.Presentation.Controllers.Pedido
     public class PedidoController : CustomController
     {
         // GET: Pedido
-        public ActionResult Pedido()
+        public ActionResult Pedido(int idProduto = 0, int quantidadeProduto = 0)
         {
-            DTOPedido pedido = new DTOPedido();           
 
-            pedido.Cliente = GetCadastroService().PesquisaCliente("", "cl25639");
-            pedido.Codigo = "PE25987";
-            pedido.DataElaboracao = DateTime.Now;                 
+            GetCadastroService().TemPedido(idProduto, quantidadeProduto);
 
-            //pedido.ItensPedidos.Add(itensPedido);
-
-            //GetCadastroService().SalvarPedido(pedido);
-
-
-            return View();
+            return Json(JsonRequestBehavior.DenyGet);
         }
 
         public ActionResult ListaPedidos(string query)

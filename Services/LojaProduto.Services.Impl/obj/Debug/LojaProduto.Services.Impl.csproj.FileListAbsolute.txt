@@ -1,3 +1,5 @@
+D:\Projetos\LojaProdutos\Services\LojaProduto.Services.Impl\obj\Debug\LojaProduto.Services.Impl.csprojResolveAssemblyReference.cache
+D:\Projetos\LojaProdutos\Services\LojaProduto.Services.Impl\bin\Debug\Reports\Categoria.rdlc
 D:\Projetos\LojaProdutos\Services\LojaProduto.Services.Impl\bin\Debug\LojaProduto.Services.Impl.dll.config
 D:\Projetos\LojaProdutos\Services\LojaProduto.Services.Impl\bin\Debug\LojaProduto.Services.Impl.dll
 D:\Projetos\LojaProdutos\Services\LojaProduto.Services.Impl\bin\Debug\LojaProduto.Services.Impl.pdb
@@ -34,10 +36,15 @@ D:\Projetos\LojaProdutos\Services\LojaProduto.Services.Impl\bin\Debug\System.Web
 D:\Projetos\LojaProdutos\Services\LojaProduto.Services.Impl\bin\Debug\System.Web.WebPages.dll
 D:\Projetos\LojaProdutos\Services\LojaProduto.Services.Impl\bin\Debug\System.Web.WebPages.Razor.dll
 D:\Projetos\LojaProdutos\Services\LojaProduto.Services.Impl\bin\Debug\WebGrease.dll
+D:\Projetos\LojaProdutos\Services\LojaProduto.Services.Impl\bin\Debug\Microsoft.SqlServer.Types.dll
 D:\Projetos\LojaProdutos\Services\LojaProduto.Services.Impl\bin\Debug\LojaProduto.Common.pdb
+D:\Projetos\LojaProdutos\Services\LojaProduto.Services.Impl\bin\Debug\LojaProduto.Common.dll.config
 D:\Projetos\LojaProdutos\Services\LojaProduto.Services.Impl\bin\Debug\LojaProduto.Domain.pdb
+D:\Projetos\LojaProdutos\Services\LojaProduto.Services.Impl\bin\Debug\LojaProduto.Domain.dll.config
 D:\Projetos\LojaProdutos\Services\LojaProduto.Services.Impl\bin\Debug\LojaProduto.Integration.Spec.pdb
+D:\Projetos\LojaProdutos\Services\LojaProduto.Services.Impl\bin\Debug\LojaProduto.Integration.Spec.dll.config
 D:\Projetos\LojaProdutos\Services\LojaProduto.Services.Impl\bin\Debug\LojaProduto.Services.Spec.pdb
+D:\Projetos\LojaProdutos\Services\LojaProduto.Services.Impl\bin\Debug\LojaProduto.Services.Spec.dll.config
 D:\Projetos\LojaProdutos\Services\LojaProduto.Services.Impl\bin\Debug\Antlr3.Runtime.pdb
 D:\Projetos\LojaProdutos\Services\LojaProduto.Services.Impl\bin\Debug\Common.Logging.pdb
 D:\Projetos\LojaProdutos\Services\LojaProduto.Services.Impl\bin\Debug\Common.Logging.xml
@@ -68,13 +75,6 @@ D:\Projetos\LojaProdutos\Services\LojaProduto.Services.Impl\bin\Debug\System.Web
 D:\Projetos\LojaProdutos\Services\LojaProduto.Services.Impl\bin\Debug\System.Web.WebPages.xml
 D:\Projetos\LojaProdutos\Services\LojaProduto.Services.Impl\bin\Debug\System.Web.WebPages.Deployment.xml
 D:\Projetos\LojaProdutos\Services\LojaProduto.Services.Impl\bin\Debug\System.Web.WebPages.Razor.xml
-D:\Projetos\LojaProdutos\Services\LojaProduto.Services.Impl\obj\Debug\LojaProduto.Services.Impl.csprojResolveAssemblyReference.cache
+D:\Projetos\LojaProdutos\Services\LojaProduto.Services.Impl\bin\Debug\pt-br\System.Web.Mvc.resources.dll
 D:\Projetos\LojaProdutos\Services\LojaProduto.Services.Impl\obj\Debug\LojaProduto.Services.Impl.dll
 D:\Projetos\LojaProdutos\Services\LojaProduto.Services.Impl\obj\Debug\LojaProduto.Services.Impl.pdb
-D:\Projetos\LojaProdutos\Services\LojaProduto.Services.Impl\bin\Debug\pt-br\System.Web.Mvc.resources.dll
-D:\Projetos\LojaProdutos\Services\LojaProduto.Services.Impl\bin\Debug\Reports\Categoria.rdlc
-D:\Projetos\LojaProdutos\Services\LojaProduto.Services.Impl\bin\Debug\Microsoft.SqlServer.Types.dll
-D:\Projetos\LojaProdutos\Services\LojaProduto.Services.Impl\bin\Debug\LojaProduto.Common.dll.config
-D:\Projetos\LojaProdutos\Services\LojaProduto.Services.Impl\bin\Debug\LojaProduto.Domain.dll.config
-D:\Projetos\LojaProdutos\Services\LojaProduto.Services.Impl\bin\Debug\LojaProduto.Integration.Spec.dll.config
-D:\Projetos\LojaProdutos\Services\LojaProduto.Services.Impl\bin\Debug\LojaProduto.Services.Spec.dll.config

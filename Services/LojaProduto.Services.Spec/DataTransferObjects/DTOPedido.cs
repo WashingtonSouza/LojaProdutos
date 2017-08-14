@@ -5,6 +5,7 @@ using System.Text;
 using System.Runtime.Serialization;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel;
+using LojaProduto.Common;
 
 namespace LojaProduto.Services.Spec.DataTransferObjects
 {
@@ -27,8 +28,6 @@ namespace LojaProduto.Services.Spec.DataTransferObjects
         [DataMember()] //, Required()
         public int statusPedido { get; set; }
 
-        public EnumTipoPedido TipoPedido { get; set; }
-
         [DataMember(), Required()]
         public int TipoVenda { get; set; }
 
@@ -38,7 +37,6 @@ namespace LojaProduto.Services.Spec.DataTransferObjects
         [DataMember(), Required()]
         public DTOCliente Cliente { get; set; }
 
-        public List<DTOItensPedido> ItensPedidos = new List<DTOItensPedido>();
-
+        public List<DTOItensPedido> ItensPedidos = new List<DTOItensPedido>(); 
     }
 }

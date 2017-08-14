@@ -6,6 +6,7 @@ using SQFramework.Spring;
 using SQFramework.Spring.Domain;
 using SQFramework.Data;
 using SQFramework.Data.Pagging;
+using LojaProduto.Services.Spec.DataTransferObjects;
 
 namespace LojaProduto.Integration.Spec
 {

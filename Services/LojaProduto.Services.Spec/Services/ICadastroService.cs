@@ -66,6 +66,9 @@ namespace LojaProduto.Services.Spec.Services
         PageMessage<DTOItensPedido> ListarItensPedidos(int startIndex, int pageSize, string orderProperty, bool orderAscending);
 
         [OperationContract]
+        void TemPedido(int idProduto, int quantidadeProduto);
+
+        [OperationContract]
         DTOFornecedor SalvarFornecedor(DTOFornecedor dto);
 
         [OperationContract]

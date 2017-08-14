@@ -40,5 +40,6 @@ namespace LojaProduto.Services.Spec.DataTransferObjects
         public DTOFornecedor Fornecedor { get; set; }
 
         public byte ImagemProduto { get; set; }
+
     }
 }

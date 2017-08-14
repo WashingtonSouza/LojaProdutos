@@ -30,7 +30,9 @@ D:\Projetos\LojaProdutos\Services\LojaProduto.Services.Spec\bin\Debug\System.Web
 D:\Projetos\LojaProdutos\Services\LojaProduto.Services.Spec\bin\Debug\System.Web.WebPages.dll
 D:\Projetos\LojaProdutos\Services\LojaProduto.Services.Spec\bin\Debug\System.Web.WebPages.Razor.dll
 D:\Projetos\LojaProdutos\Services\LojaProduto.Services.Spec\bin\Debug\WebGrease.dll
+D:\Projetos\LojaProdutos\Services\LojaProduto.Services.Spec\bin\Debug\Microsoft.SqlServer.Types.dll
 D:\Projetos\LojaProdutos\Services\LojaProduto.Services.Spec\bin\Debug\LojaProduto.Common.pdb
+D:\Projetos\LojaProdutos\Services\LojaProduto.Services.Spec\bin\Debug\LojaProduto.Common.dll.config
 D:\Projetos\LojaProdutos\Services\LojaProduto.Services.Spec\bin\Debug\Antlr3.Runtime.pdb
 D:\Projetos\LojaProdutos\Services\LojaProduto.Services.Spec\bin\Debug\Common.Logging.pdb
 D:\Projetos\LojaProdutos\Services\LojaProduto.Services.Spec\bin\Debug\Common.Logging.xml
@@ -59,9 +61,7 @@ D:\Projetos\LojaProdutos\Services\LojaProduto.Services.Spec\bin\Debug\System.Web
 D:\Projetos\LojaProdutos\Services\LojaProduto.Services.Spec\bin\Debug\System.Web.WebPages.xml
 D:\Projetos\LojaProdutos\Services\LojaProduto.Services.Spec\bin\Debug\System.Web.WebPages.Deployment.xml
 D:\Projetos\LojaProdutos\Services\LojaProduto.Services.Spec\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Projetos\LojaProdutos\Services\LojaProduto.Services.Spec\bin\Debug\pt-br\System.Web.Mvc.resources.dll
 D:\Projetos\LojaProdutos\Services\LojaProduto.Services.Spec\obj\Debug\LojaProduto.Services.Spec.csprojResolveAssemblyReference.cache
 D:\Projetos\LojaProdutos\Services\LojaProduto.Services.Spec\obj\Debug\LojaProduto.Services.Spec.dll
 D:\Projetos\LojaProdutos\Services\LojaProduto.Services.Spec\obj\Debug\LojaProduto.Services.Spec.pdb
-D:\Projetos\LojaProdutos\Services\LojaProduto.Services.Spec\bin\Debug\pt-br\System.Web.Mvc.resources.dll
-D:\Projetos\LojaProdutos\Services\LojaProduto.Services.Spec\bin\Debug\Microsoft.SqlServer.Types.dll
-D:\Projetos\LojaProdutos\Services\LojaProduto.Services.Spec\bin\Debug\LojaProduto.Common.dll.config

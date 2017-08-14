@@ -88,7 +88,7 @@
     <Compile Include="Entities\Cliente.cs" />
     <Compile Include="Entities\Endereco.cs" />
     <Compile Include="Entities\Fornecedor.cs" />
-    <Compile Include="Entities\ItensPedido.cs" />
+    <Compile Include="Entities\ItensPedidos.cs" />
     <Compile Include="Entities\Pedido.cs" />
     <Compile Include="Entities\Produto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

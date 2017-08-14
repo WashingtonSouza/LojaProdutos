@@ -19,4 +19,5 @@ namespace LojaProduto.Integration.Impl
             return Page<ItensPedido>(criteria, startIndex, pageSize, orderProperty, orderAscending);
         }
     }
+
 }

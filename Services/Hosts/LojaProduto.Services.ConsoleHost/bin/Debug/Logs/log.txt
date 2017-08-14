@@ -143,3 +143,454 @@ Error Number:207,State:1,Class:16
 2017-07-24 18:15:21,604 [1] ERROR Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - GetObjectInternal: error obtaining object TransactionManager
 2017-07-24 18:15:59,108 [1] ERROR Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] -    GetObjectInternal: error obtaining object SessionFactory
 2017-07-24 18:15:59,162 [1] ERROR Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - GetObjectInternal: error obtaining object TransactionManager
+2017-07-31 11:05:39,176 [1] ERROR Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] -    GetObjectInternal: error obtaining object SessionFactory
+2017-07-31 11:05:39,548 [1] ERROR Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - GetObjectInternal: error obtaining object TransactionManager
+2017-08-01 09:59:17,918 [7] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 09:59:18,218 [7] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 09:59:18,222 [7] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 09:59:18,226 [7] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 09:59:18,230 [7] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 09:59:18,233 [7] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 09:59:18,236 [7] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 09:59:45,206 [7] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 09:59:45,211 [7] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 09:59:45,214 [7] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 09:59:45,217 [7] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 09:59:45,219 [7] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 09:59:45,221 [7] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 09:59:45,223 [7] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 10:03:02,704 [8] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 10:03:02,753 [8] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 10:03:02,755 [8] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 10:03:02,757 [8] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 10:03:02,759 [8] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 10:03:02,761 [8] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 10:03:02,764 [8] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 10:27:32,893 [6] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 10:27:32,934 [6] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 10:27:32,937 [6] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 10:27:32,939 [6] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 10:27:32,941 [6] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 10:27:32,943 [6] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 10:27:32,945 [6] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 10:36:02,910 [3] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 10:36:02,952 [3] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 10:36:02,957 [3] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 10:36:02,960 [3] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 10:36:02,962 [3] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 10:36:02,964 [3] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 10:36:02,965 [3] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 10:37:19,843 [6] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 10:37:19,913 [6] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 10:37:19,915 [6] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 10:37:19,917 [6] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 10:37:19,919 [6] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 10:37:19,921 [6] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 10:37:19,923 [6] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 10:39:52,801 [12] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 10:39:52,845 [12] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 10:39:52,847 [12] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 10:39:52,849 [12] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 10:39:52,851 [12] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 10:39:52,854 [12] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 10:39:52,856 [12] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 10:47:38,027 [3] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 10:47:38,070 [3] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 10:47:38,078 [3] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 10:47:38,080 [3] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 10:47:38,082 [3] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 10:47:38,084 [3] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 10:47:38,087 [3] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 10:50:39,145 [8] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 10:50:39,188 [8] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 10:50:39,190 [8] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 10:50:39,196 [8] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 10:50:39,199 [8] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 10:50:39,202 [8] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 10:50:39,205 [8] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 11:27:23,637 [6] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 11:27:23,679 [6] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 11:27:23,682 [6] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 11:27:23,688 [6] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 11:27:23,690 [6] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 11:27:23,693 [6] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 11:27:23,696 [6] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 11:29:52,384 [7] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 11:29:52,425 [7] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 11:29:52,427 [7] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 11:29:52,429 [7] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 11:29:52,431 [7] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 11:29:52,436 [7] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 11:29:52,439 [7] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 11:31:55,226 [14] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 11:31:55,268 [14] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 11:31:55,271 [14] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 11:31:55,277 [14] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 11:31:55,280 [14] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 11:31:55,282 [14] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 11:31:55,284 [14] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 11:36:45,786 [5] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 11:36:45,834 [5] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 11:36:45,836 [5] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 11:36:45,838 [5] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 11:36:45,840 [5] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 11:36:45,842 [5] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 11:36:45,844 [5] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 11:37:05,637 [5] ERROR LojaProduto.Services.Impl.Services.ContextAspect [(null)] - Spring.Data.NHibernate.HibernateQueryException: could not resolve property: ClienteId of: LojaProduto.Domain.Entities.Pedido ---> NHibernate.QueryException: could not resolve property: ClienteId of: LojaProduto.Domain.Entities.Pedido
+   em NHibernate.Persister.Entity.AbstractPropertyMapping.ToType(String propertyName)
+   em NHibernate.Persister.Entity.AbstractEntityPersister.GetSubclassPropertyTableNumber(String propertyPath)
+   em NHibernate.Persister.Entity.BasicEntityPropertyMapping.ToColumns(String alias, String propertyName)
+   em NHibernate.Persister.Entity.AbstractEntityPersister.ToColumns(String alias, String propertyName)
+   em NHibernate.Loader.Criteria.CriteriaQueryTranslator.GetColumns(ICriteria subcriteria, String propertyName)
+   em NHibernate.Loader.Criteria.CriteriaQueryTranslator.GetColumnsUsingProjection(ICriteria subcriteria, String propertyName)
+   em NHibernate.Criterion.CriterionUtil.GetColumnNamesUsingPropertyName(ICriteriaQuery criteriaQuery, ICriteria criteria, String propertyName, Object value, ICriterion critertion)
+   em NHibernate.Criterion.SimpleExpression.ToSqlString(ICriteria criteria, ICriteriaQuery criteriaQuery, IDictionary`2 enabledFilters)
+   em NHibernate.Criterion.LogicalExpression.ToSqlString(ICriteria criteria, ICriteriaQuery criteriaQuery, IDictionary`2 enabledFilters)
+   em NHibernate.Loader.Criteria.CriteriaQueryTranslator.GetWhereCondition(IDictionary`2 enabledFilters)
+   em NHibernate.Loader.Criteria.CriteriaJoinWalker..ctor(IOuterJoinLoadable persister, CriteriaQueryTranslator translator, ISessionFactoryImplementor factory, ICriteria criteria, String rootEntityName, IDictionary`2 enabledFilters)
+   em NHibernate.Loader.Criteria.CriteriaLoader..ctor(IOuterJoinLoadable persister, ISessionFactoryImplementor factory, CriteriaImpl rootCriteria, String rootEntityName, IDictionary`2 enabledFilters)
+   em NHibernate.Impl.SessionImpl.List(CriteriaImpl criteria, IList results)
+   em _dynamic_NHibernate.Impl.SessionImpl.List(Object , Object[] )
+   em Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments) na c:\_prj\spring-net\src\Spring\Spring.Core\Reflection\Dynamic\DynamicMethod.cs:linha 162
+   em Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint() na c:\_prj\spring-net\src\Spring\Spring.Aop\Aop\Framework\DynamicMethodInvocation.cs:linha 109
+   em Spring.Aop.Framework.AbstractMethodInvocation.Proceed() na c:\_prj\spring-net\src\Spring\Spring.Aop\Aop\Framework\AbstractMethodInvocation.cs:linha 266
+   em Spring.Data.NHibernate.CloseSuppressingMethodInterceptor.Invoke(IMethodInvocation invocation) na c:\_prj\spring-net\src\Spring\Spring.Data.NHibernate\Data\NHibernate\HibernateAccessor.cs:linha 718
+   em Spring.Aop.Framework.AbstractMethodInvocation.Proceed() na c:\_prj\spring-net\src\Spring\Spring.Aop\Aop\Framework\AbstractMethodInvocation.cs:linha 291
+   em Spring.Aop.Framework.DynamicProxy.AdvisedProxy.Invoke(Object proxy, Object target, Type targetType, MethodInfo targetMethod, MethodInfo proxyMethod, Object[] args, IList interceptors) na c:\_prj\spring-net\src\Spring\Spring.Aop\Aop\Framework\DynamicProxy\AdvisedProxy.cs:linha 210
+   em CompositionAopProxy_8454dc41f5244947ab6cbcaed80fc2b2.List(CriteriaImpl criteria, IList results)
+   em NHibernate.Impl.CriteriaImpl.List(IList results)
+   em NHibernate.Impl.CriteriaImpl.List[T]()
+   em SQFramework.Spring.Data.Hibernate.RepositoryBase`1.<>c__DisplayClass12`1.<List>b__11(ISession session)
+   em Spring.Data.NHibernate.Generic.ExecuteHibernateCallbackUsingDelegate`1.DoInHibernate(ISession session) na c:\_prj\spring-net\src\Spring\Spring.Data.NHibernate\Data\NHibernate\Generic\HibernateTemplate.cs:linha 1356
+   em Spring.Data.NHibernate.Generic.HibernateTemplate.Execute[T](IHibernateCallback`1 action, Boolean exposeNativeSession) na c:\_prj\spring-net\src\Spring\Spring.Data.NHibernate\Data\NHibernate\Generic\HibernateTemplate.cs:linha 1155
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em Spring.Data.NHibernate.Generic.HibernateTemplate.Execute[T](IHibernateCallback`1 action, Boolean exposeNativeSession) na c:\_prj\spring-net\src\Spring\Spring.Data.NHibernate\Data\NHibernate\Generic\HibernateTemplate.cs:linha 1173
+   em Spring.Data.NHibernate.Generic.HibernateTemplate.Execute[T](IHibernateCallback`1 action) na c:\_prj\spring-net\src\Spring\Spring.Data.NHibernate\Data\NHibernate\Generic\HibernateTemplate.cs:linha 1126
+   em Spring.Data.NHibernate.Generic.HibernateTemplate.Execute[T](HibernateDelegate`1 del) na c:\_prj\spring-net\src\Spring\Spring.Data.NHibernate\Data\NHibernate\Generic\HibernateTemplate.cs:linha 1086
+   em SQFramework.Spring.Data.Hibernate.RepositoryBase`1.List[V](DetachedCriteria criteria)
+   em LojaProduto.Integration.Impl.PedidoRepository.ObtemPedido(Int32 id) na D:\Projetos\LojaProdutos\Integration\LojaProduto.Integration.Impl\PedidoRepository.cs:linha 40
+   em LojaProduto.Services.Impl.Services.CadastroService.ObtemPedido(Int32 id) na D:\Projetos\LojaProdutos\Services\LojaProduto.Services.Impl\Services\CadastroService.cs:linha 232
+   em LojaProduto.Services.Impl.Services.CadastroService.TemPedido(Int32 idProduto, Int32 quantidadeProduto) na D:\Projetos\LojaProdutos\Services\LojaProduto.Services.Impl\Services\CadastroService.cs:linha 214
+   em _dynamic_LojaProduto.Services.Impl.Services.CadastroService.TemPedido(Object , Object[] )
+   em Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments) na c:\_prj\spring-net\src\Spring\Spring.Core\Reflection\Dynamic\DynamicMethod.cs:linha 162
+   em Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint() na c:\_prj\spring-net\src\Spring\Spring.Aop\Aop\Framework\DynamicMethodInvocation.cs:linha 109
+   em Spring.Aop.Framework.AbstractMethodInvocation.Proceed() na c:\_prj\spring-net\src\Spring\Spring.Aop\Aop\Framework\AbstractMethodInvocation.cs:linha 266
+   em SQFramework.Spring.Services.Aspects.ContextAspect.Invoke(IMethodInvocation invocation)
+2017-08-01 11:37:34,585 [8] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 11:37:34,629 [8] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 11:37:34,632 [8] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 11:37:34,634 [8] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 11:37:34,637 [8] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 11:37:34,639 [8] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 11:37:34,641 [8] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 11:48:04,116 [3] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 11:48:04,158 [3] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 11:48:04,160 [3] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 11:48:04,162 [3] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 11:48:04,164 [3] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 11:48:04,168 [3] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 11:48:04,171 [3] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 11:54:15,492 [13] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 11:54:15,541 [13] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 11:54:15,547 [13] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 11:54:15,550 [13] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 11:54:15,554 [13] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 11:54:15,556 [13] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 11:54:15,560 [13] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 12:07:03,917 [3] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 12:07:03,959 [3] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 12:07:03,962 [3] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 12:07:03,963 [3] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 12:07:03,965 [3] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 12:07:03,967 [3] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 12:07:03,969 [3] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 12:08:33,763 [16] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 12:08:33,766 [16] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 12:08:33,768 [16] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 12:08:33,770 [16] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 12:08:33,771 [16] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 12:08:33,776 [16] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 12:08:33,778 [16] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 12:14:29,411 [8] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 12:14:29,452 [8] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 12:14:29,455 [8] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 12:14:29,457 [8] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 12:14:29,459 [8] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 12:14:29,474 [8] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 12:14:29,476 [8] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 12:17:18,530 [8] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 12:17:18,570 [8] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 12:17:18,572 [8] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 12:17:18,574 [8] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 12:17:18,576 [8] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 12:17:18,579 [8] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 12:17:18,583 [8] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 12:17:37,388 [8] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 12:17:37,391 [8] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 12:17:37,392 [8] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 12:17:37,394 [8] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 12:17:37,396 [8] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 12:17:37,397 [8] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 12:17:37,399 [8] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Endereco#1002]-Could not initialize proxy - no Session.
+2017-08-01 17:03:14,311 [1] ERROR NHibernate.Util.ReflectHelper [(null)] - Could not load type LojaProduto.Domain.Entities.ItensPedido, LojaProduto.Domain.
+System.TypeLoadException: Não foi possível carregar o tipo LojaProduto.Domain.Entities.ItensPedido do assembly LojaProduto.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null.
+   em System.Reflection.RuntimeAssembly.GetType(RuntimeAssembly assembly, String name, Boolean throwOnError, Boolean ignoreCase, ObjectHandleOnStack type)
+   em System.Reflection.RuntimeAssembly.GetType(String name, Boolean throwOnError, Boolean ignoreCase)
+   em System.Reflection.Assembly.GetType(String name, Boolean throwOnError)
+   em NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+2017-08-01 17:03:14,572 [1] ERROR NHibernate.Cfg.Configuration [(null)] - Could not compile the mapping document: LojaProduto.Integration.Impl.Mappings.ItensPedido.hbm.xml
+NHibernate.MappingException: Could not compile the mapping document: LojaProduto.Integration.Impl.Mappings.ItensPedido.hbm.xml ---> NHibernate.MappingException: persistent class LojaProduto.Domain.Entities.ItensPedido, LojaProduto.Domain not found ---> System.TypeLoadException: Não foi possível carregar o tipo LojaProduto.Domain.Entities.ItensPedido do assembly LojaProduto.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null.
+   em System.Reflection.RuntimeAssembly.GetType(RuntimeAssembly assembly, String name, Boolean throwOnError, Boolean ignoreCase, ObjectHandleOnStack type)
+   em System.Reflection.RuntimeAssembly.GetType(String name, Boolean throwOnError, Boolean ignoreCase)
+   em System.Reflection.Assembly.GetType(String name, Boolean throwOnError)
+   em NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+   em NHibernate.Cfg.XmlHbmBinding.Binder.ClassForFullNameChecked(String fullName, String errorMessage)
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em NHibernate.Cfg.XmlHbmBinding.Binder.ClassForFullNameChecked(String fullName, String errorMessage)
+   em NHibernate.Cfg.XmlHbmBinding.ClassBinder.BindClass(IEntityMapping classMapping, PersistentClass model, IDictionary`2 inheritedMetas)
+   em NHibernate.Cfg.XmlHbmBinding.RootClassBinder.Bind(HbmClass classSchema, IDictionary`2 inheritedMetas)
+   em NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.AddEntitiesMappings(HbmMapping mappingSchema, IDictionary`2 inheritedMetas)
+   em NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.Bind(HbmMapping mappingSchema)
+   em NHibernate.Cfg.Configuration.AddDeserializedMapping(HbmMapping mappingDocument, String documentFileName)
+   --- Fim do rastreamento de pilha de exceções internas ---
+2017-08-01 17:03:14,581 [1] ERROR Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] -    GetObjectInternal: error obtaining object SessionFactory
+2017-08-01 17:03:14,587 [1] ERROR Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - GetObjectInternal: error obtaining object TransactionManager
+2017-08-01 17:03:49,657 [1] ERROR NHibernate.Util.ReflectHelper [(null)] - Could not load type LojaProduto.Domain.Entities.ItensPedido, LojaProduto.Domain.
+System.TypeLoadException: Não foi possível carregar o tipo LojaProduto.Domain.Entities.ItensPedido do assembly LojaProduto.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null.
+   em System.Reflection.RuntimeAssembly.GetType(RuntimeAssembly assembly, String name, Boolean throwOnError, Boolean ignoreCase, ObjectHandleOnStack type)
+   em System.Reflection.RuntimeAssembly.GetType(String name, Boolean throwOnError, Boolean ignoreCase)
+   em System.Reflection.Assembly.GetType(String name, Boolean throwOnError)
+   em NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+2017-08-01 17:03:49,701 [1] ERROR NHibernate.Cfg.Configuration [(null)] - Could not compile the mapping document: LojaProduto.Integration.Impl.Mappings.ItensPedido.hbm.xml
+NHibernate.MappingException: Could not compile the mapping document: LojaProduto.Integration.Impl.Mappings.ItensPedido.hbm.xml ---> NHibernate.MappingException: persistent class LojaProduto.Domain.Entities.ItensPedido, LojaProduto.Domain not found ---> System.TypeLoadException: Não foi possível carregar o tipo LojaProduto.Domain.Entities.ItensPedido do assembly LojaProduto.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null.
+   em System.Reflection.RuntimeAssembly.GetType(RuntimeAssembly assembly, String name, Boolean throwOnError, Boolean ignoreCase, ObjectHandleOnStack type)
+   em System.Reflection.RuntimeAssembly.GetType(String name, Boolean throwOnError, Boolean ignoreCase)
+   em System.Reflection.Assembly.GetType(String name, Boolean throwOnError)
+   em NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+   em NHibernate.Cfg.XmlHbmBinding.Binder.ClassForFullNameChecked(String fullName, String errorMessage)
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em NHibernate.Cfg.XmlHbmBinding.Binder.ClassForFullNameChecked(String fullName, String errorMessage)
+   em NHibernate.Cfg.XmlHbmBinding.ClassBinder.BindClass(IEntityMapping classMapping, PersistentClass model, IDictionary`2 inheritedMetas)
+   em NHibernate.Cfg.XmlHbmBinding.RootClassBinder.Bind(HbmClass classSchema, IDictionary`2 inheritedMetas)
+   em NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.AddEntitiesMappings(HbmMapping mappingSchema, IDictionary`2 inheritedMetas)
+   em NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.Bind(HbmMapping mappingSchema)
+   em NHibernate.Cfg.Configuration.AddDeserializedMapping(HbmMapping mappingDocument, String documentFileName)
+   --- Fim do rastreamento de pilha de exceções internas ---
+2017-08-01 17:03:49,705 [1] ERROR Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] -    GetObjectInternal: error obtaining object SessionFactory
+2017-08-01 17:03:49,709 [1] ERROR Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - GetObjectInternal: error obtaining object TransactionManager
+2017-08-01 17:06:38,886 [1] ERROR NHibernate.Util.ReflectHelper [(null)] - Could not load type LojaProduto.Domain.Entities.ItensPedido, LojaProduto.Domain.
+System.TypeLoadException: Não foi possível carregar o tipo LojaProduto.Domain.Entities.ItensPedido do assembly LojaProduto.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null.
+   em System.Reflection.RuntimeAssembly.GetType(RuntimeAssembly assembly, String name, Boolean throwOnError, Boolean ignoreCase, ObjectHandleOnStack type)
+   em System.Reflection.RuntimeAssembly.GetType(String name, Boolean throwOnError, Boolean ignoreCase)
+   em System.Reflection.Assembly.GetType(String name, Boolean throwOnError)
+   em NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+2017-08-01 17:06:38,955 [1] ERROR NHibernate.Cfg.Configuration [(null)] - Could not compile the mapping document: LojaProduto.Integration.Impl.Mappings.ItensPedido.hbm.xml
+NHibernate.MappingException: Could not compile the mapping document: LojaProduto.Integration.Impl.Mappings.ItensPedido.hbm.xml ---> NHibernate.MappingException: persistent class LojaProduto.Domain.Entities.ItensPedido, LojaProduto.Domain not found ---> System.TypeLoadException: Não foi possível carregar o tipo LojaProduto.Domain.Entities.ItensPedido do assembly LojaProduto.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null.
+   em System.Reflection.RuntimeAssembly.GetType(RuntimeAssembly assembly, String name, Boolean throwOnError, Boolean ignoreCase, ObjectHandleOnStack type)
+   em System.Reflection.RuntimeAssembly.GetType(String name, Boolean throwOnError, Boolean ignoreCase)
+   em System.Reflection.Assembly.GetType(String name, Boolean throwOnError)
+   em NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+   em NHibernate.Cfg.XmlHbmBinding.Binder.ClassForFullNameChecked(String fullName, String errorMessage)
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em NHibernate.Cfg.XmlHbmBinding.Binder.ClassForFullNameChecked(String fullName, String errorMessage)
+   em NHibernate.Cfg.XmlHbmBinding.ClassBinder.BindClass(IEntityMapping classMapping, PersistentClass model, IDictionary`2 inheritedMetas)
+   em NHibernate.Cfg.XmlHbmBinding.RootClassBinder.Bind(HbmClass classSchema, IDictionary`2 inheritedMetas)
+   em NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.AddEntitiesMappings(HbmMapping mappingSchema, IDictionary`2 inheritedMetas)
+   em NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.Bind(HbmMapping mappingSchema)
+   em NHibernate.Cfg.Configuration.AddDeserializedMapping(HbmMapping mappingDocument, String documentFileName)
+   --- Fim do rastreamento de pilha de exceções internas ---
+2017-08-01 17:06:38,960 [1] ERROR Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] -    GetObjectInternal: error obtaining object SessionFactory
+2017-08-01 17:06:38,966 [1] ERROR Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - GetObjectInternal: error obtaining object TransactionManager
+2017-08-01 17:08:02,598 [1] ERROR NHibernate.Util.ReflectHelper [(null)] - Could not load type LojaProduto.Domain.Entities.ItensPedido, LojaProduto.Domain.
+System.TypeLoadException: Não foi possível carregar o tipo LojaProduto.Domain.Entities.ItensPedido do assembly LojaProduto.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null.
+   em System.Reflection.RuntimeAssembly.GetType(RuntimeAssembly assembly, String name, Boolean throwOnError, Boolean ignoreCase, ObjectHandleOnStack type)
+   em System.Reflection.RuntimeAssembly.GetType(String name, Boolean throwOnError, Boolean ignoreCase)
+   em System.Reflection.Assembly.GetType(String name, Boolean throwOnError)
+   em NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+2017-08-01 17:08:02,643 [1] ERROR NHibernate.Cfg.Configuration [(null)] - Could not compile the mapping document: LojaProduto.Integration.Impl.Mappings.ItensPedido.hbm.xml
+NHibernate.MappingException: Could not compile the mapping document: LojaProduto.Integration.Impl.Mappings.ItensPedido.hbm.xml ---> NHibernate.MappingException: persistent class LojaProduto.Domain.Entities.ItensPedido, LojaProduto.Domain not found ---> System.TypeLoadException: Não foi possível carregar o tipo LojaProduto.Domain.Entities.ItensPedido do assembly LojaProduto.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null.
+   em System.Reflection.RuntimeAssembly.GetType(RuntimeAssembly assembly, String name, Boolean throwOnError, Boolean ignoreCase, ObjectHandleOnStack type)
+   em System.Reflection.RuntimeAssembly.GetType(String name, Boolean throwOnError, Boolean ignoreCase)
+   em System.Reflection.Assembly.GetType(String name, Boolean throwOnError)
+   em NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+   em NHibernate.Cfg.XmlHbmBinding.Binder.ClassForFullNameChecked(String fullName, String errorMessage)
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em NHibernate.Cfg.XmlHbmBinding.Binder.ClassForFullNameChecked(String fullName, String errorMessage)
+   em NHibernate.Cfg.XmlHbmBinding.ClassBinder.BindClass(IEntityMapping classMapping, PersistentClass model, IDictionary`2 inheritedMetas)
+   em NHibernate.Cfg.XmlHbmBinding.RootClassBinder.Bind(HbmClass classSchema, IDictionary`2 inheritedMetas)
+   em NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.AddEntitiesMappings(HbmMapping mappingSchema, IDictionary`2 inheritedMetas)
+   em NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.Bind(HbmMapping mappingSchema)
+   em NHibernate.Cfg.Configuration.AddDeserializedMapping(HbmMapping mappingDocument, String documentFileName)
+   --- Fim do rastreamento de pilha de exceções internas ---
+2017-08-01 17:08:02,647 [1] ERROR Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] -    GetObjectInternal: error obtaining object SessionFactory
+2017-08-01 17:08:02,651 [1] ERROR Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - GetObjectInternal: error obtaining object TransactionManager
+2017-08-01 17:09:13,066 [1] ERROR NHibernate.Util.ReflectHelper [(null)] - Could not load type LojaProduto.Domain.Entities.ItensPedido, LojaProduto.Domain.
+System.TypeLoadException: Não foi possível carregar o tipo LojaProduto.Domain.Entities.ItensPedido do assembly LojaProduto.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null.
+   em System.Reflection.RuntimeAssembly.GetType(RuntimeAssembly assembly, String name, Boolean throwOnError, Boolean ignoreCase, ObjectHandleOnStack type)
+   em System.Reflection.RuntimeAssembly.GetType(String name, Boolean throwOnError, Boolean ignoreCase)
+   em System.Reflection.Assembly.GetType(String name, Boolean throwOnError)
+   em NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+2017-08-01 17:09:13,113 [1] ERROR NHibernate.Cfg.Configuration [(null)] - Could not compile the mapping document: LojaProduto.Integration.Impl.Mappings.ItensPedido.hbm.xml
+NHibernate.MappingException: Could not compile the mapping document: LojaProduto.Integration.Impl.Mappings.ItensPedido.hbm.xml ---> NHibernate.MappingException: persistent class LojaProduto.Domain.Entities.ItensPedido, LojaProduto.Domain not found ---> System.TypeLoadException: Não foi possível carregar o tipo LojaProduto.Domain.Entities.ItensPedido do assembly LojaProduto.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null.
+   em System.Reflection.RuntimeAssembly.GetType(RuntimeAssembly assembly, String name, Boolean throwOnError, Boolean ignoreCase, ObjectHandleOnStack type)
+   em System.Reflection.RuntimeAssembly.GetType(String name, Boolean throwOnError, Boolean ignoreCase)
+   em System.Reflection.Assembly.GetType(String name, Boolean throwOnError)
+   em NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+   em NHibernate.Cfg.XmlHbmBinding.Binder.ClassForFullNameChecked(String fullName, String errorMessage)
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em NHibernate.Cfg.XmlHbmBinding.Binder.ClassForFullNameChecked(String fullName, String errorMessage)
+   em NHibernate.Cfg.XmlHbmBinding.ClassBinder.BindClass(IEntityMapping classMapping, PersistentClass model, IDictionary`2 inheritedMetas)
+   em NHibernate.Cfg.XmlHbmBinding.RootClassBinder.Bind(HbmClass classSchema, IDictionary`2 inheritedMetas)
+   em NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.AddEntitiesMappings(HbmMapping mappingSchema, IDictionary`2 inheritedMetas)
+   em NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.Bind(HbmMapping mappingSchema)
+   em NHibernate.Cfg.Configuration.AddDeserializedMapping(HbmMapping mappingDocument, String documentFileName)
+   --- Fim do rastreamento de pilha de exceções internas ---
+2017-08-01 17:09:13,117 [1] ERROR Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] -    GetObjectInternal: error obtaining object SessionFactory
+2017-08-01 17:09:13,121 [1] ERROR Spring.Objects.Factory.Support.DefaultListableObjectFactory [(null)] - GetObjectInternal: error obtaining object TransactionManager

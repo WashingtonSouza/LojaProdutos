@@ -13,5 +13,7 @@ namespace LojaProduto.Integration.Spec
     public interface IPedidoRepository<T> : IRepositoryBase<T>
     {
         PageMessage<T> ListarPedidos(int startIndex, int pageSize, string orderProperty, bool orderAscending);
+
+        T VerificaSePossuiPedidoAberto(int idCliente);
     }
 }

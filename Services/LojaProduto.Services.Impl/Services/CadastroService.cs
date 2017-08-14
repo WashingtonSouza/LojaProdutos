@@ -195,6 +195,32 @@ namespace LojaProduto.Services.Impl.Services
                 .Transform<PageMessage<DTOItensPedido>>();
         }
 
+        [Transaction(TransactionPropagation.Required, ReadOnly = true)]
+        public void TemPedido(int idProduto = 0, int quantidadeProduto = 0)
+        {
+
+
+            //var pedido = ObtemPedido(clienteId.Id);
+            //var produto = ObterProduto(idProduto).Transform<Pedido>();
+            if (pedido != null)
+            {
+                
+                //AdicionaItemPedido(produto, quantidadeProduto);
+            }
+            else
+            {
+                //CriaPedido();
+            }
+        }
+
+        public Pedido PossuiPedido()
+        {
+            var clienteId = ObterCliente(5);
+            
+
+            return
+        }
+
         [Transaction(TransactionPropagation.Required)]
         public DTOFornecedor SalvarFornecedor(DTOFornecedor dto)
         {
@@ -409,6 +435,17 @@ namespace LojaProduto.Services.Impl.Services
         public IList<DTOProduto> PesquisarProdutos(string pesquisa)
         {
             return Produto.GetRepository().PesquisarProdutos(pesquisa).TransformList<DTOProduto>();
+        }
+
+        public bool ValidaQuantidadeProduto(DTOProduto produto)
+        {
+            if (produto.QuantidadeEmEstoque <= 0)
+            {
+                return false;
+                throw new System.ArgumentException("Quantidade do Produto é zero ou negativo");
+            }
+            else
+                return true;
         }
 
         [Transaction(TransactionPropagation.Required, ReadOnly = true)]

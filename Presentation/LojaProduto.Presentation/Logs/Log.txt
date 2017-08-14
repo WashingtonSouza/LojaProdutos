@@ -3155,3 +3155,748 @@ Exception rethrown at [0]:
    em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
    em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
    em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-31 13:56:51,657 [7] ERROR System.Web.Mvc.Controller - controller: ItemPedido - action: ItemPedido
+System.TimeoutException: Esta operação de solicitação enviada para net.tcp://localhost:9000/LojaProduto.Services/CadastroService não recebeu uma resposta no tempo limite configurado (00:05:00). O tempo alocado para essa operação pode ter sido uma parte de um tempo limite maior. Isso pode acontecer porque o serviço ainda está processando a operação ou porque o serviço não conseguiu enviar uma mensagem de resposta. Considere aumentar o tempo limite da operação (difundindo o canal/proxy para IContextChannel e definindo a propriedade OperationTimeout) e verificar se o serviço é capaz de conectar-se ao cliente.
+
+Server stack trace: 
+   em System.ServiceModel.Dispatcher.DuplexChannelBinder.Request(Message message, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   em System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   em System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   em System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   em LojaProduto.Services.Spec.Services.ICadastroService.CalculaTotalItemPedido(DTOItensPedido itemPedido)
+   em LojaProduto.Presentation.Controllers.ItemPedido.ItemPedidoController.ItemPedido(Int32 idProduto, Int32 quantidadeProduto) na D:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Controllers\ItemPedido\ItemPedidoController.cs:linha 20
+   em lambda_method(Closure , ControllerBase , Object[] )
+   em System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   em System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-31 15:30:53,959 [20] ERROR System.Web.Mvc.Controller - controller: ItemPedido - action: ItemPedido
+System.TimeoutException: Esta operação de solicitação enviada para net.tcp://localhost:9000/LojaProduto.Services/CadastroService não recebeu uma resposta no tempo limite configurado (00:05:00). O tempo alocado para essa operação pode ter sido uma parte de um tempo limite maior. Isso pode acontecer porque o serviço ainda está processando a operação ou porque o serviço não conseguiu enviar uma mensagem de resposta. Considere aumentar o tempo limite da operação (difundindo o canal/proxy para IContextChannel e definindo a propriedade OperationTimeout) e verificar se o serviço é capaz de conectar-se ao cliente.
+
+Server stack trace: 
+   em System.ServiceModel.Dispatcher.DuplexChannelBinder.Request(Message message, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   em System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   em System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   em System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   em LojaProduto.Services.Spec.Services.ICadastroService.AdicionaItemPedido(DTOItensPedido itemPedido, Int32 quantidade)
+   em LojaProduto.Presentation.Controllers.ItemPedido.ItemPedidoController.ItemPedido(Int32 idProduto, Int32 quantidadeProduto) na D:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Controllers\ItemPedido\ItemPedidoController.cs:linha 19
+   em lambda_method(Closure , ControllerBase , Object[] )
+   em System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   em System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-31 15:32:46,092 [17] ERROR System.Web.Mvc.Controller - controller: ItemPedido - action: ItemPedido
+System.TimeoutException: Esta operação de solicitação enviada para net.tcp://localhost:9000/LojaProduto.Services/CadastroService não recebeu uma resposta no tempo limite configurado (00:05:00). O tempo alocado para essa operação pode ter sido uma parte de um tempo limite maior. Isso pode acontecer porque o serviço ainda está processando a operação ou porque o serviço não conseguiu enviar uma mensagem de resposta. Considere aumentar o tempo limite da operação (difundindo o canal/proxy para IContextChannel e definindo a propriedade OperationTimeout) e verificar se o serviço é capaz de conectar-se ao cliente.
+
+Server stack trace: 
+   em System.ServiceModel.Dispatcher.DuplexChannelBinder.Request(Message message, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   em System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   em System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   em System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   em LojaProduto.Services.Spec.Services.ICadastroService.AdicionaItemPedido(DTOItensPedido itemPedido, Int32 quantidade)
+   em LojaProduto.Presentation.Controllers.ItemPedido.ItemPedidoController.ItemPedido(Int32 idProduto, Int32 quantidadeProduto) na D:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Controllers\ItemPedido\ItemPedidoController.cs:linha 19
+   em lambda_method(Closure , ControllerBase , Object[] )
+   em System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   em System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-31 15:35:07,250 [27] ERROR System.Web.Mvc.Controller - controller: ItemPedido - action: ItemPedido
+System.TimeoutException: Esta operação de solicitação enviada para net.tcp://localhost:9000/LojaProduto.Services/CadastroService não recebeu uma resposta no tempo limite configurado (00:05:00). O tempo alocado para essa operação pode ter sido uma parte de um tempo limite maior. Isso pode acontecer porque o serviço ainda está processando a operação ou porque o serviço não conseguiu enviar uma mensagem de resposta. Considere aumentar o tempo limite da operação (difundindo o canal/proxy para IContextChannel e definindo a propriedade OperationTimeout) e verificar se o serviço é capaz de conectar-se ao cliente.
+
+Server stack trace: 
+   em System.ServiceModel.Dispatcher.DuplexChannelBinder.Request(Message message, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   em System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   em System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   em System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   em LojaProduto.Services.Spec.Services.ICadastroService.AdicionaItemPedido(DTOItensPedido itemPedido, Int32 quantidade)
+   em LojaProduto.Presentation.Controllers.ItemPedido.ItemPedidoController.ItemPedido(Int32 idProduto, Int32 quantidadeProduto) na D:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Controllers\ItemPedido\ItemPedidoController.cs:linha 19
+   em lambda_method(Closure , ControllerBase , Object[] )
+   em System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   em System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-31 16:02:54,126 [14] ERROR System.Web.Mvc.Controller - controller: ItemPedido - action: ItemPedido
+System.TimeoutException: Esta operação de solicitação enviada para net.tcp://localhost:9000/LojaProduto.Services/CadastroService não recebeu uma resposta no tempo limite configurado (00:05:00). O tempo alocado para essa operação pode ter sido uma parte de um tempo limite maior. Isso pode acontecer porque o serviço ainda está processando a operação ou porque o serviço não conseguiu enviar uma mensagem de resposta. Considere aumentar o tempo limite da operação (difundindo o canal/proxy para IContextChannel e definindo a propriedade OperationTimeout) e verificar se o serviço é capaz de conectar-se ao cliente.
+
+Server stack trace: 
+   em System.ServiceModel.Dispatcher.DuplexChannelBinder.Request(Message message, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   em System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   em System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   em System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   em LojaProduto.Services.Spec.Services.ICadastroService.AdicionaItemPedido(DTOItensPedido itemPedido, Int32 quantidade)
+   em LojaProduto.Presentation.Controllers.ItemPedido.ItemPedidoController.ItemPedido(Int32 idProduto, Int32 quantidadeProduto) na D:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Controllers\ItemPedido\ItemPedidoController.cs:linha 19
+   em lambda_method(Closure , ControllerBase , Object[] )
+   em System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   em System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-31 16:36:00,974 [10] ERROR System.Web.Mvc.Controller - controller: ItemPedido - action: ItemPedido
+System.TimeoutException: Esta operação de solicitação enviada para net.tcp://localhost:9000/LojaProduto.Services/CadastroService não recebeu uma resposta no tempo limite configurado (00:05:00). O tempo alocado para essa operação pode ter sido uma parte de um tempo limite maior. Isso pode acontecer porque o serviço ainda está processando a operação ou porque o serviço não conseguiu enviar uma mensagem de resposta. Considere aumentar o tempo limite da operação (difundindo o canal/proxy para IContextChannel e definindo a propriedade OperationTimeout) e verificar se o serviço é capaz de conectar-se ao cliente.
+
+Server stack trace: 
+   em System.ServiceModel.Dispatcher.DuplexChannelBinder.Request(Message message, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   em System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   em System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   em System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   em LojaProduto.Services.Spec.Services.ICadastroService.AdicionaItemPedido(DTOItensPedido itemPedido, Int32 quantidade)
+   em LojaProduto.Presentation.Controllers.ItemPedido.ItemPedidoController.ItemPedido(Int32 idProduto, Int32 quantidadeProduto) na D:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Controllers\ItemPedido\ItemPedidoController.cs:linha 19
+   em lambda_method(Closure , ControllerBase , Object[] )
+   em System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   em System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-31 18:07:08,530 [9] ERROR System.Web.Mvc.Controller - controller: ItemPedido - action: ItemPedido
+System.TimeoutException: Esta operação de solicitação enviada para net.tcp://localhost:9000/LojaProduto.Services/CadastroService não recebeu uma resposta no tempo limite configurado (00:05:00). O tempo alocado para essa operação pode ter sido uma parte de um tempo limite maior. Isso pode acontecer porque o serviço ainda está processando a operação ou porque o serviço não conseguiu enviar uma mensagem de resposta. Considere aumentar o tempo limite da operação (difundindo o canal/proxy para IContextChannel e definindo a propriedade OperationTimeout) e verificar se o serviço é capaz de conectar-se ao cliente.
+
+Server stack trace: 
+   em System.ServiceModel.Dispatcher.DuplexChannelBinder.Request(Message message, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   em System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   em System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   em System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   em LojaProduto.Services.Spec.Services.ICadastroService.AdicionaItemPedido(DTOItensPedido itemPedido, Int32 quantidade)
+   em LojaProduto.Presentation.Controllers.ItemPedido.ItemPedidoController.ItemPedido(Int32 idProduto, Int32 quantidadeProduto) na D:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Controllers\ItemPedido\ItemPedidoController.cs:linha 19
+   em lambda_method(Closure , ControllerBase , Object[] )
+   em System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   em System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-31 18:10:03,273 [7] ERROR System.Web.Mvc.Controller - controller: ItemPedido - action: ItemPedido
+System.TimeoutException: Esta operação de solicitação enviada para net.tcp://localhost:9000/LojaProduto.Services/CadastroService não recebeu uma resposta no tempo limite configurado (00:05:00). O tempo alocado para essa operação pode ter sido uma parte de um tempo limite maior. Isso pode acontecer porque o serviço ainda está processando a operação ou porque o serviço não conseguiu enviar uma mensagem de resposta. Considere aumentar o tempo limite da operação (difundindo o canal/proxy para IContextChannel e definindo a propriedade OperationTimeout) e verificar se o serviço é capaz de conectar-se ao cliente.
+
+Server stack trace: 
+   em System.ServiceModel.Dispatcher.DuplexChannelBinder.Request(Message message, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   em System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   em System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   em System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   em LojaProduto.Services.Spec.Services.ICadastroService.AdicionaItemPedido(DTOItensPedido itemPedido, Int32 quantidade)
+   em LojaProduto.Presentation.Controllers.ItemPedido.ItemPedidoController.ItemPedido(Int32 idProduto, Int32 quantidadeProduto) na D:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Controllers\ItemPedido\ItemPedidoController.cs:linha 19
+   em lambda_method(Closure , ControllerBase , Object[] )
+   em System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   em System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-07-31 18:22:47,761 [55] ERROR System.Web.Mvc.Controller - controller: ItemPedido - action: ItemPedido
+System.TimeoutException: Esta operação de solicitação enviada para net.tcp://localhost:9000/LojaProduto.Services/CadastroService não recebeu uma resposta no tempo limite configurado (00:05:00). O tempo alocado para essa operação pode ter sido uma parte de um tempo limite maior. Isso pode acontecer porque o serviço ainda está processando a operação ou porque o serviço não conseguiu enviar uma mensagem de resposta. Considere aumentar o tempo limite da operação (difundindo o canal/proxy para IContextChannel e definindo a propriedade OperationTimeout) e verificar se o serviço é capaz de conectar-se ao cliente.
+
+Server stack trace: 
+   em System.ServiceModel.Dispatcher.DuplexChannelBinder.Request(Message message, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   em System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   em System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   em System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   em LojaProduto.Services.Spec.Services.ICadastroService.AdicionaItemPedido(DTOItensPedido itemPedido, Int32 quantidade)
+   em LojaProduto.Presentation.Controllers.ItemPedido.ItemPedidoController.ItemPedido(Int32 idProduto, Int32 quantidadeProduto) na D:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Controllers\ItemPedido\ItemPedidoController.cs:linha 19
+   em lambda_method(Closure , ControllerBase , Object[] )
+   em System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   em System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-08-01 09:49:50,831 [12] ERROR System.Web.Mvc.Controller - controller: Pedido - action: Pedido
+System.InvalidOperationException: A exibição 'Pedido' ou seu master não foi encontrada ou nenhum mecanismo de exibição oferece suporte para os locais pesquisados. Os seguintes locais foram pesquisados: 
+~/Views/Pedido/Pedido.aspx
+~/Views/Pedido/Pedido.ascx
+~/Views/Shared/Pedido.aspx
+~/Views/Shared/Pedido.ascx
+~/Views/Pedido/Pedido.cshtml
+~/Views/Pedido/Pedido.vbhtml
+~/Views/Shared/Pedido.cshtml
+~/Views/Shared/Pedido.vbhtml
+   em System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-08-01 10:00:32,400 [7] ERROR System.Web.Mvc.Controller - controller: Pedido - action: Pedido
+System.InvalidOperationException: A exibição 'Pedido' ou seu master não foi encontrada ou nenhum mecanismo de exibição oferece suporte para os locais pesquisados. Os seguintes locais foram pesquisados: 
+~/Views/Pedido/Pedido.aspx
+~/Views/Pedido/Pedido.ascx
+~/Views/Shared/Pedido.aspx
+~/Views/Shared/Pedido.ascx
+~/Views/Pedido/Pedido.cshtml
+~/Views/Pedido/Pedido.vbhtml
+~/Views/Shared/Pedido.cshtml
+~/Views/Shared/Pedido.vbhtml
+   em System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   em System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-08-01 10:41:20,802 [35] ERROR System.Web.Mvc.Controller - controller: Pedido - action: Pedido
+System.TimeoutException: Esta operação de solicitação enviada para net.tcp://localhost:9000/LojaProduto.Services/CadastroService não recebeu uma resposta no tempo limite configurado (00:05:00). O tempo alocado para essa operação pode ter sido uma parte de um tempo limite maior. Isso pode acontecer porque o serviço ainda está processando a operação ou porque o serviço não conseguiu enviar uma mensagem de resposta. Considere aumentar o tempo limite da operação (difundindo o canal/proxy para IContextChannel e definindo a propriedade OperationTimeout) e verificar se o serviço é capaz de conectar-se ao cliente.
+
+Server stack trace: 
+   em System.ServiceModel.Dispatcher.DuplexChannelBinder.Request(Message message, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   em System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   em System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   em System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   em LojaProduto.Services.Spec.Services.ICadastroService.TemPedido(Int32 idProduto, Int32 quantidadeProduto)
+   em LojaProduto.Presentation.Controllers.Pedido.PedidoController.Pedido(Int32 idProduto, Int32 quantidadeProduto) na D:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Controllers\Pedido\PedidoController.cs:linha 18
+   em lambda_method(Closure , ControllerBase , Object[] )
+   em System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   em System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-08-01 10:42:07,201 [32] ERROR System.Web.Mvc.Controller - controller: Pedido - action: Pedido
+System.TimeoutException: Esta operação de solicitação enviada para net.tcp://localhost:9000/LojaProduto.Services/CadastroService não recebeu uma resposta no tempo limite configurado (00:05:00). O tempo alocado para essa operação pode ter sido uma parte de um tempo limite maior. Isso pode acontecer porque o serviço ainda está processando a operação ou porque o serviço não conseguiu enviar uma mensagem de resposta. Considere aumentar o tempo limite da operação (difundindo o canal/proxy para IContextChannel e definindo a propriedade OperationTimeout) e verificar se o serviço é capaz de conectar-se ao cliente.
+
+Server stack trace: 
+   em System.ServiceModel.Dispatcher.DuplexChannelBinder.Request(Message message, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   em System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   em System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   em System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   em LojaProduto.Services.Spec.Services.ICadastroService.TemPedido(Int32 idProduto, Int32 quantidadeProduto)
+   em LojaProduto.Presentation.Controllers.Pedido.PedidoController.Pedido(Int32 idProduto, Int32 quantidadeProduto) na D:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Controllers\Pedido\PedidoController.cs:linha 18
+   em lambda_method(Closure , ControllerBase , Object[] )
+   em System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   em System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-08-01 10:44:47,720 [44] ERROR System.Web.Mvc.Controller - controller: Pedido - action: Pedido
+System.TimeoutException: Esta operação de solicitação enviada para net.tcp://localhost:9000/LojaProduto.Services/CadastroService não recebeu uma resposta no tempo limite configurado (00:05:00). O tempo alocado para essa operação pode ter sido uma parte de um tempo limite maior. Isso pode acontecer porque o serviço ainda está processando a operação ou porque o serviço não conseguiu enviar uma mensagem de resposta. Considere aumentar o tempo limite da operação (difundindo o canal/proxy para IContextChannel e definindo a propriedade OperationTimeout) e verificar se o serviço é capaz de conectar-se ao cliente.
+
+Server stack trace: 
+   em System.ServiceModel.Dispatcher.DuplexChannelBinder.Request(Message message, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   em System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   em System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   em System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   em LojaProduto.Services.Spec.Services.ICadastroService.TemPedido(Int32 idProduto, Int32 quantidadeProduto)
+   em LojaProduto.Presentation.Controllers.Pedido.PedidoController.Pedido(Int32 idProduto, Int32 quantidadeProduto) na D:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Controllers\Pedido\PedidoController.cs:linha 18
+   em lambda_method(Closure , ControllerBase , Object[] )
+   em System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   em System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-08-01 11:26:50,634 [49] ERROR System.Web.Mvc.Controller - controller: Pedido - action: Pedido
+System.TimeoutException: Esta operação de solicitação enviada para net.tcp://localhost:9000/LojaProduto.Services/CadastroService não recebeu uma resposta no tempo limite configurado (00:05:00). O tempo alocado para essa operação pode ter sido uma parte de um tempo limite maior. Isso pode acontecer porque o serviço ainda está processando a operação ou porque o serviço não conseguiu enviar uma mensagem de resposta. Considere aumentar o tempo limite da operação (difundindo o canal/proxy para IContextChannel e definindo a propriedade OperationTimeout) e verificar se o serviço é capaz de conectar-se ao cliente.
+
+Server stack trace: 
+   em System.ServiceModel.Dispatcher.DuplexChannelBinder.Request(Message message, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   em System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   em System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   em System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   em LojaProduto.Services.Spec.Services.ICadastroService.TemPedido(Int32 idProduto, Int32 quantidadeProduto)
+   em LojaProduto.Presentation.Controllers.Pedido.PedidoController.Pedido(Int32 idProduto, Int32 quantidadeProduto) na D:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Controllers\Pedido\PedidoController.cs:linha 18
+   em lambda_method(Closure , ControllerBase , Object[] )
+   em System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   em System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-08-01 11:26:50,634 [63] ERROR System.Web.Mvc.Controller - controller: Pedido - action: Pedido
+System.TimeoutException: Esta operação de solicitação enviada para net.tcp://localhost:9000/LojaProduto.Services/CadastroService não recebeu uma resposta no tempo limite configurado (00:05:00). O tempo alocado para essa operação pode ter sido uma parte de um tempo limite maior. Isso pode acontecer porque o serviço ainda está processando a operação ou porque o serviço não conseguiu enviar uma mensagem de resposta. Considere aumentar o tempo limite da operação (difundindo o canal/proxy para IContextChannel e definindo a propriedade OperationTimeout) e verificar se o serviço é capaz de conectar-se ao cliente.
+
+Server stack trace: 
+   em System.ServiceModel.Dispatcher.DuplexChannelBinder.Request(Message message, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   em System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   em System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   em System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   em LojaProduto.Services.Spec.Services.ICadastroService.TemPedido(Int32 idProduto, Int32 quantidadeProduto)
+   em LojaProduto.Presentation.Controllers.Pedido.PedidoController.Pedido(Int32 idProduto, Int32 quantidadeProduto) na D:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Controllers\Pedido\PedidoController.cs:linha 18
+   em lambda_method(Closure , ControllerBase , Object[] )
+   em System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   em System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-08-01 11:31:16,198 [49] ERROR System.Web.Mvc.Controller - controller: Pedido - action: Pedido
+System.ServiceModel.CommunicationException: O ponto de extremidade remoto não reconhece mais essa sequência. Isso ocorre provavelmente devido a uma anulação no ponto de extremidade remoto. O valor de wsrm:Identifier não é um identificador de Sequência conhecido. Falha na sessão confiável.
+
+Server stack trace: 
+   em System.Runtime.InputQueue`1.WaitQueueReader.Wait(TimeSpan timeout, T& value)
+   em System.Runtime.InputQueue`1.Dequeue(TimeSpan timeout, T& value)
+   em System.ServiceModel.Channels.InputQueueChannel`1.Dequeue(TimeSpan timeout, TDisposable& item)
+   em System.ServiceModel.Channels.DuplexChannel.TryReceive(TimeSpan timeout, Message& message)
+   em System.ServiceModel.Dispatcher.DuplexChannelBinder.Request(Message message, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   em System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   em System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   em System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   em LojaProduto.Services.Spec.Services.ICadastroService.TemPedido(Int32 idProduto, Int32 quantidadeProduto)
+   em LojaProduto.Presentation.Controllers.Pedido.PedidoController.Pedido(Int32 idProduto, Int32 quantidadeProduto) na D:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Controllers\Pedido\PedidoController.cs:linha 18
+   em lambda_method(Closure , ControllerBase , Object[] )
+   em System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   em System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-08-01 11:34:48,015 [36] ERROR System.Web.Mvc.Controller - controller: Pedido - action: Pedido
+System.TimeoutException: Esta operação de solicitação enviada para net.tcp://localhost:9000/LojaProduto.Services/CadastroService não recebeu uma resposta no tempo limite configurado (00:05:00). O tempo alocado para essa operação pode ter sido uma parte de um tempo limite maior. Isso pode acontecer porque o serviço ainda está processando a operação ou porque o serviço não conseguiu enviar uma mensagem de resposta. Considere aumentar o tempo limite da operação (difundindo o canal/proxy para IContextChannel e definindo a propriedade OperationTimeout) e verificar se o serviço é capaz de conectar-se ao cliente.
+
+Server stack trace: 
+   em System.ServiceModel.Dispatcher.DuplexChannelBinder.Request(Message message, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   em System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   em System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   em System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   em LojaProduto.Services.Spec.Services.ICadastroService.TemPedido(Int32 idProduto, Int32 quantidadeProduto)
+   em LojaProduto.Presentation.Controllers.Pedido.PedidoController.Pedido(Int32 idProduto, Int32 quantidadeProduto) na D:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Controllers\Pedido\PedidoController.cs:linha 18
+   em lambda_method(Closure , ControllerBase , Object[] )
+   em System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   em System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-08-01 11:35:46,450 [41] ERROR System.Web.Mvc.Controller - controller: Pedido - action: Pedido
+System.TimeoutException: Esta operação de solicitação enviada para net.tcp://localhost:9000/LojaProduto.Services/CadastroService não recebeu uma resposta no tempo limite configurado (00:05:00). O tempo alocado para essa operação pode ter sido uma parte de um tempo limite maior. Isso pode acontecer porque o serviço ainda está processando a operação ou porque o serviço não conseguiu enviar uma mensagem de resposta. Considere aumentar o tempo limite da operação (difundindo o canal/proxy para IContextChannel e definindo a propriedade OperationTimeout) e verificar se o serviço é capaz de conectar-se ao cliente.
+
+Server stack trace: 
+   em System.ServiceModel.Dispatcher.DuplexChannelBinder.Request(Message message, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   em System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   em System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   em System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   em LojaProduto.Services.Spec.Services.ICadastroService.TemPedido(Int32 idProduto, Int32 quantidadeProduto)
+   em LojaProduto.Presentation.Controllers.Pedido.PedidoController.Pedido(Int32 idProduto, Int32 quantidadeProduto) na D:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Controllers\Pedido\PedidoController.cs:linha 18
+   em lambda_method(Closure , ControllerBase , Object[] )
+   em System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   em System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-08-01 11:37:01,422 [25] ERROR System.Web.Mvc.Controller - controller: Pedido - action: Pedido
+System.ServiceModel.CommunicationException: O tempo limite de inatividade de (00:05:00) foi excedido.
+
+Server stack trace: 
+   em System.Runtime.InputQueue`1.WaitQueueReader.Wait(TimeSpan timeout, T& value)
+   em System.Runtime.InputQueue`1.Dequeue(TimeSpan timeout, T& value)
+   em System.ServiceModel.Channels.InputQueueChannel`1.Dequeue(TimeSpan timeout, TDisposable& item)
+   em System.ServiceModel.Channels.DuplexChannel.TryReceive(TimeSpan timeout, Message& message)
+   em System.ServiceModel.Dispatcher.DuplexChannelBinder.Request(Message message, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   em System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   em System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   em System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   em LojaProduto.Services.Spec.Services.ICadastroService.TemPedido(Int32 idProduto, Int32 quantidadeProduto)
+   em LojaProduto.Presentation.Controllers.Pedido.PedidoController.Pedido(Int32 idProduto, Int32 quantidadeProduto) na D:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Controllers\Pedido\PedidoController.cs:linha 18
+   em lambda_method(Closure , ControllerBase , Object[] )
+   em System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   em System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-08-01 11:41:42,055 [19] ERROR System.Web.Mvc.Controller - controller: Pedido - action: Pedido
+System.TimeoutException: Esta operação de solicitação enviada para net.tcp://localhost:9000/LojaProduto.Services/CadastroService não recebeu uma resposta no tempo limite configurado (00:05:00). O tempo alocado para essa operação pode ter sido uma parte de um tempo limite maior. Isso pode acontecer porque o serviço ainda está processando a operação ou porque o serviço não conseguiu enviar uma mensagem de resposta. Considere aumentar o tempo limite da operação (difundindo o canal/proxy para IContextChannel e definindo a propriedade OperationTimeout) e verificar se o serviço é capaz de conectar-se ao cliente.
+
+Server stack trace: 
+   em System.ServiceModel.Dispatcher.DuplexChannelBinder.Request(Message message, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   em System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   em System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   em System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   em LojaProduto.Services.Spec.Services.ICadastroService.TemPedido(Int32 idProduto, Int32 quantidadeProduto)
+   em LojaProduto.Presentation.Controllers.Pedido.PedidoController.Pedido(Int32 idProduto, Int32 quantidadeProduto) na D:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Controllers\Pedido\PedidoController.cs:linha 18
+   em lambda_method(Closure , ControllerBase , Object[] )
+   em System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   em System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-08-01 11:42:29,914 [11] ERROR System.Web.Mvc.Controller - controller: Pedido - action: Pedido
+System.TimeoutException: Esta operação de solicitação enviada para net.tcp://localhost:9000/LojaProduto.Services/CadastroService não recebeu uma resposta no tempo limite configurado (00:05:00). O tempo alocado para essa operação pode ter sido uma parte de um tempo limite maior. Isso pode acontecer porque o serviço ainda está processando a operação ou porque o serviço não conseguiu enviar uma mensagem de resposta. Considere aumentar o tempo limite da operação (difundindo o canal/proxy para IContextChannel e definindo a propriedade OperationTimeout) e verificar se o serviço é capaz de conectar-se ao cliente.
+
+Server stack trace: 
+   em System.ServiceModel.Dispatcher.DuplexChannelBinder.Request(Message message, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   em System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   em System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   em System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   em LojaProduto.Services.Spec.Services.ICadastroService.TemPedido(Int32 idProduto, Int32 quantidadeProduto)
+   em LojaProduto.Presentation.Controllers.Pedido.PedidoController.Pedido(Int32 idProduto, Int32 quantidadeProduto) na D:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Controllers\Pedido\PedidoController.cs:linha 18
+   em lambda_method(Closure , ControllerBase , Object[] )
+   em System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   em System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-08-01 11:53:16,602 [10] ERROR System.Web.Mvc.Controller - controller: Pedido - action: Pedido
+System.ServiceModel.CommunicationException: O tempo limite de inatividade de (00:05:00) foi excedido.
+
+Server stack trace: 
+   em System.ServiceModel.Channels.CommunicationObject.ThrowPending()
+   em System.ServiceModel.Channels.CommunicationObject.ThrowIfFaulted()
+   em System.ServiceModel.Channels.InputQueueChannel`1.Dequeue(TimeSpan timeout, TDisposable& item)
+   em System.ServiceModel.Channels.DuplexChannel.TryReceive(TimeSpan timeout, Message& message)
+   em System.ServiceModel.Dispatcher.DuplexChannelBinder.Request(Message message, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   em System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   em System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   em System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   em LojaProduto.Services.Spec.Services.ICadastroService.TemPedido(Int32 idProduto, Int32 quantidadeProduto)
+   em LojaProduto.Presentation.Controllers.Pedido.PedidoController.Pedido(Int32 idProduto, Int32 quantidadeProduto) na D:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Controllers\Pedido\PedidoController.cs:linha 18
+   em lambda_method(Closure , ControllerBase , Object[] )
+   em System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   em System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-08-01 12:00:27,103 [13] ERROR System.Web.Mvc.Controller - controller: Pedido - action: Pedido
+System.ServiceModel.CommunicationException: O tempo limite de inatividade de (00:05:00) foi excedido.
+
+Server stack trace: 
+   em System.Runtime.InputQueue`1.WaitQueueReader.Wait(TimeSpan timeout, T& value)
+   em System.Runtime.InputQueue`1.Dequeue(TimeSpan timeout, T& value)
+   em System.ServiceModel.Channels.InputQueueChannel`1.Dequeue(TimeSpan timeout, TDisposable& item)
+   em System.ServiceModel.Channels.DuplexChannel.TryReceive(TimeSpan timeout, Message& message)
+   em System.ServiceModel.Dispatcher.DuplexChannelBinder.Request(Message message, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   em System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   em System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   em System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   em LojaProduto.Services.Spec.Services.ICadastroService.TemPedido(Int32 idProduto, Int32 quantidadeProduto)
+   em LojaProduto.Presentation.Controllers.Pedido.PedidoController.Pedido(Int32 idProduto, Int32 quantidadeProduto) na D:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Controllers\Pedido\PedidoController.cs:linha 18
+   em lambda_method(Closure , ControllerBase , Object[] )
+   em System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   em System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-08-01 12:13:27,541 [7] ERROR System.Web.Mvc.Controller - controller: Pedido - action: Pedido
+System.TimeoutException: Esta operação de solicitação enviada para net.tcp://localhost:9000/LojaProduto.Services/CadastroService não recebeu uma resposta no tempo limite configurado (00:05:00). O tempo alocado para essa operação pode ter sido uma parte de um tempo limite maior. Isso pode acontecer porque o serviço ainda está processando a operação ou porque o serviço não conseguiu enviar uma mensagem de resposta. Considere aumentar o tempo limite da operação (difundindo o canal/proxy para IContextChannel e definindo a propriedade OperationTimeout) e verificar se o serviço é capaz de conectar-se ao cliente.
+
+Server stack trace: 
+   em System.ServiceModel.Dispatcher.DuplexChannelBinder.Request(Message message, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   em System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   em System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   em System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   em LojaProduto.Services.Spec.Services.ICadastroService.TemPedido(Int32 idProduto, Int32 quantidadeProduto)
+   em LojaProduto.Presentation.Controllers.Pedido.PedidoController.Pedido(Int32 idProduto, Int32 quantidadeProduto) na D:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Controllers\Pedido\PedidoController.cs:linha 18
+   em lambda_method(Closure , ControllerBase , Object[] )
+   em System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   em System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-08-01 12:19:22,865 [23] ERROR System.Web.Mvc.Controller - controller: Pedido - action: Pedido
+System.TimeoutException: Esta operação de solicitação enviada para net.tcp://localhost:9000/LojaProduto.Services/CadastroService não recebeu uma resposta no tempo limite configurado (00:05:00). O tempo alocado para essa operação pode ter sido uma parte de um tempo limite maior. Isso pode acontecer porque o serviço ainda está processando a operação ou porque o serviço não conseguiu enviar uma mensagem de resposta. Considere aumentar o tempo limite da operação (difundindo o canal/proxy para IContextChannel e definindo a propriedade OperationTimeout) e verificar se o serviço é capaz de conectar-se ao cliente.
+
+Server stack trace: 
+   em System.ServiceModel.Dispatcher.DuplexChannelBinder.Request(Message message, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   em System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   em System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   em System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   em LojaProduto.Services.Spec.Services.ICadastroService.TemPedido(Int32 idProduto, Int32 quantidadeProduto)
+   em LojaProduto.Presentation.Controllers.Pedido.PedidoController.Pedido(Int32 idProduto, Int32 quantidadeProduto) na D:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Controllers\Pedido\PedidoController.cs:linha 18
+   em lambda_method(Closure , ControllerBase , Object[] )
+   em System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   em System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-08-01 12:22:14,037 [20] ERROR System.Web.Mvc.Controller - controller: Pedido - action: Pedido
+System.TimeoutException: Esta operação de solicitação enviada para net.tcp://localhost:9000/LojaProduto.Services/CadastroService não recebeu uma resposta no tempo limite configurado (00:05:00). O tempo alocado para essa operação pode ter sido uma parte de um tempo limite maior. Isso pode acontecer porque o serviço ainda está processando a operação ou porque o serviço não conseguiu enviar uma mensagem de resposta. Considere aumentar o tempo limite da operação (difundindo o canal/proxy para IContextChannel e definindo a propriedade OperationTimeout) e verificar se o serviço é capaz de conectar-se ao cliente.
+
+Server stack trace: 
+   em System.ServiceModel.Dispatcher.DuplexChannelBinder.Request(Message message, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   em System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   em System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   em System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   em LojaProduto.Services.Spec.Services.ICadastroService.TemPedido(Int32 idProduto, Int32 quantidadeProduto)
+   em LojaProduto.Presentation.Controllers.Pedido.PedidoController.Pedido(Int32 idProduto, Int32 quantidadeProduto) na D:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Controllers\Pedido\PedidoController.cs:linha 18
+   em lambda_method(Closure , ControllerBase , Object[] )
+   em System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   em System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-08-01 14:00:32,954 [49] ERROR System.Web.Mvc.Controller - controller: Pedido - action: Pedido
+System.TimeoutException: Esta operação de solicitação enviada para net.tcp://localhost:9000/LojaProduto.Services/CadastroService não recebeu uma resposta no tempo limite configurado (00:05:00). O tempo alocado para essa operação pode ter sido uma parte de um tempo limite maior. Isso pode acontecer porque o serviço ainda está processando a operação ou porque o serviço não conseguiu enviar uma mensagem de resposta. Considere aumentar o tempo limite da operação (difundindo o canal/proxy para IContextChannel e definindo a propriedade OperationTimeout) e verificar se o serviço é capaz de conectar-se ao cliente.
+
+Server stack trace: 
+   em System.ServiceModel.Dispatcher.DuplexChannelBinder.Request(Message message, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   em System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   em System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   em System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   em LojaProduto.Services.Spec.Services.ICadastroService.TemPedido(Int32 idProduto, Int32 quantidadeProduto)
+   em LojaProduto.Presentation.Controllers.Pedido.PedidoController.Pedido(Int32 idProduto, Int32 quantidadeProduto) na D:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Controllers\Pedido\PedidoController.cs:linha 18
+   em lambda_method(Closure , ControllerBase , Object[] )
+   em System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   em System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2017-08-01 17:14:05,454 [19] ERROR System.Web.Mvc.Controller - controller: Produto - action: ListaProdutos
+System.ServiceModel.EndpointNotFoundException: Não foi possível a conexão com net.tcp://localhost:9000/LojaProduto.Services/CadastroService. A tentativa de conexão durou pelo período de tempo de 00:00:02.0002000. Código de erro TCP 10061: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente 127.0.0.1:9000.  ---> System.Net.Sockets.SocketException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente 127.0.0.1:9000
+   em System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   em System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   em System.ServiceModel.Channels.SocketConnectionInitiator.Connect(Uri uri, TimeSpan timeout)
+   --- Fim do rastreamento de pilha de exceções internas ---
+
+Server stack trace: 
+   em System.ServiceModel.Channels.SocketConnectionInitiator.Connect(Uri uri, TimeSpan timeout)
+   em System.ServiceModel.Channels.BufferedConnectionInitiator.Connect(Uri uri, TimeSpan timeout)
+   em System.ServiceModel.Channels.ConnectionPoolHelper.EstablishConnection(TimeSpan timeout)
+   em System.ServiceModel.Channels.ClientFramingDuplexSessionChannel.OnOpen(TimeSpan timeout)
+   em System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   em System.ServiceModel.Channels.ReliableChannelBinder`1.ChannelSynchronizer.SyncWaiter.TryGetChannel()
+   em System.ServiceModel.Channels.ReliableChannelBinder`1.ChannelSynchronizer.SyncWaiter.TryWait(TChannel& channel)
+   em System.ServiceModel.Channels.ReliableChannelBinder`1.ChannelSynchronizer.TryGetChannel(Boolean canGetChannel, Boolean canCauseFault, TimeSpan timeout, MaskingMode maskingMode, TChannel& channel)
+   em System.ServiceModel.Channels.ReliableChannelBinder`1.Send(Message message, TimeSpan timeout, MaskingMode maskingMode)
+   em System.ServiceModel.Channels.SendReceiveReliableRequestor.OnRequest(Message request, TimeSpan timeout, Boolean last)
+   em System.ServiceModel.Channels.ReliableRequestor.Request(TimeSpan timeout)
+   em System.ServiceModel.Channels.ClientReliableSession.Open(TimeSpan timeout)
+   em System.ServiceModel.Channels.ClientReliableDuplexSessionChannel.OnOpen(TimeSpan timeout)
+   em System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannel.OnOpen(TimeSpan timeout)
+   em System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannel.CallOpenOnce.System.ServiceModel.Channels.ServiceChannel.ICallOnce.Call(ServiceChannel channel, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannel.CallOnceManager.CallOnce(TimeSpan timeout, CallOnceManager cascade)
+   em System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   em System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   em System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   em System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   em System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   em LojaProduto.Services.Spec.Services.ICadastroService.ListarProdutos()
+   em LojaProduto.Presentation.Controllers.ProdutoController.ListaProdutos(String query) na D:\Projetos\LojaProdutos\Presentation\LojaProduto.Presentation\Controllers\Produto\ProdutoController.cs:linha 39
+   em lambda_method(Closure , ControllerBase , Object[] )
+   em System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   em System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   em System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   em System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
