@@ -43,5 +43,27 @@ namespace LojaProduto.Domain.Entities
             this.produto = produto;
         }
 
+        public virtual void CalculaTotalItemPedido()
+        {
+            var validaQuantidadeProduto = ValidaQuantidadeProduto();
+
+            if (validaQuantidadeProduto)
+            {
+                TotalItemPedido += (Produto.PrecoProduto * QuantidadeProduto);
+            }
+
+        }
+
+        public virtual bool ValidaQuantidadeProduto()
+        {
+            if (QuantidadeProduto <= 0)
+            {
+                return false;
+                throw new System.ArgumentException("Quantidade do Produto é zero ou negativo");
+            }
+            else
+                return true;
+        }
+
     }
 }

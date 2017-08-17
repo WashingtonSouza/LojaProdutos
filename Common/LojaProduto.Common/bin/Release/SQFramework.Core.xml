@@ -1,0 +1,1606 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SQFramework.Core</name>
+    </assembly>
+    <members>
+        <member name="T:SQFramework.Core.Attributes.AttributeHelper">
+            <summary>
+            Classe responsável por encapsular facilitadores para utilização de atributos
+            </summary>
+        </member>
+        <member name="M:SQFramework.Core.Attributes.AttributeHelper.GetAttributes``1(System.Type)">
+            <summary>
+            Retorna lista genérica de um determinado Atributo
+            </summary>
+            <typeparam name="T">Tipo genérico do Atributo</typeparam>
+            <param name="type">Tipo que contém o Atributo</param>
+            <returns>Lista do Atributo</returns>
+        </member>
+        <member name="M:SQFramework.Core.Attributes.AttributeHelper.GetAttribute``1(System.Type)">
+            <summary>
+            Retorna Atributo de um determinado tipo
+            </summary>
+            <typeparam name="T">Tipo genérico do Atributo</typeparam>
+            <param name="type">Tipo que contém o Atributo</param>
+            <returns>Atributo requerido</returns>
+        </member>
+        <member name="M:SQFramework.Core.Attributes.AttributeHelper.GetAttributeTypes(System.String,System.Type)">
+            <summary>
+            Retorna todos os tipos que são decorados com um determinado Atributo dentro de um Assembly
+            </summary>
+            <param name="assemblyName">Nome do Assembly</param>
+            <param name="attributeType">Tipo do Atributo requerido</param>
+            <returns>Lista de tipos decorados com o Atributo requerido</returns>
+        </member>
+        <member name="M:SQFramework.Core.Attributes.AttributeHelper.GetAttributeTypes(System.Reflection.Assembly,System.Type)">
+            <summary>
+            Retorna todos os tipos que são decorados com um determinado Atributo dentro de um Assembly
+            </summary>
+            <param name="assembly">Instância do Assembly</param>
+            <param name="attributeType">Tipo do Atributo requerido</param>
+            <returns>Lista de tipos decorados com o Atributo requerido</returns>
+        </member>
+        <member name="M:SQFramework.Core.Attributes.AttributeHelper.GetAttributes``1(System.Reflection.MemberInfo)">
+            <summary>
+            Retorna Array com os Atributos de um membro
+            </summary>
+            <typeparam name="T">Tipo do Atributo requerido</typeparam>
+            <param name="memberInfo">Membro utilizado para obter os Atributos</param>
+            <returns>Array do Atributo requerido</returns>
+        </member>
+        <member name="M:SQFramework.Core.Attributes.AttributeHelper.GetAttribute``1(System.Reflection.MemberInfo)">
+            <summary>
+            Retorna um Atributo de um membro
+            </summary>
+            <typeparam name="T">Tipo do Atributo requerido</typeparam>
+            <param name="memberInfo">Membro utilizado para obter o Atributo</param>
+            <returns>Instância do Atributo, retorna null se não encontrado</returns>
+        </member>
+        <member name="T:SQFramework.Core.Context.ThreadContextProperties">
+            <summary>
+            Esta classe permite a criação/leitura de variáveis que serão
+            visíveis durante o tempo de vida da Thread.
+            </summary>
+        </member>
+        <member name="T:SQFramework.Core.Enums.EnumConverter`1">
+            <summary>
+            Classe utilizada para converter uma string utilizada pelo Atributo StringValueAttribute em um Enum, 
+            assim como converter um Enum em uma string definida pelo Atributo StringValueAttribute
+            </summary>
+            <typeparam name="T">Tipo genérico do Atributo</typeparam>
+        </member>
+        <member name="M:SQFramework.Core.Enums.EnumConverter`1.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>
+            Verifica se é possível a converter a a partir da origem.
+            </summary>
+            <param name="context"></param>Informações do contexto.
+            <param name="sourceType"></param>Tipo do objeto de origem.
+            <returns></returns>
+        </member>
+        <member name="M:SQFramework.Core.Enums.EnumConverter`1.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)">
+            <summary>
+            Retorna o objeto resultante da conversão.
+            </summary>
+            <param name="context"></param>Informações do contexto.
+            <param name="culture"></param>Cultura utilizada.
+            <param name="value"></param>Valor string a ser convertido.
+            <returns></returns>
+        </member>
+        <member name="M:SQFramework.Core.Enums.EnumConverter`1.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>
+            Verifica se é possível a conversão.
+            </summary>
+            <param name="context"></param>Informações do contexto.
+            <param name="destinationType"></param>Tipo de destino da conversão.
+            <returns></returns>
+        </member>
+        <member name="M:SQFramework.Core.Enums.EnumConverter`1.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
+            <summary>
+            Realiza a conversão.
+            </summary>
+            <param name="context"></param>Informações do contexto.
+            <param name="culture"></param>Cultura utilizada
+            <param name="value"></param>Valor string a ser convertido.
+            <param name="destinationType"></param>Tipo de destino da conversão.
+            <returns></returns>
+        </member>
+        <member name="M:SQFramework.Core.Enums.EnumConverter`1.ToList">
+            <summary>
+            Retorna uma lista dos valores do Enum
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SQFramework.Core.Enums.EnumConverter`1.FindByName(System.String)">
+            <summary>
+            Procura através do nome e retorna a estrutura do Enum.
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SQFramework.Core.Enums.StringValueAttribute">
+            <summary>
+            Atributo utilizado para definir uma string para cada item do Enum, o qual poderá ser utilizado pelo EnumConverter
+            para fazer a conversão do item do Enum em string, assim como converter uma string em um item do Enum
+            </summary>
+        </member>
+        <member name="M:SQFramework.Core.Enums.StringValueAttribute.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="value">Valor definido para um item do Enum</param>
+        </member>
+        <member name="M:SQFramework.Core.Enums.StringValueAttribute.#ctor(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="value">Valor definido para um item do Enum</param>
+            <param name="description">Descrição do item do Enum</param>
+        </member>
+        <member name="M:SQFramework.Core.Enums.StringValueAttribute.#ctor(System.String,System.String,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="value">Valor definido para um item do Enum</param>
+            <param name="description">Descrição do item do Enum</param>
+            <param name="visible">Determina se o item do Enum será visível ao definir o Enum como DataSource de um controle.
+            Ex: SQFramework.Web.Controls.DropDownList</param>
+        </member>
+        <member name="M:SQFramework.Core.Enums.StringValueAttribute.GetValue(System.Type,System.Object)">
+            <summary>
+            Recupera o valor.
+            </summary>
+            <param name="enumType"></param>Tipo do Enum
+            <param name="item"></param>Item
+            <returns></returns>
+        </member>
+        <member name="M:SQFramework.Core.Enums.StringValueAttribute.GetDescription(System.Type,System.Object)">
+            <summary>
+            Recupera a descrição
+            </summary>
+            <param name="enumType"></param>Tipo do Enum
+            <param name="item"></param>Item
+            <returns></returns>
+        </member>
+        <member name="P:SQFramework.Core.Enums.StringValueAttribute.Value">
+            <summary>
+            Valor do item do Enum
+            </summary>
+        </member>
+        <member name="P:SQFramework.Core.Enums.StringValueAttribute.Description">
+            <summary>
+            Descrição do Enum
+            </summary>
+        </member>
+        <member name="T:SQFramework.Core.ArrayExtension">
+            <summary>
+            Classe utilizada como extensão de Arrays
+            </summary>
+        </member>
+        <member name="M:SQFramework.Core.ArrayExtension.RemoveNullValues``1(``0[])">
+            <summary>
+            Remove valores nulos de um Array
+            </summary>
+            <typeparam name="T">Tipo genérico (T) do Array a ser retornado</typeparam>
+            <param name="array">Array do qual será removido os valores</param>
+            <returns>Instância do Array do tipo genérico (T)</returns>
+        </member>
+        <member name="T:SQFramework.Core.IntExtensions">
+            <summary>
+            Classe utilizada como extensão os tipos System.Int16, System.Int32 e System.Int64
+            </summary>
+        </member>
+        <member name="M:SQFramework.Core.IntExtensions.ToStringDescription(System.Int32)">
+            <summary>
+            Retorna o valor por extenso de um valor
+            </summary>
+            <param name="value">Valor a ser formatado</param>
+            <returns>Valor por Extenso</returns>
+        </member>
+        <member name="T:SQFramework.Core.CurrencyExtensions">
+            <summary>
+            Classe utilizada como extensão relacionada a moedas
+            </summary>
+        </member>
+        <member name="M:SQFramework.Core.CurrencyExtensions.GetCurrencyDescription(System.String)">
+            <summary>
+            Retorna o valor por extenso de um valor. Passar uma string formatada em c com o String.Format 
+            o valor máximo é 999 bilhões, não esqueça o ' ,00 ' 
+            Ex: R$ 1550,85
+            </summary>
+            <param name="value">Valor a ser formatado</param>
+            <returns>Valor por Extenso</returns>
+        </member>
+        <member name="M:SQFramework.Core.CurrencyExtensions.GetCurrencyDescription(System.Decimal)">
+            <summary>
+            Retorna o valor por extenso de um valor. Passar uma string formatada em c com o String.Format 
+            o valor máximo é 999 bilhões, não esqueça o ' ,00 ' 
+            Ex: R$ 1550,85
+            </summary>
+            <param name="value">Valor a ser formatado</param>
+            <returns>Valor por Extenso</returns>
+        </member>
+        <member name="M:SQFramework.Core.LinqExtensions.Set``1(``0,System.Action{``0})">
+            <summary>
+            Used to modify properties of an object returned from a LINQ query
+            </summary>
+        </member>
+        <member name="T:SQFramework.Core.ListExtensions">
+            <summary>
+            Classe utilizada como extensão para qualquer tipo de lista
+            </summary>
+        </member>
+        <member name="M:SQFramework.Core.ListExtensions.AddRange``1(System.Collections.Generic.IList{``0},System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Adiciona itens de uma lista em outra
+            </summary>
+            <typeparam name="T">Tipo genérico das listas</typeparam>
+            <param name="list">Lista de destino</param>
+            <param name="items">Lista de origem</param>
+        </member>
+        <member name="M:SQFramework.Core.ListExtensions.ToString``1(System.Collections.Generic.IList{``0},System.String)">
+            <summary>
+            Concatena itens de uma lista genérica utilizando um separador
+            </summary>
+            <typeparam name="T">Tipo genérico da lista</typeparam>
+            <param name="list">Lista genérica</param>
+            <param name="separator">Separador dos itens</param>
+            <returns>Itens da lista concatenados</returns>
+        </member>
+        <member name="M:SQFramework.Core.ListExtensions.Each``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})">
+            <summary>
+            Executa uma determinada ação para cada item de uma lista
+            </summary>
+            <typeparam name="TItem">Tipo genérico do item da lista</typeparam>
+            <param name="collection">Lista que implementa a interface IEnumerable</param>
+            <param name="action">Ação a ser executada para cada item da lista</param>
+        </member>
+        <member name="M:SQFramework.Core.ListExtensions.GetRange``1(System.Collections.Generic.IEnumerable{``0},System.Int32,System.Int32)">
+            <summary>
+            Retorna parte de uma lista
+            </summary>
+            <typeparam name="T">Tipo genérico da lista a ser retornada</typeparam>
+            <param name="enumerable">Lista original</param>
+            <param name="position">Posição inicial</param>
+            <param name="length">Tamanho</param>
+            <returns>Lista genérica com as posições requeridas</returns>
+        </member>
+        <member name="M:SQFramework.Core.ListExtensions.ConcatListItemsWithCommaSeparator(System.Collections.IEnumerable)">
+            <summary>
+            Concatena todos os itens de uma String separados virgula
+            </summary>
+            <param name="list">Instância da lista a ser concatenada</param>
+            <returns>String concatenada</returns>
+        </member>
+        <member name="M:SQFramework.Core.ListExtensions.ConcatListItems(System.Collections.IEnumerable,System.String)">
+            <summary>
+            Concatena todos os itens de uma String separados por uma String
+            </summary>
+            <param name="list">Instância da lista a ser concatenada</param>
+            <param name="separator">String separadora</param>
+            <returns>String concatenada</returns>
+        </member>
+        <member name="M:SQFramework.Core.ListExtensions.GetListFromConcatString``1(System.String,System.Char)">
+            <summary>
+            Retorna uma lista de um tipo genérico a partir de uma string separada por uma String
+            </summary>
+            <typeparam name="T">Tipo genérico da lista</typeparam>
+            <param name="concatItems">String com o separador</param>
+            <param name="separator">String informando o separador</param>
+            <returns>Lista do tipo genérico</returns>
+        </member>
+        <member name="T:SQFramework.Core.ObjectExtensions">
+            <summary>
+            Classe utilizada como extensão o tipo System.Object
+            </summary>
+        </member>
+        <member name="M:SQFramework.Core.ObjectExtensions.ToDecimal(System.Object)">
+            <summary>
+            Converte um Object para Decimal, caso a conversão seja inválida, retorna 0
+            </summary>
+            <param name="value">Instância de Object a ser convertida</param>
+            <returns></returns>
+        </member>
+        <member name="M:SQFramework.Core.ObjectExtensions.ToInt32(System.Object)">
+            <summary>
+            Converte um Object para Int32, caso a conversão seja inválida, dispara uma Exceção
+            </summary>
+            <param name="value">Instância de Object a ser convertida</param>
+            <returns></returns>
+        </member>
+        <member name="M:SQFramework.Core.ObjectExtensions.ToShort(System.Object)">
+            <summary>
+            Converte um Object para Int16, caso a conversão seja inválida, retorna 0
+            </summary>
+            <param name="value">Instância de Object a ser convertida</param>
+            <returns></returns>
+        </member>
+        <member name="M:SQFramework.Core.ObjectExtensions.ToByte(System.Object)">
+            <summary>
+            Converte um Object para Byte, caso a conversão seja inválida, retorna 0
+            </summary>
+            <param name="value">Instância de Object a ser convertida</param>
+            <returns></returns>
+        </member>
+        <member name="M:SQFramework.Core.ObjectExtensions.ToLong(System.Object)">
+            <summary>
+            Converte um Object para Int64, caso a conversão seja inválida, retorna 0
+            </summary>
+            <param name="value">Instância de Object a ser convertida</param>
+            <returns></returns>
+        </member>
+        <member name="M:SQFramework.Core.ObjectExtensions.ToBoolean(System.Object)">
+            <summary>
+            Converte um Object para Boolean, caso a conversão seja inválida, dispara uma Exceção
+            </summary>
+            <param name="value">Instância de Object a ser convertida</param>
+            <returns></returns>
+        </member>
+        <member name="M:SQFramework.Core.ObjectExtensions.ToGeneric``1(System.Object)">
+            <summary>
+            Converte um Object para um tipo genérico, caso a conversão seja inválida, dispara uma Exceção
+            </summary>
+            <param name="value">Instância de Object a ser convertida</param>
+            <returns></returns>
+        </member>
+        <member name="T:SQFramework.Core.PropertyInfoExtensions">
+            <summary>
+            Classe utilizada como extensão o tipo System.Reflection.PropertyInfo
+            </summary>
+        </member>
+        <member name="M:SQFramework.Core.PropertyInfoExtensions.IsMarkedWith``1(System.Reflection.PropertyInfo)">
+            <summary>
+            Determina se uma Propriedade está decorada com um determinado Atributo
+            </summary>
+            <typeparam name="TAttribute">Tipo genérico do Atributo</typeparam>
+            <param name="propertyInfo">Propriedade a ser verificada</param>
+            <returns></returns>
+        </member>
+        <member name="M:SQFramework.Core.PropertyInfoExtensions.GetAttribute``1(System.Reflection.PropertyInfo)">
+            <summary>
+            Retorna instância de um determinado Atributo de um Propriedade
+            </summary>
+            <typeparam name="TAttribute">Tipo genérico do Atributo</typeparam>
+            <param name="propertyInfo">Propriedade que contém o Atributo</param>
+            <returns>Instância do Atributo</returns>
+        </member>
+        <member name="M:SQFramework.Core.PropertyInfoExtensions.GetAttributes``1(System.Reflection.PropertyInfo)">
+            <summary>
+            Retorna uma lista de um determinado Atributo de uma Propriedade
+            </summary>
+            <typeparam name="TAttribute">Tipo genérico do Atributo</typeparam>
+            <param name="propertyInfo">Propriedade que contém o Atributo</param>
+            <returns>Lista com os Atributos</returns>
+        </member>
+        <member name="T:SQFramework.Core.RegexExtensions">
+            <summary>
+            Classe utilizada como extensão para utilização de expressões regulares
+            </summary>
+        </member>
+        <member name="M:SQFramework.Core.RegexExtensions.GetOnlyNumbers(System.String)">
+            <summary>
+            Retorna uma string apenas com os números de uma string de origem
+            </summary>
+            <param name="value">String de origem</param>
+            <returns>String apenas com números</returns>
+        </member>
+        <member name="M:SQFramework.Core.RegexExtensions.ValidateEmail(System.String)">
+            <summary>
+            Determina se a string informada está no formato válido de email
+            </summary>
+            <param name="email"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SQFramework.Core.Extensions.StringBuildeExtensions">
+            <summary>
+            Classe utilizada como extensão do tipo System.Text.StringBuilder
+            </summary>
+        </member>
+        <member name="M:SQFramework.Core.Extensions.StringBuildeExtensions.AppendLineFormat(System.Text.StringBuilder,System.String,System.Object[])">
+            <summary>
+            Concatena uma String, substituindo o formato especificado na String pelos itens do Array, em uma instância do StringBuilder e adiciona uma quebra de linha ao final
+            </summary>
+            <param name="sb">Instância do StringBuilder a ser concatenado</param>
+            <param name="text">String a ser concatenada ao StringBuilder e formatada</param>
+            <param name="args">Parâmetros utilizados na formatação da String</param>
+        </member>
+        <member name="T:SQFramework.Core.StringExtensions">
+            <summary>
+            Classe utilizada como extensão do tipo System.String
+            </summary>
+        </member>
+        <member name="M:SQFramework.Core.StringExtensions.ToInt32(System.String)">
+            <summary>
+            Converte uma String para Int32, caso a conversão seja inválida, retorna 0
+            </summary>
+            <param name="value">String a ser convertida</param>
+            <returns>Valor convertido</returns>
+        </member>
+        <member name="M:SQFramework.Core.StringExtensions.ToInt32(System.String,System.Boolean)">
+            <summary>
+            Converte uma String para Int32, caso a conversão seja inválida, retorna 0
+            </summary>
+            <param name="value">String a ser convertida</param>
+            <param name="removeMask">Indica se a máscara do valor deve ser removida</param>
+            <returns>Valor convertido</returns>
+        </member>
+        <member name="M:SQFramework.Core.StringExtensions.ToNullableInt32(System.String,System.Boolean)">
+            <summary>
+            Converte uma String para Int32?, caso a conversão seja inválida, retorna null
+            </summary>
+            <param name="value">String a ser convertida</param>
+            <param name="removeMask">Indica se a máscara do valor deve ser removida</param>
+            <returns>Valor convertido</returns>
+        </member>
+        <member name="M:SQFramework.Core.StringExtensions.IsNumeric(System.String)">
+            <summary>
+            Indica se uma String é númerica
+            </summary>
+            <param name="value">String a ser verificada</param>
+            <returns></returns>
+        </member>
+        <member name="M:SQFramework.Core.StringExtensions.IsDateTime(System.String)">
+            <summary>
+            Indica se uma String é uma data
+            </summary>
+            <param name="value">String a ser verificada</param>
+            <returns></returns>
+        </member>
+        <member name="M:SQFramework.Core.StringExtensions.ToDouble(System.String)">
+            <summary>
+            Converte uma String para Double, caso a conversão seja inválida, retorna 0
+            </summary>
+            <param name="value">String a ser convertida</param>
+            <returns>Valor convertido</returns>
+        </member>
+        <member name="M:SQFramework.Core.StringExtensions.ToDouble(System.String,System.Boolean)">
+            <summary>
+            Converte uma String para double, caso a conversão seja inválida, retorna 0
+            </summary>
+            <param name="value">String a ser convertida</param>
+            <param name="removeMask">Indica se a máscara do valor deve ser removida</param>
+            <returns>Valor convertido</returns>
+        </member>
+        <member name="M:SQFramework.Core.StringExtensions.ToNullableDouble(System.String,System.Boolean)">
+            <summary>
+            Converte uma String para double?, caso a conversão seja inválida, retorna null
+            </summary>
+            <param name="value">String a ser convertida</param>
+            <param name="removeMask">Indica se a máscara do valor deve ser removida</param>
+            <returns>Valor convertido</returns>
+        </member>
+        <member name="M:SQFramework.Core.StringExtensions.ToInt16(System.String)">
+            <summary>
+            Converte uma String para Int16, caso a conversão seja inválida, retorna 0
+            </summary>
+            <param name="value">String a ser convertida</param>
+            <returns>Valor convertido</returns>
+        </member>
+        <member name="M:SQFramework.Core.StringExtensions.ToInt16(System.String,System.Boolean)">
+            <summary>
+            Converte uma String para Int16, caso a conversão seja inválida, retorna 0
+            </summary>
+            <param name="value">String a ser convertida</param>
+            <param name="removeMask">Indica se a máscara do valor deve ser removida</param>
+            <returns>Valor convertido</returns>
+        </member>
+        <member name="M:SQFramework.Core.StringExtensions.ToNullableInt16(System.String,System.Boolean)">
+            <summary>
+            Converte uma String para Int16?, caso a conversão seja inválida, retorna null
+            </summary>
+            <param name="value">String a ser convertida</param>
+            <param name="removeMask">Indica se a máscara do valor deve ser removida</param>
+            <returns>Valor convertido</returns>
+        </member>
+        <member name="M:SQFramework.Core.StringExtensions.ToInt64(System.String)">
+            <summary>
+            Converte uma String para Int64, caso a conversão seja inválida, retorna 0
+            </summary>
+            <param name="value">String a ser convertida</param>
+            <returns>Valor convertido</returns>
+        </member>
+        <member name="M:SQFramework.Core.StringExtensions.ToInt64(System.String,System.Boolean)">
+            <summary>
+            Converte uma String para Int64, caso a conversão seja inválida, retorna 0
+            </summary>
+            <param name="value">String a ser convertida</param>
+            <param name="removeMask">Indica se a máscara do valor deve ser removida</param>
+            <returns>Valor convertido</returns>
+        </member>
+        <member name="M:SQFramework.Core.StringExtensions.ToNullableInt64(System.String,System.Boolean)">
+            <summary>
+            Converte uma String para Int64?, caso a conversão seja inválida, retorna null
+            </summary>
+            <param name="value">String a ser convertida</param>
+            <param name="removeMask">Indica se a máscara do valor deve ser removida</param>
+            <returns>Valor convertido</returns>
+        </member>
+        <member name="M:SQFramework.Core.StringExtensions.ToByte(System.String)">
+            <summary>
+            Converte uma String para Byte, caso a conversão seja inválida, retorna 0
+            </summary>
+            <param name="value">String a ser convertida</param>
+            <returns>Valor convertido</returns>
+        </member>
+        <member name="M:SQFramework.Core.StringExtensions.ToByte(System.String,System.Boolean)">
+            <summary>
+            Converte uma String para byte, caso a conversão seja inválida, retorna 0
+            </summary>
+            <param name="value">String a ser convertida</param>
+            <param name="removeMask">Indica se a máscara do valor deve ser removida</param>
+            <returns>Valor convertido</returns>
+        </member>
+        <member name="M:SQFramework.Core.StringExtensions.ToNullableByte(System.String,System.Boolean)">
+            <summary>
+            Converte uma String para byte?, caso a conversão seja inválida, retorna null
+            </summary>
+            <param name="value">String a ser convertida</param>
+            <param name="removeMask">Indica se a máscara do valor deve ser removida</param>
+            <returns>Valor convertido</returns>
+        </member>
+        <member name="M:SQFramework.Core.StringExtensions.ToSByte(System.String)">
+            <summary>
+            Converte uma String para SByte, caso a conversão seja inválida, retorna 0
+            </summary>
+            <param name="value">String a ser convertida</param>
+            <returns>Valor convertido</returns>
+        </member>
+        <member name="M:SQFramework.Core.StringExtensions.ToSByte(System.String,System.Boolean)">
+            <summary>
+            Converte uma String para SByte, caso a conversão seja inválida, retorna 0
+            </summary>
+            <param name="value">String a ser convertida</param>
+            <param name="removeMask">Indica se a máscara do valor deve ser removida</param>
+            <returns>Valor convertido</returns>
+        </member>
+        <member name="M:SQFramework.Core.StringExtensions.ToNullableSByte(System.String,System.Boolean)">
+            <summary>
+            Converte uma String para SByte?, caso a conversão seja inválida, retorna null
+            </summary>
+            <param name="value">String a ser convertida</param>
+            <param name="removeMask">Indica se a máscara do valor deve ser removida</param>
+            <returns>Valor convertido</returns>
+        </member>
+        <member name="M:SQFramework.Core.StringExtensions.ToSingle(System.String)">
+            <summary>
+            Converte uma String para Single, caso a conversão seja inválida, retorna 0
+            </summary>
+            <param name="value">String a ser convertida</param>
+            <returns>Valor convertido</returns>
+        </member>
+        <member name="M:SQFramework.Core.StringExtensions.ToSingle(System.String,System.Boolean)">
+            <summary>
+            Converte uma String para Single, caso a conversão seja inválida, retorna 0
+            </summary>
+            <param name="value">String a ser convertida</param>
+            <param name="removeMask">Indica se a máscara do valor deve ser removida</param>
+            <returns>Valor convertido</returns>
+        </member>
+        <member name="M:SQFramework.Core.StringExtensions.ToNullableSingle(System.String,System.Boolean)">
+            <summary>
+            Converte uma String para Single?, caso a conversão seja inválida, retorna null
+            </summary>
+            <param name="value">String a ser convertida</param>
+            <param name="removeMask">Indica se a máscara do valor deve ser removida</param>
+            <returns>Valor convertido</returns>
+        </member>
+        <member name="M:SQFramework.Core.StringExtensions.ToUInt16(System.String)">
+            <summary>
+            Converte uma String para UInt16, caso a conversão seja inválida, retorna 0
+            </summary>
+            <param name="value">String a ser convertida</param>
+            <returns>Valor convertido</returns>
+        </member>
+        <member name="M:SQFramework.Core.StringExtensions.ToUInt16(System.String,System.Boolean)">
+            <summary>
+            Converte uma String para UInt16, caso a conversão seja inválida, retorna 0
+            </summary>
+            <param name="value">String a ser convertida</param>
+            <param name="removeMask">Indica se a máscara do valor deve ser removida</param>
+            <returns>Valor convertido</returns>
+        </member>
+        <member name="M:SQFramework.Core.StringExtensions.ToNullableUInt16(System.String,System.Boolean)">
+            <summary>
+            Converte uma String para UInt16?, caso a conversão seja inválida, retorna null
+            </summary>
+            <param name="value">String a ser convertida</param>
+            <param name="removeMask">Indica se a máscara do valor deve ser removida</param>
+            <returns>Valor convertido</returns>
+        </member>
+        <member name="M:SQFramework.Core.StringExtensions.ToUInt32(System.String)">
+            <summary>
+            Converte uma String para UInt32, caso a conversão seja inválida, retorna 0
+            </summary>
+            <param name="value">String a ser convertida</param>
+            <returns>Valor convertido</returns>
+        </member>
+        <member name="M:SQFramework.Core.StringExtensions.ToUInt32(System.String,System.Boolean)">
+            <summary>
+            Converte uma String para UInt32, caso a conversão seja inválida, retorna 0
+            </summary>
+            <param name="value">String a ser convertida</param>
+            <param name="removeMask">Indica se a máscara do valor deve ser removida</param>
+            <returns>Valor convertido</returns>
+        </member>
+        <member name="M:SQFramework.Core.StringExtensions.ToNullableUInt32(System.String,System.Boolean)">
+            <summary>
+            Converte uma String para UInt32?, caso a conversão seja inválida, retorna null
+            </summary>
+            <param name="value">String a ser convertida</param>
+            <param name="removeMask">Indica se a máscara do valor deve ser removida</param>
+            <returns>Valor convertido</returns>
+        </member>
+        <member name="M:SQFramework.Core.StringExtensions.ToUInt64(System.String)">
+            <summary>
+            Converte uma String para UInt64, caso a conversão seja inválida, retorna 0
+            </summary>
+            <param name="value">String a ser convertida</param>
+            <returns>Valor convertido</returns>
+        </member>
+        <member name="M:SQFramework.Core.StringExtensions.ToUInt64(System.String,System.Boolean)">
+            <summary>
+            Converte uma String para UInt64, caso a conversão seja inválida, retorna 0
+            </summary>
+            <param name="value">String a ser convertida</param>
+            <param name="removeMask">Indica se a máscara do valor deve ser removida</param>
+            <returns>Valor convertido</returns>
+        </member>
+        <member name="M:SQFramework.Core.StringExtensions.ToNullableUInt64(System.String,System.Boolean)">
+            <summary>
+            Converte uma String para UInt64?, caso a conversão seja inválida, retorna null
+            </summary>
+            <param name="value">String a ser convertida</param>
+            <param name="removeMask">Indica se a máscara do valor deve ser removida</param>
+            <returns>Valor convertido</returns>
+        </member>
+        <member name="M:SQFramework.Core.StringExtensions.ToDecimal(System.String)">
+            <summary>
+            Converte uma String para Decimal, caso a conversão seja inválida, retorna 0
+            </summary>
+            <param name="value">String a ser convertida</param>
+            <returns>Valor convertido</returns>
+        </member>
+        <member name="M:SQFramework.Core.StringExtensions.ToDecimal(System.String,System.IFormatProvider)">
+            <summary>
+            Converte uma String para decimal, caso a conversão seja inválida, retorna 0
+            </summary>
+            <param name="value">String a ser convertida</param>
+            <param name="format">Fornece um mecanismo para recuperar um objeto para controlar a formatação</param>
+            <returns></returns>
+        </member>
+        <member name="M:SQFramework.Core.StringExtensions.ToDecimal(System.String,System.Boolean)">
+            <summary>
+            Converte uma String para decimal, caso a conversão seja inválida, retorna 0
+            </summary>
+            <param name="value">String a ser convertida</param>
+            <param name="removeMask">Indica se a máscara do valor deve ser removida</param>
+            <returns>Valor convertido</returns>
+        </member>
+        <member name="M:SQFramework.Core.StringExtensions.ToNullableDecimal(System.String,System.Boolean)">
+            <summary>
+            Converte uma String para decimal?, caso a conversão seja inválida, retorna null
+            </summary>
+            <param name="value">String a ser convertida</param>
+            <param name="removeMask">Indica se a máscara do valor deve ser removida</param>
+            <returns>Valor convertido</returns>
+        </member>
+        <member name="M:SQFramework.Core.StringExtensions.ToBoolean(System.String)">
+            <summary>
+            Converte uma String para Boolean, caso a conversão seja inválida, retorna false
+            </summary>
+            <param name="value">String a ser convertida</param>
+            <returns>Valor convertido</returns>
+        </member>
+        <member name="M:SQFramework.Core.StringExtensions.ToTimeSpan(System.String)">
+            <summary>
+            Converte uma String para TimeSpan, caso a conversão seja inválida, retorna TimeSpan.Zero
+            </summary>
+            <param name="value">String a ser convertida</param>
+            <returns>Valor convertido</returns>
+        </member>
+        <member name="M:SQFramework.Core.StringExtensions.ToNullableTimeSpan(System.String)">
+            <summary>
+            Converte uma String para TimeSpan?, caso a conversão seja inválida, retorna null
+            </summary>
+            <param name="value">String a ser convertida</param>
+            <returns>Valor convertido</returns>
+        </member>
+        <member name="M:SQFramework.Core.StringExtensions.ToDateTime(System.String,System.String,System.IFormatProvider)">
+            <summary>
+            Converte uma String para DateTime, caso a conversão seja inválida, dispara uma exceção
+            </summary>
+            <param name="value">String a ser convertida</param>
+            <param name="format">Formato utilizado na conversão</param>
+            <param name="provider">Cultura utilizada na conversão</param>
+            <returns>Valor convertido</returns>
+        </member>
+        <member name="M:SQFramework.Core.StringExtensions.ToNullableDateTime(System.String,System.String,System.IFormatProvider)">
+            <summary>
+            Converte uma String para DateTime, caso a conversão seja inválida, retorna null
+            </summary>
+            <param name="value">String a ser convertida</param>
+            <param name="format">Formato utilizado na conversão</param>
+            <param name="provider">Cultura utilizada na conversão</param>
+            <returns>Valor convertido</returns>
+        </member>
+        <member name="T:SQFramework.Core.ThreadExtension">
+            <summary>
+            Classe que auxilia a utilização de threads.
+            </summary>
+        </member>
+        <member name="M:SQFramework.Core.ThreadExtension.ForEachMultiThreading``1(System.Collections.Generic.List{``0},System.Int32,System.Action{``0})">
+            <summary>
+            Este método é responsável pela manipulação do pool de Threads
+            </summary>
+            <typeparam name="T"></typeparam>Classe genérica.
+            <param name="collection"></param>Coleção de objetos genéricos.
+            <param name="maxItens"></param>Número máximo de itens.
+            <param name="action"></param>Ação genérica.
+        </member>
+        <member name="M:SQFramework.Core.ThreadExtension.ExecuteThreads(System.Action[])">
+            <summary>
+            Método responsável pela execução de threads.
+            </summary>
+            <param name="action"></param>Array de ações.
+        </member>
+        <member name="T:SQFramework.Core.TypeExtensions">
+            <summary>
+            Classe utilizada como extensão do tipo System.Type
+            </summary>
+        </member>
+        <member name="M:SQFramework.Core.TypeExtensions.IsMarkedWith``1(System.Type)">
+            <summary>
+            Determina se o tipo está marcado com um determinado atributo
+            </summary>
+            <typeparam name="TAttribute">Atributo a ser verificado</typeparam>
+            <param name="type">Tipo a ser verificado</param>
+            <returns></returns>
+        </member>
+        <member name="M:SQFramework.Core.TypeExtensions.GetAttribute``1(System.Type)">
+            <summary>
+            Retorna instância do Atributo de um tipo
+            </summary>
+            <typeparam name="TAttribute">Atributo a ser retornado</typeparam>
+            <param name="type">Tipo utilizado para obter o Atributo</param>
+            <returns>Instância do Atributo</returns>
+        </member>
+        <member name="M:SQFramework.Core.TypeExtensions.GetAttributes``1(System.Type)">
+            <summary>
+            Retorna uma lista de um determinado Atributo de um tipo
+            </summary>
+            <typeparam name="TAttribute">Atributo a ser retornado</typeparam>
+            <param name="type">Tipo utilizado para obter o Atributo</param>
+            <returns>Lista genérica do Atributo</returns>
+        </member>
+        <member name="M:SQFramework.Core.TypeExtensions.GetFields(System.Type,System.Reflection.BindingFlags,System.Boolean)">
+            <summary>
+            Retorna um Array contendo os Fields de um tipo e os tipos de suas heranças
+            </summary>
+            <param name="type">Tipo que será utilizado para obter os Fields</param>
+            <param name="bindingFlags">BindingFlags utilizados para procurar os Fields</param>
+            <param name="inheritance">Indica se será realizada busca nas heranças</param>
+            <returns>Array de FieldInfo</returns>
+        </member>
+        <member name="M:SQFramework.Core.TypeExtensions.IsNullableType(System.Type)">
+            <summary>
+            Verifica se o tipo é Nullable.
+            </summary>
+            <param name="type">Tipo que será validado.</param>
+            <returns>Returna true se o tipo é Nullable, caso contrário false</returns>
+        </member>
+        <member name="T:SQFramework.Core.MathHelper">
+            <summary>
+            Classe utilizada para operações matématicas
+            </summary>
+        </member>
+        <member name="M:SQFramework.Core.MathHelper.Round(System.Decimal,System.Int32)">
+            <summary>
+            Arredonda um valor utilizando uma determinada quantidade de casas decimais
+            </summary>
+            <param name="valor">Valor original</param>
+            <param name="decimais">Quantidade de casas decimais</param>
+            <returns>Valor arredondado</returns>
+        </member>
+        <member name="M:SQFramework.Core.MathHelper.SumList(System.Collections.IEnumerable,System.String)">
+            <summary>
+            Soma um determinado campo de uma lista
+            </summary>
+            <param name="list">Lista que contém o campo a ser somado</param>
+            <param name="field">Campo a ser somado</param>
+            <returns>Soma do campo na lista</returns>
+        </member>
+        <member name="T:SQFramework.Core.ObjectCloner">
+            <summary>
+            Classe utilizada para criar uma copia identica de um objeto
+            </summary>
+        </member>
+        <member name="M:SQFramework.Core.ObjectCloner.Clone``1(System.Object)">
+            <summary>
+            Cria uma nova instância idêntica
+            </summary>
+            <typeparam name="T">Tipo para o qual será copiado</typeparam>
+            <param name="source">Instância de origem</param>
+            <returns>Instância do tipo T</returns>
+        </member>
+        <member name="T:SQFramework.Core.Reflection.SQLAttribute.GenericEqualityComparer`1">
+            <summary>
+            EqualityComparer genérico.
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="F:SQFramework.Core.Reflection.CompareObjects._parents">
+            <summary>
+            Keep track of parent objects in the object hiearchy
+            </summary>
+        </member>
+        <member name="F:SQFramework.Core.Reflection.CompareObjects._propertyCache">
+            <summary>
+            Reflection Cache for property info
+            </summary>
+        </member>
+        <member name="F:SQFramework.Core.Reflection.CompareObjects._fieldCache">
+            <summary>
+            Reflection Cache for field info
+            </summary>
+        </member>
+        <member name="F:SQFramework.Core.Reflection.CompareObjects._methodList">
+            <summary>
+            Reflection Cache for methods
+            </summary>
+        </member>
+        <member name="M:SQFramework.Core.Reflection.CompareObjects.#ctor">
+            <summary>
+            Set up defaults for the comparison
+            </summary>
+        </member>
+        <member name="M:SQFramework.Core.Reflection.CompareObjects.Compare(System.Object,System.Object)">
+            <summary>
+            Compare two objects of the same type to each other.
+            </summary>
+            <remarks>
+            Check the Differences or DifferencesString Properties for the differences.
+            Default MaxDifferences is 1 for performance
+            </remarks>
+            <param name="object1"></param>
+            <param name="object2"></param>
+            <returns>True if they are equal</returns>
+        </member>
+        <member name="M:SQFramework.Core.Reflection.CompareObjects.ClearCache">
+            <summary>
+            Reflection properties and fields are cached. By default this cache is cleared automatically after each compare.
+            </summary>
+            <seealso cref="P:SQFramework.Core.Reflection.CompareObjects.AutoClearCache"/>
+            <seealso cref="P:SQFramework.Core.Reflection.CompareObjects.Caching"/>
+        </member>
+        <member name="M:SQFramework.Core.Reflection.CompareObjects.Compare(System.Object,System.Object,System.String)">
+            <summary>
+            Compare two objects
+            </summary>
+            <param name="object1">The first object to compare</param>
+            <param name="object2">The second object to compare</param>
+            <param name="breadCrumb">Where we are in the object hiearchy</param>
+        </member>
+        <member name="M:SQFramework.Core.Reflection.CompareObjects.CompareUri(System.Object,System.Object,System.String)">
+            <summary>
+            Compare an object of type URI
+            </summary>
+            <param name="object1"></param>
+            <param name="object2"></param>
+            <param name="breadCrumb"></param>
+        </member>
+        <member name="M:SQFramework.Core.Reflection.CompareObjects.CompareType(System.Object,System.Object,System.String)">
+            <summary>
+            Compare an object of type Type (Runtime type)
+            </summary>
+            <param name="object1"></param>
+            <param name="object2"></param>
+            <param name="breadCrumb"></param>
+        </member>
+        <member name="M:SQFramework.Core.Reflection.CompareObjects.CompareDataRow(System.Object,System.Object,System.String)">
+            <summary>
+            Compare all columns in a data row
+            </summary>
+            <param name="object1"></param>
+            <param name="object2"></param>
+            <param name="breadCrumb"></param>
+        </member>
+        <member name="M:SQFramework.Core.Reflection.CompareObjects.CompareDataTable(System.Object,System.Object,System.String)">
+            <summary>
+            Compare all rows in a data table
+            </summary>
+            <param name="object1"></param>
+            <param name="object2"></param>
+            <param name="breadCrumb"></param>
+        </member>
+        <member name="M:SQFramework.Core.Reflection.CompareObjects.CompareDataset(System.Object,System.Object,System.String)">
+            <summary>
+            Compare all tables and all rows in all tables
+            </summary>
+            <param name="object1"></param>
+            <param name="object2"></param>
+            <param name="breadCrumb"></param>
+        </member>
+        <member name="M:SQFramework.Core.Reflection.CompareObjects.CompareTimespan(System.Object,System.Object,System.String)">
+            <summary>
+            Compare a timespan struct
+            </summary>
+            <param name="object1"></param>
+            <param name="object2"></param>
+            <param name="breadCrumb"></param>
+        </member>
+        <member name="M:SQFramework.Core.Reflection.CompareObjects.ComparePointer(System.Object,System.Object,System.String)">
+            <summary>
+            Compare a pointer struct
+            </summary>
+            <param name="object1"></param>
+            <param name="object2"></param>
+            <param name="breadCrumb"></param>
+        </member>
+        <member name="M:SQFramework.Core.Reflection.CompareObjects.CompareEnum(System.Object,System.Object,System.String)">
+            <summary>
+            Compare an enumeration
+            </summary>
+            <param name="object1"></param>
+            <param name="object2"></param>
+            <param name="breadCrumb"></param>
+        </member>
+        <member name="M:SQFramework.Core.Reflection.CompareObjects.CompareSimpleType(System.Object,System.Object,System.String)">
+            <summary>
+            Compare a simple type
+            </summary>
+            <param name="object1"></param>
+            <param name="object2"></param>
+            <param name="breadCrumb"></param>
+        </member>
+        <member name="M:SQFramework.Core.Reflection.CompareObjects.CompareStruct(System.Object,System.Object,System.String)">
+            <summary>
+            Compare a struct
+            </summary>
+            <param name="object1"></param>
+            <param name="object2"></param>
+            <param name="breadCrumb"></param>
+        </member>
+        <member name="M:SQFramework.Core.Reflection.CompareObjects.CompareClass(System.Object,System.Object,System.String)">
+            <summary>
+            Compare the properties, fields of a class
+            </summary>
+            <param name="object1"></param>
+            <param name="object2"></param>
+            <param name="breadCrumb"></param>
+        </member>
+        <member name="M:SQFramework.Core.Reflection.CompareObjects.PerformCompareFields(System.Type,System.Object,System.Object,System.Boolean,System.String)">
+            <summary>
+            Compare the fields of a class
+            </summary>
+            <param name="t1"></param>
+            <param name="object1"></param>
+            <param name="object2"></param>
+            <param name="structCompare"></param>
+            <param name="breadCrumb"></param>
+        </member>
+        <member name="M:SQFramework.Core.Reflection.CompareObjects.GetFieldInfo(System.Type)">
+            <summary>
+            Get a list of the fields within a type
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SQFramework.Core.Reflection.CompareObjects.PerformCompareProperties(System.Type,System.Object,System.Object,System.Boolean,System.String)">
+            <summary>
+            Compare the properties of a class
+            </summary>
+            <param name="t1"></param>
+            <param name="object1"></param>
+            <param name="object2"></param>
+            <param name="structCompare"></param>
+            <param name="breadCrumb"></param>
+        </member>
+        <member name="M:SQFramework.Core.Reflection.CompareObjects.GetPropertyInfo(System.Type)">
+            <summary>
+            Get a list of the properties in a type
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SQFramework.Core.Reflection.CompareObjects.CompareIndexer(System.Reflection.PropertyInfo,System.Object,System.Object,System.String)">
+            <summary>
+            Compare an integer indexer
+            </summary>
+            <param name="info"></param>
+            <param name="object1"></param>
+            <param name="object2"></param>
+            <param name="breadCrumb"></param>
+        </member>
+        <member name="M:SQFramework.Core.Reflection.CompareObjects.CompareIDictionary(System.Object,System.Object,System.String)">
+            <summary>
+            Compare a dictionary
+            </summary>
+            <param name="object1"></param>
+            <param name="object2"></param>
+            <param name="breadCrumb"></param>
+        </member>
+        <member name="M:SQFramework.Core.Reflection.CompareObjects.CompareIList(System.Object,System.Object,System.String)">
+            <summary>
+            Compare an array or something that implements IList
+            </summary>
+            <param name="object1"></param>
+            <param name="object2"></param>
+            <param name="breadCrumb"></param>
+        </member>
+        <member name="M:SQFramework.Core.Reflection.CompareObjects.CompareHashSet(System.Object,System.Object,System.String)">
+            <summary>
+            Compare a HashSet
+            </summary>
+            <param name="object1"></param>
+            <param name="object2"></param>
+            <param name="breadCrumb"></param>
+        </member>
+        <member name="M:SQFramework.Core.Reflection.CompareObjects.IsTypeOfType(System.Type)">
+            <summary>
+            Returns true if the Type is a Runtime type
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SQFramework.Core.Reflection.CompareObjects.IgnoredByAttribute(System.Reflection.MemberInfo)">
+            <summary>
+            Check if any type has attributes that should be bypassed
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SQFramework.Core.Reflection.CompareObjects.GetPropertyValue(System.Type,System.Object,System.String)">
+            <summary>
+            Get the value of a property
+            </summary>
+            <param name="type"></param>
+            <param name="objectValue"></param>
+            <param name="propertyName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SQFramework.Core.Reflection.CompareObjects.GetPropertiesValues(System.Type,System.Object)">
+            <summary>
+            Get the values of a properties
+            </summary>
+            <param name="type"></param>
+            <param name="objectValue"></param>
+            <param name="propertyName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SQFramework.Core.Reflection.CompareObjects.GetMethod(System.Type,System.String)">
+            <summary>
+            Get a method by name
+            </summary>
+            <param name="type"></param>
+            <param name="methodName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SQFramework.Core.Reflection.CompareObjects.GetMethods(System.Type)">
+            <summary>
+            Get the cached methods for a type
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SQFramework.Core.Reflection.CompareObjects.NiceString(System.Object)">
+            <summary>
+            Convert an object to a nicely formatted string
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SQFramework.Core.Reflection.CompareObjects.AddBreadCrumb(System.String,System.String,System.String,System.Int32)">
+            <summary>
+            Add a breadcrumb to an existing breadcrumb
+            </summary>
+            <param name="existing"></param>
+            <param name="name"></param>
+            <param name="extra"></param>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SQFramework.Core.Reflection.CompareObjects.AddBreadCrumb(System.String,System.String,System.String,System.String)">
+            <summary>
+            Add a breadcrumb to an existing breadcrumb
+            </summary>
+            <param name="existing"></param>
+            <param name="name"></param>
+            <param name="extra"></param>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="P:SQFramework.Core.Reflection.CompareObjects.ElementsToIgnore">
+            <summary>
+            Ignore classes, properties, or fields by name during the comparison.
+            Case sensitive.
+            </summary>
+            <example>ElementsToIgnore.Add("CreditCardNumber")</example>
+        </member>
+        <member name="P:SQFramework.Core.Reflection.CompareObjects.ElementsToInclude">
+            <summary>
+            Only compare elements by name for classes, properties, and fields
+            Case sensitive.
+            </summary>
+            <example>ElementsToInclude.Add("FirstName")</example>
+        </member>
+        <member name="P:SQFramework.Core.Reflection.CompareObjects.ComparePrivateProperties">
+            <summary>
+            If true, private properties and fields will be compared. The default is false.  Silverlight and WinRT restricts access to private variables.
+            </summary>
+        </member>
+        <member name="P:SQFramework.Core.Reflection.CompareObjects.ComparePrivateFields">
+            <summary>
+            If true, private fields will be compared. The default is false.  Silverlight and WinRT restricts access to private variables.
+            </summary>
+        </member>
+        <member name="P:SQFramework.Core.Reflection.CompareObjects.CompareStaticProperties">
+            <summary>
+            If true, static properties will be compared.  The default is true.
+            </summary>
+        </member>
+        <member name="P:SQFramework.Core.Reflection.CompareObjects.CompareStaticFields">
+            <summary>
+            If true, static fields will be compared.  The default is true.
+            </summary>
+        </member>
+        <member name="P:SQFramework.Core.Reflection.CompareObjects.CompareChildren">
+            <summary>
+            If true, child objects will be compared. The default is true. 
+            If false, and a list or array is compared list items will be compared but not their children.
+            </summary>
+        </member>
+        <member name="P:SQFramework.Core.Reflection.CompareObjects.CompareReadOnly">
+            <summary>
+            If true, compare read only properties (only the getter is implemented).
+            The default is true.
+            </summary>
+        </member>
+        <member name="P:SQFramework.Core.Reflection.CompareObjects.CompareFields">
+            <summary>
+            If true, compare fields of a class (see also CompareProperties).
+            The default is true.
+            </summary>
+        </member>
+        <member name="P:SQFramework.Core.Reflection.CompareObjects.CompareProperties">
+            <summary>
+            If true, compare properties of a class (see also CompareFields).
+            The default is true.
+            </summary>
+        </member>
+        <member name="P:SQFramework.Core.Reflection.CompareObjects.MaxDifferences">
+            <summary>
+            The maximum number of differences to detect
+            </summary>
+            <remarks>
+            Default is 1 for performance reasons.
+            </remarks>
+        </member>
+        <member name="P:SQFramework.Core.Reflection.CompareObjects.Differences">
+            <summary>
+            The differences found during the compare
+            </summary>
+        </member>
+        <member name="P:SQFramework.Core.Reflection.CompareObjects.DifferencesString">
+            <summary>
+            The differences found in a string suitable for a textbox
+            </summary>
+        </member>
+        <member name="P:SQFramework.Core.Reflection.CompareObjects.AutoClearCache">
+            <summary>
+            Reflection properties and fields are cached. By default this cache is cleared after each compare.  Set to false to keep the cache for multiple compares.
+            </summary>
+            <seealso cref="P:SQFramework.Core.Reflection.CompareObjects.Caching"/>
+            <seealso cref="M:SQFramework.Core.Reflection.CompareObjects.ClearCache"/>
+        </member>
+        <member name="P:SQFramework.Core.Reflection.CompareObjects.Caching">
+            <summary>
+            By default properties and fields for types are cached for each compare.  By default this cache is cleared after each compare.
+            </summary>
+            <seealso cref="P:SQFramework.Core.Reflection.CompareObjects.AutoClearCache"/>
+            <seealso cref="M:SQFramework.Core.Reflection.CompareObjects.ClearCache"/>
+        </member>
+        <member name="P:SQFramework.Core.Reflection.CompareObjects.AttributesToIgnore">
+            <summary>
+            A list of attributes to ignore a class, property or field
+            </summary>
+            <example>AttributesToIgnore.Add(typeof(XmlIgnoreAttribute));</example>
+        </member>
+        <member name="P:SQFramework.Core.Reflection.CompareObjects.IgnoreObjectTypes">
+            <summary>
+            If true, objects will be compared ignore their type diferences
+            </summary>
+        </member>
+        <member name="P:SQFramework.Core.Reflection.CompareObjects.IsUseCustomTypeComparer">
+            <summary>
+            Func that determine when use CustomComparer for comparing specific type.
+            Default value return permanent false value.
+            </summary>
+        </member>
+        <member name="P:SQFramework.Core.Reflection.CompareObjects.CustomComparer">
+            <summary>
+            Action that performed for comparing objects.
+            T1: contain current CompareObjects
+            T2: object1 for comparing
+            T3: object1 for comparing
+            T4: current CompareObjects breadcrumb
+            </summary>
+        </member>
+        <member name="P:SQFramework.Core.Reflection.CompareObjects.ExpectedName">
+            <summary>
+            In the differences string, this is the name for expected name, default is Expected 
+            </summary>
+        </member>
+        <member name="P:SQFramework.Core.Reflection.CompareObjects.ActualName">
+            <summary>
+            In the differences string, this is the name for the actual name, default is Actual
+            </summary>
+        </member>
+        <member name="T:SQFramework.Core.Reflection.Difference">
+            <summary>
+            Detailed information about the difference
+            </summary>
+        </member>
+        <member name="P:SQFramework.Core.Reflection.Difference.ExpectedName">
+            <summary>
+            Name of Expected Object
+            </summary>
+        </member>
+        <member name="P:SQFramework.Core.Reflection.Difference.ActualName">
+            <summary>
+            Name of Actual Object
+            </summary>
+        </member>
+        <member name="P:SQFramework.Core.Reflection.Difference.PropertyName">
+            <summary>
+            The breadcrumb of the property leading up to the value
+            </summary>
+        </member>
+        <member name="P:SQFramework.Core.Reflection.Difference.ChildPropertyName">
+            <summary>
+            The child property name
+            </summary>
+        </member>
+        <member name="P:SQFramework.Core.Reflection.Difference.Object1Value">
+            <summary>
+            Object1 Value
+            </summary>
+        </member>
+        <member name="P:SQFramework.Core.Reflection.Difference.Object2Value">
+            <summary>
+            Object2 Value
+            </summary>
+        </member>
+        <member name="P:SQFramework.Core.Reflection.Difference.MessagePrefix">
+            <summary>
+            Prefix to put on the beginning of the message
+            </summary>
+        </member>
+        <member name="P:SQFramework.Core.Reflection.Difference.KeyProperty">
+            <summary>
+            Campo chave da propriedade que está diferente
+            </summary>
+        </member>
+        <member name="P:SQFramework.Core.Reflection.Difference.Key1Value">
+            <summary>
+            Valor do campo chave da propriedade que está diferente
+            </summary>
+        </member>
+        <member name="P:SQFramework.Core.Reflection.Difference.Key2Value">
+            <summary>
+            Valor do campo chave da propriedade que está diferente
+            </summary>
+        </member>
+        <member name="P:SQFramework.Core.Reflection.Difference.IsValue">
+            <summary>
+            É uma propriedade de valor?
+            </summary>
+        </member>
+        <member name="T:SQFramework.Core.Text.StringHelper">
+            <summary>
+            Classe responsável por encapsular facilitadores para manipulação de strings
+            </summary>
+        </member>
+        <member name="M:SQFramework.Core.Text.StringHelper.CharCodeIsNumber(System.Int32)">
+            <summary>
+            Verifica se o caracter informado é um número
+            </summary>
+            <param name="charCode">Caracter</param>
+            <returns></returns>
+        </member>
+        <member name="M:SQFramework.Core.Text.StringHelper.CharCodeIsSpecialCharacter(System.Int32)">
+            <summary>
+            Verifica se o caracter informado é um caracter especial
+            </summary>
+            <param name="charCode">Caracter</param>
+            <returns></returns>
+        </member>
+        <member name="M:SQFramework.Core.Text.StringHelper.GetRandomString(System.Int32)">
+            <summary>
+            Cria uma String de um determinado tamanho, com caracteres randômicos
+            </summary>
+            <param name="length">Tamanho da String</param>
+            <returns>String randômica</returns>
+        </member>
+        <member name="T:SQFramework.Core.TransformHelper">
+            <summary>
+            Classe utilizada para transformação de objetos
+            </summary>
+        </member>
+        <member name="M:SQFramework.Core.TransformHelper.Transform``1(System.Object)">
+            <summary>
+            Transforma um objeto em outro, criando uma nova instância do tipo T
+            </summary>
+            <typeparam name="T">Tipo para o qual será transformado</typeparam>
+            <param name="source">Instância de origem</param>
+            <returns>Instância do tipo T transformado</returns>
+        </member>
+        <member name="M:SQFramework.Core.TransformHelper.Transform``1(System.Object,System.String)">
+            <summary>
+            Transforma um objeto em outro, criando uma nova instância do tipo T e não mapeia algumas propriedades com atributo NoMap e que contenham o mesmo noMapValue
+            </summary>
+            <typeparam name="T">Tipo para o qual será transformado</typeparam>
+            <param name="source">Instância de origem</param>
+            <param name="noMapValue">Parâmetro do atributo NoMap, indicando qual item não será mapeado para o objeto de destino</param>
+            <returns>Instância do tipo T transformado</returns>
+        </member>
+        <member name="M:SQFramework.Core.TransformHelper.TransformNoMap``1(System.Object)">
+            <summary>
+            Transforma um objeto em outro, criando uma nova instância do tipo T e ignora o atributo NoMap
+            </summary>
+            <typeparam name="T">Tipo para o qual será transformado</typeparam>
+            <param name="source">Instância de origem</param>
+            <returns>Instância do tipo T transformado</returns>
+        </member>
+        <member name="M:SQFramework.Core.TransformHelper.Transform``1(System.Object,``0)">
+            <summary>
+            Transforma um objeto em outro utilizando uma instância do tipo T já existente
+            </summary>
+            <typeparam name="T">Tipo para o qual será transformado</typeparam>
+            <param name="source">Instância de origem</param>
+            <param name="target">Instância do tipo T transformado</param>
+            <returns></returns>
+        </member>
+        <member name="M:SQFramework.Core.TransformHelper.Transform(System.Object,System.Object)">
+            <summary>
+            Transforma um objeto em outro utilizando uma instância já existente
+            </summary>
+            <param name="source">Instância de origem</param>
+            <param name="target">Instância de destino</param>
+            <returns>Instância de destino</returns>
+        </member>
+        <member name="M:SQFramework.Core.TransformHelper.TransformListToArray``1(System.Collections.IList,System.Boolean,System.String)">
+            <summary>
+            Transforma uma lista em um Array do tipo T
+            </summary>
+            <typeparam name="T">Tipo para o qual será transformado</typeparam>
+            <param name="list">Lista de origem</param>
+            <param name="useMapAttribute">Indica se o atributo Map será utilizado na transformação</param>
+            <param name="noMapValue">Parâmetro do atributo NoMap, indicando qual item não será mapeado para o objeto de destino</param>
+            <returns>Array do Tipo T</returns>
+        </member>
+        <member name="M:SQFramework.Core.TransformHelper.TransformArrayToArray``1(System.Object[],System.Boolean,System.String)">
+            <summary>
+            Transforma um Array em outro Array do tipo T
+            </summary>
+            <typeparam name="T">Tipo para o qual será transformado</typeparam>
+            <param name="array">Array de origem</param>
+            <param name="useMapAttribute">Indica se o atributo Map será utilizado na transformação</param>
+            <param name="noMapValue">Parâmetro do atributo NoMap, indicando qual item não será mapeado para o objeto de destino</param>
+            <returns>Array do Tipo T</returns>
+        </member>
+        <member name="M:SQFramework.Core.TransformHelper.TransformArrayToList``1(System.Object[],System.Boolean,System.String)">
+            <summary>
+            Transforma um Array em uma lista genérica
+            </summary>
+            <typeparam name="T">Tipo para o qual será transformado</typeparam>
+            <param name="array">Array de origem</param>
+            <param name="useMapAttribute">Indica se o atributo Map será utilizado na transformação</param>
+            <param name="noMapValue">Parâmetro do atributo NoMap, indicando qual item não será mapeado para o objeto de destino</param>
+            <returns>Array do Tipo T</returns>
+        </member>
+        <member name="M:SQFramework.Core.TransformHelper.TransformList``1(System.Collections.IEnumerable)">
+            <summary>
+            Transforma uma lista que implementa a interface IEnumerable em uma lista genérica do tipo T
+            </summary>
+            <typeparam name="T">Tipo para o qual será transformado</typeparam>
+            <param name="sourceList">Lista de origem</param>
+            <returns>Lista genérica do tipo T</returns>
+        </member>
+        <member name="M:SQFramework.Core.TransformHelper.TransformList``1(System.Collections.IEnumerable,System.Boolean,System.String)">
+            <summary>
+            Transforma uma lista que implementa a interface IEnumerable em uma lista genérica do tipo T
+            </summary>
+            <typeparam name="T">Tipo para o qual será transformado</typeparam>
+            <param name="sourceList">Lista de origem</param>
+            <param name="useMapAttribute">Indica se o atributo Map será utilizado na transformação</param>
+            <param name="noMapValue">Parâmetro do atributo NoMap, indicando qual item não será mapeado para o objeto de destino</param>
+            <returns>Lista genérica do tipo T</returns>
+        </member>
+        <member name="M:SQFramework.Core.TransformHelper.TransformListNoMap``1(System.Collections.IEnumerable)">
+            <summary>
+            Transforma uma lista que implementa a interface IEnumerable em uma lista genérica do tipo T, ignorando o atributo Map
+            </summary>
+            <typeparam name="T">Tipo para o qual será transformado</typeparam>
+            <param name="sourceList">Lista de origem</param>
+            <returns>Lista genérica do tipo T</returns>
+        </member>
+        <member name="M:SQFramework.Core.TransformHelper.TransformListNoMap``1(System.Collections.IEnumerable,System.String)">
+            <summary>
+            Transforma uma lista que implementa a interface IEnumerable em uma lista genérica do tipo T, ignorando o atributo Map
+            </summary>
+            <typeparam name="T">Tipo para o qual será transformado</typeparam>
+            <param name="sourceList">Lista de origem</param>
+            <param name="noMapValue">Parâmetro do atributo NoMap, indicando qual item não será mapeado para o objeto de destino</param>
+            <returns>Lista genérica do tipo T</returns>
+        </member>
+        <member name="M:SQFramework.Core.TransformHelper.TransformListToDataTable``1(System.Collections.Generic.IList{``0})">
+            <summary>
+            Transforma uma lista em datatable
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="source"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SQFramework.Core.Resources.ResourceHelper">
+            <summary>
+            Classe utilizada para manipulação de Resources
+            </summary>
+        </member>
+        <member name="M:SQFramework.Core.Resources.ResourceHelper.GetResourceValue(System.String)">
+            <summary>
+            Retorna o valor de um recurso pelo nome completo
+            </summary>
+            <param name="resourceFullName">Nome completo do recurso, incluindo todo o namespace e o Assembly
+            Ex: SQFramework.Core.Resources.Test.TemplateEmail, SQFramework.Core</param>
+            <returns>Valor do Recurso requerido</returns>
+        </member>
+        <member name="M:SQFramework.Core.Resources.ResourceHelper.GetResourceValue(System.String,System.Reflection.Assembly)">
+            <summary>
+            Retorna o valor de um recurso pelo nome completo
+            </summary>
+            <param name="baseName">Nome do Recurso, incluindo o namespace sem o Assembly
+            Ex: SQFramework.Core.Resources.Test.TemplateEmail</param>
+            <param name="assembly">Instância do Assembly que contém o Recurso</param>
+            <returns>Valor do Recurso requerido</returns>
+        </member>
+        <member name="M:SQFramework.Core.Resources.ResourceHelper.GetResourceValue(System.String,System.Reflection.Assembly,System.String)">
+            <summary>
+            Retorna a string de um recurso pelo nome completo
+            </summary>
+            <param name="baseName">Nome do Recurso, incluindo o namespace sem o Assembly
+            Ex: SQFramework.Core.Resources.Test.TemplateEmail</param>
+            <param name="assembly">Instância do Assembly que contém o Recurso</param>
+            <param name="nome">Nome String Procurada</param>
+            <returns>Valor do Recurso requerido</returns>
+        </member>
+        <member name="M:SQFramework.Core.Resources.ResourceHelper.GetResourceStream(System.String,System.String)">
+            <summary>
+            Retorna uma Stream do Recurso dentro de um Assembly
+            </summary>
+            <param name="assemblyName">Nome do Assembly</param>
+            <param name="name">Nome do Recurso dentro do Assembly</param>
+            <returns>Stream do Recurso, retorna null se não encontrar</returns>
+        </member>
+        <member name="M:SQFramework.Core.Resources.ResourceHelper.GetResourceStream(System.Reflection.Assembly,System.String)">
+            <summary>
+            Retorna uma Stream com o um Recurso dentro de um Assembly
+            </summary>
+            <param name="assembly">Objeto Assembly</param>
+            <param name="name">Nome do Recurso dentro do Assembly</param>
+            <returns>Stream do Recurso, retorna null se não encontrar</returns>
+        </member>
+        <member name="T:SQFramework.Core.Serialization.SerializationHelper">
+            <summary>
+            Classe utilizada para serialização de objetos
+            </summary>
+        </member>
+        <member name="M:SQFramework.Core.Serialization.SerializationHelper.BinarySerialize(System.Object)">
+            <summary>
+            Serializa uma instância de um objeto para um Array de Byte
+            </summary>
+            <param name="value">Instância a ser serializada</param>
+            <returns>Array de Byte</returns>
+        </member>
+        <member name="M:SQFramework.Core.Serialization.SerializationHelper.BinaryDeserialize``1(System.Byte[])">
+            <summary>
+            Deserializa um Array de Byte para o tipo genérico (T)
+            </summary>
+            <typeparam name="T">Tipo para o qual será convertido o objeto deserializado</typeparam>
+            <param name="value">Array de Byte a ser deserializado</param>
+            <returns>Instância do tipo genérico (T)</returns>
+        </member>
+        <member name="M:SQFramework.Core.Serialization.SerializationHelper.BinaryDeserialize(System.Byte[])">
+            <summary>
+            Deserializa um Array de Byte
+            </summary>
+            <param name="value">Array de Byte a ser deserializado</param>
+            <returns>Instância do objeto deserializado</returns>
+        </member>
+        <member name="M:SQFramework.Core.Serialization.SerializationHelper.SerializeToXmlFile``1(``0,System.String)">
+            <summary>
+            Serializa uma instância do tipo T utilizando DataContractSerializer para um arquivo
+            </summary>
+            <typeparam name="T">Tipo genérico (T) da instância</typeparam>
+            <param name="instance">Instância do tipo genérico (T)</param>
+            <param name="filename">Caminho completo do arquivo</param>
+        </member>
+        <member name="M:SQFramework.Core.Serialization.SerializationHelper.DeserializeFromXmlFile``1(System.String)">
+            <summary>
+            Deserializa um arquivo para uma instância genérica do tipo T, utilizando o DataContractSerializer
+            </summary>
+            <typeparam name="T">Tipo genérico (T) do retorno</typeparam>
+            <param name="filename">Caminho completo do arquivo</param>
+            <returns>Instância do tipo genérico (T)</returns>
+        </member>
+        <member name="M:SQFramework.Core.Serialization.SerializationHelper.SerializeAndCompress(System.Object)">
+            <summary>
+            Serializa uma instância para Array de Byte e comprime utilizando GZipStream
+            </summary>
+            <param name="value">Instância a ser serializada</param>
+            <returns>Array de Byte comprimido</returns>
+        </member>
+        <member name="M:SQFramework.Core.Serialization.SerializationHelper.DecompressAndDeserialze(System.Byte[])">
+            <summary>
+            Deserializa um Array de Byte comprimido e retorna a instância
+            </summary>
+            <param name="value">Array de Byte comprimido</param>
+            <returns>Instância deserializada</returns>
+        </member>
+        <member name="T:SQFramework.Core.Validators.CNPJValidator">
+            <summary>
+            Classe utilizada para validação de CNPJ
+            </summary>
+        </member>
+        <member name="M:SQFramework.Core.Validators.CNPJValidator.Validate(System.String)">
+            <summary>
+            Verifica se o CNPJ está correto
+            </summary>
+            <param name="cnpj">Número do CNPJ sem mascara</param>
+            <returns>Retorna se o número do CNPJ informado está correto ou inválido</returns>
+        </member>
+        <member name="T:SQFramework.Core.Validators.CPFValidator">
+            <summary>
+            Classe utilizada para validação de CPF
+            </summary>
+        </member>
+        <member name="M:SQFramework.Core.Validators.CPFValidator.CalculaDigitosCpf(System.String)">
+            <summary>
+            Método responsável por calculo o dígito verificador de um CPF
+            </summary>
+            <param name="cpf"></param>CPF
+            <returns></returns>
+        </member>
+        <member name="M:SQFramework.Core.Validators.CPFValidator.Validate(System.String)">
+            <summary>
+            Verifica se o CPF está correto
+            </summary>
+            <param name="cpf">Número do CPF sem mascara</param>
+            <returns>Retorna se o número do CPF informado está correto ou inválido</returns>
+        </member>
+        <member name="T:SQFramework.Core.Validators.DateValidator">
+            <summary>
+            Classe utilizada para validação de data
+            </summary>
+        </member>
+        <member name="M:SQFramework.Core.Validators.DateValidator.Validate(System.String)">
+            <summary>
+            Verifica se a data informada é valida e está entre 01/01/1753 e 31/12/9999
+            </summary>
+            <param name="date">Data a ser validada</param>
+            <returns></returns>
+        </member>
+        <member name="M:SQFramework.Core.Validators.DateValidator.Validate(System.DateTime)">
+            <summary>
+            Verifica se a data informada é valida e está entre 01/01/1753 e 31/12/9999
+            </summary>
+            <param name="date">Data a ser validada</param>
+            <returns></returns>
+        </member>
+        <member name="M:SQFramework.Core.Validators.EmailValidator.Validate(System.String)">
+            <summary>
+            Verifica se o email é válido.
+            </summary>
+            <param name="email">Email informado pelo usuário.</param>
+            <returns>Retorna se email informado é válido ou inválido.</returns>
+        </member>
+    </members>
+</doc>

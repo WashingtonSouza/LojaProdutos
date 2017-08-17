@@ -10,7 +10,7 @@
         <property name="totalItemPedido" column="TotalItemPedido" type="decimal" access="field" not-null="true" />
 
         <many-to-one name="pedido" column="PedidoId" access="field" class="Pedido" not-null="true" />
-        <many-to-one name="produto" column="ProdutoId" access="field" class="Produto" not-null="true" />
+        <many-to-one name="produto" column="ProdutoId" cascade="all" access="field" class="Produto" not-null="true" />
 
     </class>
 </hibernate-mapping>

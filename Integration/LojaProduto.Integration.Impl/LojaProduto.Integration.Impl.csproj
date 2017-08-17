@@ -139,7 +139,7 @@
       <Name>LojaProduto.Domain</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\Services\LojaProduto.Services.Spec\LojaProduto.Services.Spec.csproj">
-      <Project>{1B030810-5179-466F-8CFF-DF57A5B5E571}</Project>
+      <Project>{1b030810-5179-466f-8cff-df57a5b5e571}</Project>
       <Name>LojaProduto.Services.Spec</Name>
     </ProjectReference>
     <ProjectReference Include="..\LojaProduto.Integration.Spec\LojaProduto.Integration.Spec.csproj">

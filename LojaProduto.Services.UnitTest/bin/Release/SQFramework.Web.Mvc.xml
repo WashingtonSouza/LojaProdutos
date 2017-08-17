@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SQFramework.Web.Mvc</name>
+    </assembly>
+    <members>
+        <member name="T:SQFramework.Web.Mvc.Report.ReportViewerHelper">
+            <summary>
+            Responsável por criar relatórios no Report Viewer.
+            </summary>
+        </member>
+        <member name="M:SQFramework.Web.Mvc.Report.ReportViewerHelper.ExportReport(SQFramework.Web.Mvc.Report.ReportViewerHelper.ReportType,System.String,System.Collections.IEnumerable)">
+            <summary>
+            Método responsável por retornar o array de bytes contendo o arquivo de relatório.
+            </summary>
+            <param name="type">Tipo de documento a ser gerado</param>
+            <param name="path">Caminho para o relatório</param>
+            <param name="items">Coleção de dados</param>
+            <returns></returns>
+        </member>
+        <member name="M:SQFramework.Web.Mvc.Report.ReportViewerHelper.ExportReport(SQFramework.Web.Mvc.Report.ReportViewerHelper.ReportType,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.IEnumerable},System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Método responsável por retornar o array de bytes contendo o arquivo de relatório.
+            </summary>
+            <param name="type">Tipo de documento a ser gerado</param>
+            <param name="path">Caminho para o relatório</param>
+            <param name="dataSources">Fontes de dados para o relatório</param>
+            <param name="parameters">Parâmetros para o relatório</param>
+            <returns></returns>
+        </member>
+        <member name="T:SQFramework.Web.Mvc.ModelBinder.NumericModelBinder">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:SQFramework.Web.Mvc.ModelBinder.NumericModelBinder.BindModel(System.Web.Mvc.ControllerContext,System.Web.Mvc.ModelBindingContext)">
+            <summary>
+            
+            </summary>
+            <param name="controllerContext"></param>
+            <param name="bindingContext"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

@@ -195,30 +195,72 @@ namespace LojaProduto.Services.Impl.Services
                 .Transform<PageMessage<DTOItensPedido>>();
         }
 
-        [Transaction(TransactionPropagation.Required, ReadOnly = true)]
-        public void TemPedido(int idProduto = 0, int quantidadeProduto = 0)
+        [Transaction(TransactionPropagation.Required)]
+        public DTOPedido CriaPedido(int idCliente)
         {
+            var pedido = new Pedido(Cliente.GetRepository().Get(idCliente));
 
+            pedido.CriarPedido();
 
-            //var pedido = ObtemPedido(clienteId.Id);
-            //var produto = ObterProduto(idProduto).Transform<Pedido>();
-            if (pedido != null)
-            {
-                
-                //AdicionaItemPedido(produto, quantidadeProduto);
-            }
-            else
-            {
-                //CriaPedido();
-            }
+            return pedido.Transform<DTOPedido>();
         }
 
-        public Pedido PossuiPedido()
+        public DTOPedido ObtemPedidoEmAberto(int idCliente)
         {
-            var clienteId = ObterCliente(5);
-            
+            var pedido = Pedido.GetRepository().VerificaSePossuiPedidoAberto(idCliente);
 
-            return
+            return pedido.Transform<DTOPedido>();
+        }
+
+        public void AdicionaItemPedido(int idPedido, int quantidadeProduto, int idProduto)
+        {
+            var pedido = Pedido.GetRepository().Get(idPedido);
+            var produto = Produto.GetRepository().Get(idProduto);
+
+            pedido.AdicionarProduto(produto, quantidadeProduto);
+            //pedido.Save();
+        }
+        [Transaction(TransactionPropagation.Required)]
+        public void FaturarPedido(int idPedido)
+        {
+            var pedido = Pedido.GetRepository().Get(idPedido);
+
+            pedido.CalcularValorTotalPedido();
+            pedido.FaturarPedido();
+        }
+
+        [Transaction(TransactionPropagation.Required)]
+        public decimal CalcularPedido(int idPedido)
+        {
+            var pedido = Pedido.GetRepository().Get(idPedido);
+            pedido.CalcularValorTotalPedido();
+
+            return pedido.ValorTotalPedido;
+        }
+
+        [Transaction(TransactionPropagation.Required)]
+        public void AumentaOuReduzQuantidadeItem(int idItemPedido, int quantidade)
+        {
+            var itemPedido = ItensPedido.GetRepository().Get(idItemPedido);
+            var pedido = Pedido.GetRepository().Get(itemPedido.Pedido.Id);
+            var produto = Produto.GetRepository().Get(itemPedido.Produto.Id);
+
+            if (quantidade > itemPedido.QuantidadeProduto)
+            {
+                pedido.AumentaQuantidadeProduto(itemPedido, quantidade);
+            }
+            else
+                pedido.ReduzQuantidadeItemPedido(itemPedido, quantidade, produto);
+        }
+
+        [Transaction(TransactionPropagation.Required)]
+        public void EstornarPedido(int idProduto, int idPedido)
+        {
+            var pedido = Pedido.GetRepository().Get(idPedido);
+            var produto = Produto.GetRepository().Get(idProduto);
+            var itemPedido = pedido.ItensPedidos.Transform<ItensPedido>();
+
+            pedido.EstornaPedido(itemPedido);
         }
 
         [Transaction(TransactionPropagation.Required)]
@@ -435,17 +477,6 @@ namespace LojaProduto.Services.Impl.Services
         public IList<DTOProduto> PesquisarProdutos(string pesquisa)
         {
             return Produto.GetRepository().PesquisarProdutos(pesquisa).TransformList<DTOProduto>();
-        }
-
-        public bool ValidaQuantidadeProduto(DTOProduto produto)
-        {
-            if (produto.QuantidadeEmEstoque <= 0)
-            {
-                return false;
-                throw new System.ArgumentException("Quantidade do Produto é zero ou negativo");
-            }
-            else
-                return true;
         }
 
         [Transaction(TransactionPropagation.Required, ReadOnly = true)]

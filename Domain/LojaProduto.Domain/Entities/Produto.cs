@@ -54,5 +54,31 @@ namespace LojaProduto.Domain.Entities
         {
             this.fornecedor = fornecedor;
         }
+
+        public virtual bool EstoqueSuficiente(int quantidadeProduto)
+        {
+            if (quantidadeProduto <= 0)
+            {
+                throw new System.ArgumentException("Produto com quantidade Zero ou Negativo");
+            }
+            else if (quantidadeProduto > QuantidadeEmEstoque)
+            {
+                throw new System.ArgumentException("Quantidade de produto maior que a disponível em estoque");
+            }
+            else
+                return true;
+        }
+
+        public virtual bool ValidaPrecoProduto()
+        {
+            if (PrecoProduto <= 0)
+            {
+                return false;
+                throw new System.ArgumentException("Preço Zero ou negativo");
+            }
+            else
+                return true;
+        }
+
     }
 }

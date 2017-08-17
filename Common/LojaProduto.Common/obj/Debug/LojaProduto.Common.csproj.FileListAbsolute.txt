@@ -11,3 +11,4 @@ D:\Projetos\LojaProdutos\Common\LojaProduto.Common\bin\Debug\Common.Logging.Core
 D:\Projetos\LojaProdutos\Common\LojaProduto.Common\bin\Debug\SQFramework.Core.xml
 D:\Projetos\LojaProdutos\Common\LojaProduto.Common\obj\Debug\LojaProduto.Common.dll
 D:\Projetos\LojaProdutos\Common\LojaProduto.Common\obj\Debug\LojaProduto.Common.pdb
+D:\Projetos\LojaProdutos\Common\LojaProduto.Common\obj\Debug\LojaProduto.Common.csprojResolveAssemblyReference.cache

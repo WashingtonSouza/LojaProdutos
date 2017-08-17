@@ -4,9 +4,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{22C8AE0B-B110-4644-95AB-411DFDE90990}"
-	ProjectSection(SolutionItems) = preProject
-		Services\LojaProduto.Services.Spec\DataTransferObjects\EnumStatusPedido.cs = Services\LojaProduto.Services.Spec\DataTransferObjects\EnumStatusPedido.cs
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{9EF87084-6DAC-4447-B52C-C3351862C423}"
 EndProject
@@ -46,6 +43,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		nuget.config = nuget.config
 		w4c.config = w4c.config
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LojaProduto.Services.UnitTest", "LojaProduto.Services.UnitTest\LojaProduto.Services.UnitTest.csproj", "{AF15462F-C820-4706-9BA3-50C4AB63DB2A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -157,6 +156,18 @@ Global
 		{4152B3EA-EE6D-43C0-9005-63538525FCEE}.Release|Mixed Platforms.Build.0 = Release|x86
 		{4152B3EA-EE6D-43C0-9005-63538525FCEE}.Release|x86.ActiveCfg = Release|x86
 		{4152B3EA-EE6D-43C0-9005-63538525FCEE}.Release|x86.Build.0 = Release|x86
+		{AF15462F-C820-4706-9BA3-50C4AB63DB2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF15462F-C820-4706-9BA3-50C4AB63DB2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF15462F-C820-4706-9BA3-50C4AB63DB2A}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{AF15462F-C820-4706-9BA3-50C4AB63DB2A}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{AF15462F-C820-4706-9BA3-50C4AB63DB2A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AF15462F-C820-4706-9BA3-50C4AB63DB2A}.Debug|x86.Build.0 = Debug|Any CPU
+		{AF15462F-C820-4706-9BA3-50C4AB63DB2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF15462F-C820-4706-9BA3-50C4AB63DB2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF15462F-C820-4706-9BA3-50C4AB63DB2A}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{AF15462F-C820-4706-9BA3-50C4AB63DB2A}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{AF15462F-C820-4706-9BA3-50C4AB63DB2A}.Release|x86.ActiveCfg = Release|Any CPU
+		{AF15462F-C820-4706-9BA3-50C4AB63DB2A}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

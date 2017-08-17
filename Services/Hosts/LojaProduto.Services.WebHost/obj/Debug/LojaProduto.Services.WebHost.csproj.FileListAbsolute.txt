@@ -96,4 +96,3 @@ D:\Projetos\LojaProdutos\Services\Hosts\LojaProduto.Services.WebHost\bin\Antlr3.
 D:\Projetos\LojaProdutos\Services\Hosts\LojaProduto.Services.WebHost\bin\pt-br\System.Web.Mvc.resources.dll
 D:\Projetos\LojaProdutos\Services\Hosts\LojaProduto.Services.WebHost\obj\Debug\LojaProduto.Services.WebHost.dll
 D:\Projetos\LojaProdutos\Services\Hosts\LojaProduto.Services.WebHost\obj\Debug\LojaProduto.Services.WebHost.pdb
-D:\Projetos\LojaProdutos\Services\Hosts\LojaProduto.Services.WebHost\bin\Newtonsoft.Json.xml

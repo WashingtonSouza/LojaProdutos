@@ -1,5 +1,6 @@
 ﻿using LojaProduto.Presentation.Controllers.Base;
 using LojaProduto.Services.Spec.DataTransferObjects;
+using LojaProduto.Presentation.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,17 +15,26 @@ namespace LojaProduto.Presentation.Controllers.Pedido
         // GET: Pedido
         public ActionResult Pedido(int idProduto = 0, int quantidadeProduto = 0)
         {
+            var pedido = GetCadastroService().ObtemPedidoEmAberto(CodigoCliente);     
+            
+            if (pedido == null)
+            {
+                pedido = GetCadastroService().CriaPedido(CodigoCliente);
+            }
 
-            GetCadastroService().TemPedido(idProduto, quantidadeProduto);
+            GetCadastroService().AdicionaItemPedido(pedido.Id, quantidadeProduto, idProduto);
 
             return Json(JsonRequestBehavior.DenyGet);
         }
 
-        public ActionResult ListaPedidos(string query)
+        public ActionResult Pedidos()
         {
-            //ListaPedidos model = new ListaPedidos();
+            Pedidos model = new Pedidos();
 
-            return View();
+            var resultado = GetCadastroService().ListarItensPedidos();
+            model.ItensPedidos = resultado.ToList();            
+
+            return View(model);
         }
     }
 }

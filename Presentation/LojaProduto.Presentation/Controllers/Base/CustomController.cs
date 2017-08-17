@@ -15,5 +15,7 @@ namespace LojaProduto.Presentation.Controllers.Base
         {
             return serviceLocator.GetService<ICadastroService>("antt.servicos/CadastroService", SCAApplicationContext.ObterParametrosServico(), "antt");
         }
+
+        public int CodigoCliente { get { return 5; } }
     }
 }

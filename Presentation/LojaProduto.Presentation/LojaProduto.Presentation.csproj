@@ -244,7 +244,9 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helpers\HtmlHelperExtensions.cs" />
+    <Compile Include="Models\ListaPedidos.cs" />
     <Compile Include="Models\ListaProdutos.cs" />
+    <Compile Include="Models\Pedidos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -364,7 +366,7 @@
     <Content Include="Views\Categoria\Index.cshtml" />
     <Content Include="Views\Produto\Form.cshtml" />
     <Content Include="Views\Shared\BaseTemplate\_MenuInverse.cshtml" />
-    <Content Include="Views\Pedido\Index.cshtml" />
+    <Content Include="Views\Pedido\Pedidos.cshtml" />
     <Content Include="Views\Produto\ListaProdutos.cshtml" />
   </ItemGroup>
   <ItemGroup>

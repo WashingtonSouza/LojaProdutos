@@ -66,9 +66,6 @@ namespace LojaProduto.Services.Spec.Services
         PageMessage<DTOItensPedido> ListarItensPedidos(int startIndex, int pageSize, string orderProperty, bool orderAscending);
 
         [OperationContract]
-        void TemPedido(int idProduto, int quantidadeProduto);
-
-        [OperationContract]
         DTOFornecedor SalvarFornecedor(DTOFornecedor dto);
 
         [OperationContract]
@@ -130,5 +127,26 @@ namespace LojaProduto.Services.Spec.Services
 
         [OperationContract(Name = "ListarCategoriasPaged")]
         PageMessage<DTOCategoria> ListarCategorias(int startIndex, int pageSize, string orderProperty, bool orderAscending);
+
+        [OperationContract]
+        void AdicionaItemPedido(int idPedido, int quantidadeProduto, int idProduto);
+
+        [OperationContract]
+        DTOPedido ObtemPedidoEmAberto(int idCliente);
+
+        [OperationContract]
+        DTOPedido CriaPedido(int idCliente);
+
+        [OperationContract]
+        void FaturarPedido(int idPedido);
+
+        [OperationContract]
+        decimal CalcularPedido(int idPedido);
+
+        [OperationContract]
+        void EstornarPedido(int idProduto, int idPedido);
+
+        [OperationContract]
+        void AumentaOuReduzQuantidadeItem(int idItemPedido, int quantidade);
     }
 }

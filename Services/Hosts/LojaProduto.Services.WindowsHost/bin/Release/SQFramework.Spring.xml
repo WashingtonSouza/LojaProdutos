@@ -1,0 +1,475 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SQFramework.Spring</name>
+    </assembly>
+    <members>
+        <member name="T:SQFramework.Spring.Caching.ExpirationCache">
+            <summary>
+            Cache customizado para o Spring com expiração
+            </summary>
+        </member>
+        <member name="T:SQFramework.Spring.Caching.ExpirationCacheValue">
+            <summary>
+            Representa as informações do Cache
+            </summary>
+        </member>
+        <member name="P:SQFramework.Spring.Caching.ExpirationCacheValue.ExpirationTime">
+            <summary>
+            Data e Hora exata da expiração do Cache
+            </summary>
+        </member>
+        <member name="P:SQFramework.Spring.Caching.ExpirationCacheValue.TimeToLive">
+            <summary>
+            Tempo de Cache
+            </summary>
+        </member>
+        <member name="P:SQFramework.Spring.Caching.ExpirationCacheValue.Value">
+            <summary>
+            Instância cacheada
+            </summary>
+        </member>
+        <member name="P:SQFramework.Spring.Caching.ExpirationCacheValue.Expired">
+            <summary>
+            Determina se o Cache está expirado
+            </summary>
+        </member>
+        <member name="T:SQFramework.Spring.Domain.DomainBaseGeneric`3">
+            <summary>
+            Classe base de entidades, contendo facilitadores de acesso ao Repositório
+            </summary>
+            <typeparam name="T">Tipo da Entidade</typeparam>
+            <typeparam name="R">Interface do Repositório</typeparam>
+            <typeparam name="Key">Tipo da chave primária</typeparam>
+        </member>
+        <member name="T:SQFramework.Spring.ObjectBase">
+            <summary>
+            Representa o objeto base do qual todas as classes que utilizam a injeção de dependência do Framework devem extender
+            </summary>
+        </member>
+        <member name="M:SQFramework.Spring.ObjectBase.GetObject``1">
+            <summary>
+            Retorna nova instância da dependência resolvida para uma interface através do Atributo ObjectMap
+            </summary>
+            <typeparam name="T">Interface para a qual será resolvida a dependência</typeparam>
+            <returns>Instância vinculada a interface</returns>
+        </member>
+        <member name="M:SQFramework.Spring.ObjectBase.GetObject``1(System.Object[])">
+            <summary>
+            Retorna nova instância da dependência resolvida para uma interface através do Atributo ObjectMap, passando os parâmetros do construtor
+            </summary>
+            <typeparam name="T">Interface para a qual será resolvida a dependência</typeparam>
+            <param name="ctorArgs">Parâmetros do construtor</param>
+            <returns>Instância vinculada a interface</returns>
+        </member>
+        <member name="M:SQFramework.Spring.ObjectBase.GetObject``1(System.String)">
+            <summary>
+            Retorna nova instância da dependência resolvida para um nome informado
+            </summary>
+            <typeparam name="T">Interface para a qual será resolvida a dependência</typeparam>
+            <param name="objectId">Nome do objeto no container Ioc</param>
+            <returns>Instância vinculada ao nome informado</returns>
+        </member>
+        <member name="M:SQFramework.Spring.ObjectBase.GetObject``1(System.String,System.Object[])">
+            <summary>
+            Retorna nova instância da dependência resolvida para um nome informado, passando os parâmetros do construtor
+            </summary>
+            <typeparam name="T">Interface para a qual será resolvida a dependência</typeparam>
+            <param name="objectId">Nome do objeto no container Ioc</param>
+            <param name="ctorArgs">Parâmetros do construtor</param>
+            <returns>Instância vinculada ao nome informado</returns>
+        </member>
+        <member name="M:SQFramework.Spring.ObjectBase.GetSingleton``1">
+            <summary>
+            Retorna instância única da dependência resolvida para uma interface através do Atributo ObjectMap, passando os parâmetros do construtor
+            </summary>
+            <typeparam name="T">Interface para a qual será resolvida a dependência</typeparam>
+            <returns>Instância vinculada a interface</returns>
+        </member>
+        <member name="M:SQFramework.Spring.ObjectBase.GetTarget``1">
+            <summary>
+            Retorna nova instância da dependência resolvida para uma interface através do Atributo ObjectMap, removendo todos os proxies associados a dependência
+            </summary>
+            <typeparam name="T">Interface para a qual será resolvida a dependência</typeparam>
+            <returns>Instância vinculada a interface</returns>
+        </member>
+        <member name="M:SQFramework.Spring.ObjectBase.GetTarget``1(System.String)">
+            <summary>
+            Retorna nova instância da dependência resolvida para um nome informado, removendo todos os proxies associados a dependência
+            </summary>
+            <typeparam name="T">Interface para a qual será resolvida a dependência</typeparam>
+            <param name="objectId">Nome do objeto no container Ioc</param>
+            <returns>Instância vinculada ao nome informado</returns>
+        </member>
+        <member name="M:SQFramework.Spring.ObjectBase.GetTarget``1(System.Object)">
+            <summary>
+            Retorna a instância original de um proxy
+            </summary>
+            <typeparam name="T">Tipo para o qual será convertido</typeparam>
+            <param name="proxy">Instância proxiada</param>
+            <returns>Instância original sem proxy</returns>
+        </member>
+        <member name="M:SQFramework.Spring.ObjectBase.ConfigureObject``1(System.Object,System.String)">
+            <summary>
+            Executa a configuração de uma instância de acordo com a configuração de um objeto específico no container Ioc
+            </summary>
+            <typeparam name="T">Tipo para o qual será convertido</typeparam>
+            <param name="target">Instância a ser configurada</param>
+            <param name="objectId">Nome do objeto no container Ioc</param>
+            <returns>Instância configurada de acordo com o nome informado</returns>
+        </member>
+        <member name="M:SQFramework.Spring.ObjectBase.GetMessageAsString(System.String)">
+            <summary>
+            Retorna valor do Recurso requerido. Os arquivos de recurso devem estar configurados no Container através do objeto Spring.Context.Support.ResourceSetMessageSource
+            </summary>
+            <param name="name">Nome do Recurso requerido</param>
+            <returns>Valor do Recurso requerido</returns>
+        </member>
+        <member name="M:SQFramework.Spring.ObjectBase.GetMessageAsStringFormat(System.String,System.Object[])">
+            <summary>
+            Retorna valor do Recurso requerido formatado. Os arquivos de recurso devem estar configurados no Container através do objeto Spring.Context.Support.ResourceSetMessageSource
+            </summary>
+            <param name="name">Nome do Recurso requerido, o valor do recurso deve estar configurado para ser formatado com o método string.Format</param>
+            <param name="parameters">Parâmetros a serem substituídos pelo método string.Format</param>
+            <returns>Valor do Recurso formatado</returns>
+        </member>
+        <member name="M:SQFramework.Spring.ObjectBase.GetMessageAsInt(System.String)">
+            <summary>
+            Retorna valor do Recurso requerido como Int32. Os arquivos de recurso devem estar configurados no Container através do objeto Spring.Context.Support.ResourceSetMessageSource
+            </summary>
+            <param name="name">Nome do Recurso requerido</param>
+            <returns>Valor do Recurso</returns>
+        </member>
+        <member name="M:SQFramework.Spring.ObjectBase.GetMessageAsShort(System.String)">
+            <summary>
+            Retorna valor do Recurso requerido como Int16. Os arquivos de recurso devem estar configurados no Container através do objeto Spring.Context.Support.ResourceSetMessageSource
+            </summary>
+            <param name="resourceId">Nome do Recurso requerido</param>
+            <returns>Valor do Recurso</returns>
+        </member>
+        <member name="P:SQFramework.Spring.ObjectBase.Logger">
+            <summary>
+            Retorna instância do Log configurado
+            </summary>
+        </member>
+        <member name="M:SQFramework.Spring.Domain.DomainBaseGeneric`3.GetRepository">
+            <summary>
+            Retorna instância do Repositório mapeada para a interface informada no tipo genérico R
+            </summary>
+            <returns>Instância do Repositório</returns>
+        </member>
+        <member name="M:SQFramework.Spring.Domain.DomainBaseGeneric`3.Load(`2)">
+            <summary>
+            Carrega a instância atual do banco de dados
+            </summary>
+            <param name="codigo">Chave primária da tabela</param>
+        </member>
+        <member name="M:SQFramework.Spring.Domain.DomainBaseGeneric`3.Get(`2)">
+            <summary>
+            Retorna uma nova instância da Entidade do banco de dados
+            </summary>
+            <param name="codigo">Chave primária da tabela</param>
+            <returns>Nova instância da Entidade</returns>
+        </member>
+        <member name="M:SQFramework.Spring.Domain.DomainBaseGeneric`3.Save">
+            <summary>
+            Persiste a instância atual no banco de dados
+            </summary>
+        </member>
+        <member name="M:SQFramework.Spring.Domain.DomainBaseGeneric`3.Delete">
+            <summary>
+            Excluir a instância atual do banco de dados
+            </summary>
+        </member>
+        <member name="M:SQFramework.Spring.Domain.DomainBaseGeneric`3.ListAll">
+            <summary>
+            Lista todos os registros do tipo dessa Entidade do banco de dados
+            </summary>
+            <returns>Lista com as instâncias da Entidade</returns>
+        </member>
+        <member name="P:SQFramework.Spring.Domain.DomainBaseGeneric`3.Repository">
+            <summary>
+            Instância do Repositório associado a interface do tipo genérico R
+            </summary>
+        </member>
+        <member name="T:SQFramework.Spring.Domain.DomainBase`2">
+            <summary>
+            Classe base de entidades, contendo facilitadores de acesso ao Repositório
+            </summary>
+            <typeparam name="TEntity">Tipo da Entidade</typeparam>
+            <typeparam name="TRepository">Interface do Repositório</typeparam>
+        </member>
+        <member name="T:SQFramework.Spring.Services.Aspects.ContextAspect">
+            <summary>
+            Aspecto responsável por criar o contexto (SQFramework.Spring.Context) de uma chamada. 
+            </summary>
+        </member>
+        <member name="T:SQFramework.Spring.Context">
+            <summary>
+            Representa o contexto de um usuário dentro de uma operação
+            </summary>
+        </member>
+        <member name="M:SQFramework.Spring.Context.Add(SQFramework.Security.UserInfo)">
+            <summary>
+            Adiciona um contexto para um usuário
+            </summary>
+            <param name="userInfo">Informações do usuário</param>
+        </member>
+        <member name="M:SQFramework.Spring.Context.AddParameter(System.String,System.Object)">
+            <summary>
+            Adiciona um parâmetro dentro do contexto
+            </summary>
+            <param name="paramater">Nome do parâmetro</param>
+            <param name="value">Valor do parâmetro</param>
+        </member>
+        <member name="M:SQFramework.Spring.Context.GetParameterValue``1(System.String)">
+            <summary>
+            Retorna o valor de um parâmetro requerido
+            </summary>
+            <typeparam name="T">Tipo para o qual o parâmetro será convertido</typeparam>
+            <param name="parameter">Nome do parâmetro</param>
+            <returns>Instância do parâmetro requerido</returns>
+        </member>
+        <member name="M:SQFramework.Spring.Context.GetParameterValue(System.String)">
+            <summary>
+            Retorna o valor de um parâmetro requerido
+            </summary>
+            <param name="parameter">Nome do parâmetro</param>
+            <returns>Instância do parâmetro requerido</returns>
+        </member>
+        <member name="M:SQFramework.Spring.Context.Remove(System.Int32)">
+            <summary>
+            Remove o contexto associado ao ThreadId informado
+            </summary>
+            <param name="threadId">Id da Thread</param>
+        </member>
+        <member name="M:SQFramework.Spring.Context.Clear">
+            <summary>
+            Remove o contexto associado ao ThreaId atual
+            </summary>
+        </member>
+        <member name="M:SQFramework.Spring.Context.RemoveCurrentContext">
+            <summary>
+            Remove o contexto associado ao ThreaId atual
+            </summary>
+        </member>
+        <member name="P:SQFramework.Spring.Context.Current">
+            <summary>
+            Retorna o Contexto associado ao ThreaId atual
+            </summary>
+        </member>
+        <member name="P:SQFramework.Spring.Context.UserInfo">
+            <summary>
+            Retorna o usuário associado ao contexto
+            </summary>
+        </member>
+        <member name="P:SQFramework.Spring.Context.ThreadId">
+            <summary>
+            ThreaId associado ao contexto
+            </summary>
+        </member>
+        <member name="T:SQFramework.Spring.ObjectFactory">
+            <summary>
+            Classe responsável por encapsular o acesso ao Container Ioc do Spring
+            </summary>
+        </member>
+        <member name="M:SQFramework.Spring.ObjectFactory.ObjectExists(System.String)">
+            <summary>
+            Determina se um objeto existe no Container Ioc do Spring
+            </summary>
+            <param name="objectID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SQFramework.Spring.ObjectFactory.GetMessage(System.String)">
+            <summary>
+            Retorna valor do Recurso requerido. Os arquivos de recurso devem estar configurados no Container através do objeto Spring.Context.Support.ResourceSetMessageSource
+            </summary>
+            <param name="name">Nome do Recurso requerido</param>
+            <returns>Valor do Recurso formatado</returns>
+        </member>
+        <member name="M:SQFramework.Spring.ObjectFactory.GetObject``1">
+            <summary>
+            Retorna nova instância da dependência resolvida para uma interface através do Atributo ObjectMap
+            </summary>
+            <typeparam name="T">Interface para a qual será resolvida a dependência</typeparam>
+            <returns>Instância vinculada a interface</returns>
+        </member>
+        <member name="M:SQFramework.Spring.ObjectFactory.GetObject``1(System.Object[])">
+            <summary>
+            Retorna nova instância da dependência resolvida para uma interface através do Atributo ObjectMap, passando os parâmetros do construtor
+            </summary>
+            <typeparam name="T">Interface para a qual será resolvida a dependência</typeparam>
+            <param name="ctorArgs">Parâmetros do construtor</param>
+            <returns>Instância vinculada a interface</returns>
+        </member>
+        <member name="M:SQFramework.Spring.ObjectFactory.GetSingleton``1">
+            <summary>
+            Retorna instância única da dependência resolvida para uma interface através do Atributo ObjectMap
+            </summary>
+            <typeparam name="T">Interface para a qual será resolvida a dependência</typeparam>
+            <returns>Instância vinculada a interface</returns>
+        </member>
+        <member name="M:SQFramework.Spring.ObjectFactory.GetType``1(System.Boolean)">
+            <summary>
+            Retorna o tipo da dependência resolvida de uma interface através do Atributo ObjectMap
+            </summary>
+            <typeparam name="T">Interface para a qual será resolvida a dependência</typeparam>
+            <param name="isSingleton">Determina a instância a ser utilizada é Singleton</param>
+            <returns>Tipo da dependência resolvida</returns>
+        </member>
+        <member name="M:SQFramework.Spring.ObjectFactory.GetType(System.Type,System.Boolean)">
+            <summary>
+            Retorna o tipo da dependência resolvida de uma interface através do Atributo ObjectMap
+            </summary>
+            <param name="type">Tipo da interface</param>
+            <param name="isSingleton">Determina a instância a ser utilizada é Singleton</param>
+            <returns>Tipo da dependência resolvida</returns>
+        </member>
+        <member name="M:SQFramework.Spring.ObjectFactory.GetType(System.String)">
+            <summary>
+            Retorna o tipo de um objeto configurado no Container do Spring
+            </summary>
+            <param name="objectName">Nome do objeto configurado</param>
+            <returns>Tipo do objeto configurado</returns>
+        </member>
+        <member name="M:SQFramework.Spring.ObjectFactory.GetObject``1(System.Boolean)">
+            <summary>
+            Retorna nova ou única instância da dependência resolvida para uma interface através do Atributo ObjectMap
+            </summary>
+            <typeparam name="T">Interface para a qual será resolvida a dependência</typeparam>
+            <param name="isSingleton">Determina se será utilizado o Atributo ObjectMap que está marcado como Singleton ou não para obter o nome da dependência</param>
+            <returns>Instância vinculada a interface</returns>
+        </member>
+        <member name="M:SQFramework.Spring.ObjectFactory.GetObject``1(System.Boolean,System.Object[])">
+            <summary>
+            Retorna nova ou única instância da dependência resolvida para uma interface através do Atributo ObjectMap, passando os parâmetros do construtor
+            </summary>
+            <typeparam name="T">Interface para a qual será resolvida a dependência</typeparam>
+            <param name="isSingleton">Determina se será utilizado o Atributo ObjectMap que está marcado como Singleton ou não para obter o nome da dependência</param>
+            <param name="ctorArgs">Parâmetros do construtor</param>
+            <returns>Instância vinculada a interface</returns>
+        </member>
+        <member name="M:SQFramework.Spring.ObjectFactory.GetObject(System.String)">
+            <summary>
+            Retorna instância da dependência resolvida para um nome informado
+            </summary>
+            <param name="objectID">Nome do objeto no Container do Spring</param>
+            <returns>Instância vinculada ao nome informado</returns>
+        </member>
+        <member name="M:SQFramework.Spring.ObjectFactory.GetObject``1(System.String)">
+            <summary>
+            Retorna nova instância da dependência resolvida para um nome informado
+            </summary>
+            <typeparam name="T">Interface para a qual será resolvida a dependência</typeparam>
+            <param name="objectID">Nome do objeto no container Ioc</param>
+            <returns>Instância vinculada ao nome informado</returns>
+        </member>
+        <member name="M:SQFramework.Spring.ObjectFactory.GetObject``1(System.String,System.Object[])">
+            <summary>
+            Retorna nova instância da dependência resolvida para um nome informado, passando os parâmetros do construtor
+            </summary>
+            <typeparam name="T">Interface para a qual será resolvida a dependência</typeparam>
+            <param name="objectID">Nome do objeto no container Ioc</param>
+            <param name="ctorArgs">Parâmetros do construtor</param>
+            <returns>Instância vinculada ao nome informado</returns>
+        </member>
+        <member name="M:SQFramework.Spring.ObjectFactory.GetObjectsOfType``1">
+            <summary>
+            Retorna todos os objetos configurados no Container do Spring que são de um mesmo tipo
+            </summary>
+            <typeparam name="T">Tipo a ser verificado pelo Container</typeparam>
+            <returns>Dicionário com todas as instâncias do mesmo tipo</returns>
+        </member>
+        <member name="M:SQFramework.Spring.ObjectFactory.ResolveDependencies(System.Object)">
+            <summary>
+            Resolve todas as dependências internas de uma instância, caso exista configuração dessa instância no Container do Spring
+            </summary>
+            <param name="target">Instância a ser resolvida</param>
+        </member>
+        <member name="M:SQFramework.Spring.ObjectFactory.ResolveDependencies(System.Collections.IList)">
+            <summary>
+            Resolve todas as dependências internas de cada instância de uma lista, caso exista configuração de cada instância no Container do Spring
+            </summary>
+            <param name="targetList">Lista com as instâncias a serem resolvidas</param>
+        </member>
+        <member name="M:SQFramework.Spring.ObjectFactory.ConfigureObject``1(System.Object,System.String)">
+            <summary>
+            Executa a configuração de uma instância de acordo com a configuração de um objeto específico no Container do Spring
+            </summary>
+            <typeparam name="T">Tipo para o qual será convertido</typeparam>
+            <param name="target">Instância a ser configurada</param>
+            <param name="name">Nome do objeto no Container do Spring</param>
+            <returns>Instância configurada de acordo com o nome informado</returns>
+        </member>
+        <member name="M:SQFramework.Spring.ObjectFactory.Initialize">
+            <summary>
+            Inicializa o Container do Spring, caso não esteja iniciado
+            </summary>
+        </member>
+        <member name="M:SQFramework.Spring.ObjectFactory.GetTarget``1(System.Object)">
+            <summary>
+            Retorna a instância original de um proxy
+            </summary>
+            <typeparam name="T">Tipo para o qual será convertido</typeparam>
+            <param name="proxy">Instância proxiada</param>
+            <returns>Instância original sem proxy</returns>
+        </member>
+        <member name="M:SQFramework.Spring.ObjectFactory.GetTarget(System.Object)">
+            <summary>
+            Retorna a instância original de um proxy
+            </summary>
+            <param name="proxy">Instância proxiada</param>
+            <returns>Instância original sem proxy</returns>
+        </member>
+        <member name="M:SQFramework.Spring.ObjectFactory.GetTarget``1(System.String)">
+            <summary>
+            Retorna instância da dependência resolvida para um nome informado, removendo qualquer proxy criado
+            </summary>
+            <typeparam name="T">Tipo para o qual será convertido</typeparam>
+            <param name="objectID">Nome do objeto no Container do Spring</param>
+            <returns>Instância sem proxy vinculada ao nome informado</returns>
+        </member>
+        <member name="M:SQFramework.Spring.ObjectFactory.GetTarget``1">
+            <summary>
+            Retorna nova instância da dependência resolvida para uma interface através do Atributo ObjectMap, removendo todos os proxies associados a dependência
+            </summary>
+            <typeparam name="T">Interface para a qual será resolvida a dependência</typeparam>
+            <returns>Instância vinculada a interface</returns>
+        </member>
+        <member name="T:SQFramework.Spring.ObjectMapAttribute">
+            <summary>
+            Atributo utilizado em interfaces indicando o nome da dependência no container Ioc
+            </summary>
+        </member>
+        <member name="M:SQFramework.Spring.ObjectMapAttribute.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="name">Nome da dependência no container Ioc</param>
+        </member>
+        <member name="M:SQFramework.Spring.ObjectMapAttribute.#ctor(System.String,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="name">Nome da dependência no container Ioc</param>
+            <param name="issingleton">Indica se a instância a ser obtida é Singleton</param>
+        </member>
+        <member name="M:SQFramework.Spring.ObjectMapAttribute.GetObjectMapAttribute(System.Type)">
+            <summary>
+            Retorna instância do primeiro Atributo ObjectMap encontrado em um tipo
+            </summary>
+            <param name="type">Tipo a ser verificado</param>
+            <returns>Instância do Atributo</returns>
+        </member>
+        <member name="P:SQFramework.Spring.ObjectMapAttribute.Name">
+            <summary>
+            Nome da dependência no container Ioc
+            </summary>
+        </member>
+        <member name="P:SQFramework.Spring.ObjectMapAttribute.isSingleton">
+            <summary>
+            Indica se a instância a ser obtida é Singleton
+            </summary>
+        </member>
+    </members>
+</doc>

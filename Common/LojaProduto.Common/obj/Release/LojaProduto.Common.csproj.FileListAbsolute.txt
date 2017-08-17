@@ -1,0 +1,13 @@
+D:\Projetos\LojaProdutos\Common\LojaProduto.Common\bin\Release\LojaProduto.Common.dll.config
+D:\Projetos\LojaProdutos\Common\LojaProduto.Common\bin\Release\LojaProduto.Common.dll
+D:\Projetos\LojaProdutos\Common\LojaProduto.Common\bin\Release\LojaProduto.Common.pdb
+D:\Projetos\LojaProdutos\Common\LojaProduto.Common\bin\Release\Common.Logging.Core.dll
+D:\Projetos\LojaProdutos\Common\LojaProduto.Common\bin\Release\Common.Logging.dll
+D:\Projetos\LojaProdutos\Common\LojaProduto.Common\bin\Release\SQFramework.Core.dll
+D:\Projetos\LojaProdutos\Common\LojaProduto.Common\bin\Release\Common.Logging.pdb
+D:\Projetos\LojaProdutos\Common\LojaProduto.Common\bin\Release\Common.Logging.xml
+D:\Projetos\LojaProdutos\Common\LojaProduto.Common\bin\Release\Common.Logging.Core.pdb
+D:\Projetos\LojaProdutos\Common\LojaProduto.Common\bin\Release\Common.Logging.Core.xml
+D:\Projetos\LojaProdutos\Common\LojaProduto.Common\bin\Release\SQFramework.Core.xml
+D:\Projetos\LojaProdutos\Common\LojaProduto.Common\obj\Release\LojaProduto.Common.dll
+D:\Projetos\LojaProdutos\Common\LojaProduto.Common\obj\Release\LojaProduto.Common.pdb

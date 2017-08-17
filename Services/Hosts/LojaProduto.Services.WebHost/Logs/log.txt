@@ -1,0 +1,324 @@
+2017-08-04 18:09:55,923 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:09:56,035 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:09:56,037 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:09:56,039 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:09:56,041 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:09:56,043 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:09:56,045 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:09:56,047 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:09:56,049 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:11:43,258 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:11:43,260 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:11:43,261 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:11:43,262 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:11:43,263 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:11:43,264 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:11:43,265 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:11:43,266 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:11:43,267 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:11:51,674 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:11:51,675 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:11:51,676 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:11:51,677 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:11:51,678 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:11:51,679 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:11:51,680 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:11:51,681 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:11:51,682 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:14:32,666 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:14:32,668 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:14:32,669 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:14:32,670 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:14:32,671 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:14:32,672 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:14:32,673 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:14:32,675 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:14:32,676 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:14:32,691 [1] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:14:32,692 [1] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:14:32,693 [1] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:14:32,695 [1] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:14:32,696 [1] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:14:32,697 [1] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:14:32,698 [1] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:14:32,699 [1] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:14:32,700 [1] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:14:52,053 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:14:52,054 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:14:52,055 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:14:52,056 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:14:52,058 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:14:52,059 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:14:52,060 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:14:52,061 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:14:52,062 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:15:25,563 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:15:25,565 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:15:25,566 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:15:25,567 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:15:25,568 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:15:25,568 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:15:25,569 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:15:25,570 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:15:25,571 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:15:25,606 [1] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:15:25,608 [1] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:15:25,609 [1] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:15:25,610 [1] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:15:25,612 [1] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:15:25,613 [1] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:15:25,614 [1] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:15:25,615 [1] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:15:25,616 [1] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:16:01,442 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:16:01,481 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:16:01,483 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:16:01,486 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:16:01,488 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:16:01,490 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:16:01,493 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:16:01,495 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:16:01,497 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:16:37,857 [47] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:16:37,858 [47] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:16:37,860 [47] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:16:37,861 [47] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:16:37,863 [47] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:16:37,865 [47] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:16:37,866 [47] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:16:37,868 [47] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:16:37,869 [47] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:16:37,883 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:16:37,885 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:16:37,886 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:16:37,887 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:16:37,888 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:16:37,890 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:16:37,891 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:16:37,893 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:16:37,894 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:27:05,323 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:27:05,325 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:27:05,326 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:27:05,327 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:27:05,328 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:27:05,329 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:27:05,330 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:27:05,331 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:27:05,333 [20] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:27:05,347 [47] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:27:05,348 [47] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:27:05,349 [47] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:27:05,350 [47] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:27:05,351 [47] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:27:05,352 [47] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:27:05,353 [47] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:27:05,354 [47] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-04 18:27:05,356 [47] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-07 09:45:32,582 [10] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-07 09:45:32,980 [10] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-07 09:45:32,982 [10] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-07 09:45:32,984 [10] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-07 09:45:32,986 [10] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-07 09:45:32,988 [10] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-07 09:45:32,990 [10] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-07 09:45:32,992 [10] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-07 09:45:32,994 [10] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-07 09:45:33,286 [10] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-07 09:45:33,288 [10] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-07 09:45:33,290 [10] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-07 09:45:33,291 [10] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-07 09:45:33,293 [10] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-07 09:45:33,294 [10] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-07 09:45:33,296 [10] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-07 09:45:33,297 [10] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-07 09:45:33,299 [10] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-07 09:48:39,467 [19] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-07 09:48:39,472 [19] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-07 09:48:39,481 [19] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-07 09:48:39,486 [19] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-07 09:48:39,489 [19] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-07 09:48:39,494 [19] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-07 09:48:39,497 [19] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-07 09:48:39,500 [19] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-07 09:48:39,503 [19] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-07 09:56:38,209 [1] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-07 09:56:38,211 [1] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-07 09:56:38,212 [1] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-07 09:56:38,213 [1] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-07 09:56:38,215 [1] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-07 09:56:38,216 [1] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-07 09:56:38,218 [1] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-07 09:56:38,219 [1] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-07 09:56:38,221 [1] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-07 09:57:55,448 [1] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-07 09:57:55,450 [1] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-07 09:57:55,451 [1] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-07 09:57:55,451 [1] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-07 09:57:55,453 [1] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-07 09:57:55,454 [1] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-07 09:57:55,455 [1] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-07 09:57:55,455 [1] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+2017-08-07 09:57:55,456 [1] ERROR NHibernate.LazyInitializationException [(null)] - Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[LojaProduto.Domain.Entities.Cliente#5]-Could not initialize proxy - no Session.

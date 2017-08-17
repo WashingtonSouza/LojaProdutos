@@ -17,4 +17,17 @@ namespace LojaProduto.Common
         [StringValue("2", "Example 2")]
         Example2 = 2
     }
+    public enum EnumStatusPedido
+    {
+        Aberto    = 1,
+        Faturar   = 2,
+        Faturado  = 3,
+        Cancelado = 4
+    }
+    public enum EnumTipoDeVenda
+    {
+        Avista = 1,
+        Parcelado = 2,
+        Invalido = 3
+    }
 }

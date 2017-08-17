@@ -1,0 +1,329 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SQFramework.Spring.Data.Hibernate</name>
+    </assembly>
+    <members>
+        <member name="T:SQFramework.Spring.Data.Hibernate.EntityIdentificatorAttribute">
+            <summary>
+            Atributo utilizado para definir os campos que são chave primária de uma Entidade
+            </summary>
+        </member>
+        <member name="M:SQFramework.Spring.Data.Hibernate.EntityIdentificatorAttribute.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="fieldName">Nome do campo que pertence a chave primária</param>
+        </member>
+        <member name="P:SQFramework.Spring.Data.Hibernate.EntityIdentificatorAttribute.FieldName">
+            <summary>
+            Nome do campo que pertence a chave primária
+            </summary>
+        </member>
+        <member name="T:SQFramework.Spring.Data.Hibernate.RepositoryBase`1">
+            <summary>
+            Classe base de Repositório
+            </summary>
+            <typeparam name="T">Tipo da Entidade</typeparam>
+        </member>
+        <member name="M:SQFramework.Spring.Data.Hibernate.RepositoryBase`1.Count">
+            <summary>
+            Retorna quantidade de registros na tabela mapeada para uma Entidade
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SQFramework.Spring.Data.Hibernate.RepositoryBase`1.Count(NHibernate.Criterion.DetachedCriteria)">
+            <summary>
+            Retorna quantidade de registros de uma criteria
+            </summary>
+            <param name="criteria">Instância da Criteria a ser executada</param>
+            <returns>Quantidade de registros</returns>
+        </member>
+        <member name="M:SQFramework.Spring.Data.Hibernate.RepositoryBase`1.Count(NHibernate.Criterion.DetachedCriteria,System.String)">
+            <summary>
+            Retorna quantidade de registros de uma criteria
+            </summary>
+            <param name="criteria">Instância da Criteria a ser executada</param>
+            <param name="field">Campo da chave primária</param>
+            <returns>Quantidade de registros</returns>
+        </member>
+        <member name="M:SQFramework.Spring.Data.Hibernate.RepositoryBase`1.Count(NHibernate.Criterion.DetachedCriteria,NHibernate.Criterion.IProjection)">
+            <summary>
+            Retorna quantidade de registros de uma criteria
+            </summary>
+            <param name="criteria">Instância da Criteria a ser executada</param>
+            <param name="projection">Projection a ser adicionada na criteria para definição do que será contado</param>
+            <returns>Quantidade de registros</returns>
+        </member>
+        <member name="M:SQFramework.Spring.Data.Hibernate.RepositoryBase`1.Get(NHibernate.Criterion.DetachedCriteria)">
+            <summary>
+            Retorna instância da Entidade após a execução de uma Criteria
+            </summary>
+            <param name="criteria">Instância da Criteria a ser executada</param>
+            <returns>Instância da Entidade</returns>
+        </member>
+        <member name="M:SQFramework.Spring.Data.Hibernate.RepositoryBase`1.Get(NHibernate.Criterion.DetachedCriteria,System.Int32)">
+            <summary>
+            Retorna instância da Entidade após a execução de uma Criteria
+            </summary>
+            <param name="criteria">Instância da Criteria a ser executada</param>
+            <param name="maxResults">Quantidade máxima de registros a ser retornado</param>
+            <returns>Instância da Entidade</returns>
+        </member>
+        <member name="M:SQFramework.Spring.Data.Hibernate.RepositoryBase`1.Get(NHibernate.Criterion.DetachedCriteria,NHibernate.Transform.IResultTransformer)">
+            <summary>
+            Retorna instância da Entidade após a execução de uma Criteria, utilizando um transformador do resultado
+            </summary>
+            <param name="criteria">Instância da Criteria a ser executada</param>
+            <param name="resultTransformer">Instância do transformador a ser utilizado</param>
+            <returns>Instância da Entidade</returns>
+        </member>
+        <member name="M:SQFramework.Spring.Data.Hibernate.RepositoryBase`1.Get(NHibernate.Criterion.DetachedCriteria,NHibernate.Transform.IResultTransformer,System.Int32)">
+            <summary>
+            Retorna instância da Entidade após a execução de uma Criteria, utilizando um transformador do resultado
+            </summary>
+            <param name="criteria">Instância da Criteria a ser executada</param>
+            <param name="resultTransformer">Instância do transformador a ser utilizado</param>
+            <param name="maxResults">Quantidade máxima de registros a ser retornado</param>
+            <returns>Instância da Entidade</returns>
+        </member>
+        <member name="M:SQFramework.Spring.Data.Hibernate.RepositoryBase`1.Get``1(NHibernate.Criterion.DetachedCriteria)">
+            <summary>
+            Retorna instância do tipo V após a execução de uma Criteria
+            </summary>
+            <typeparam name="V">Tipo para o qual o resultado será convertido</typeparam>
+            <param name="criteria">Instância da Criteria a ser executada</param>
+            <returns>Instância do tipo V</returns>
+        </member>
+        <member name="M:SQFramework.Spring.Data.Hibernate.RepositoryBase`1.List``1(NHibernate.Criterion.DetachedCriteria)">
+            <summary>
+            
+            </summary>
+            <typeparam name="V"></typeparam>
+            <param name="criteria"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SQFramework.Spring.Data.Hibernate.RepositoryBase`1.Get(System.Object)">
+            <summary>
+            Retorna instância da Entidade
+            </summary>
+            <param name="id">Chave primária da Entidade</param>
+            <returns>Instância da Entidade</returns>
+        </member>
+        <member name="M:SQFramework.Spring.Data.Hibernate.RepositoryBase`1.Get(System.Type,System.Object)">
+            <summary>
+            Retorna instância da Entidade
+            </summary>
+            <param name="entityType">Tipo da entidade</param>
+            <param name="id">Chave primária da Entidade</param>
+            <returns>Instância da Entidade</returns>
+        </member>
+        <member name="M:SQFramework.Spring.Data.Hibernate.RepositoryBase`1.ListIdentificators(System.Object)">
+            <summary>
+            Lista os campos chave primária do objeto informado
+            </summary>
+            <param name="obj">Objeto de origem da chave primária</param>
+            <returns>Lista com os campos da chave primária</returns>
+        </member>
+        <member name="M:SQFramework.Spring.Data.Hibernate.RepositoryBase`1.ListAll">
+            <summary>
+            Lista todos os registros da Entidade
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SQFramework.Spring.Data.Hibernate.RepositoryBase`1.Page(NHibernate.Criterion.DetachedCriteria,SQFramework.Data.Pagging.PageMessage,NHibernate.Criterion.Order)">
+            <summary>
+            Executa a paginação baseado em uma criteria, informações da paginação e ordenação
+            </summary>
+            <param name="criteria">Criteria a ser executada</param>
+            <param name="pageMessage">Informações da paginação</param>
+            <param name="order">Ordenação a ser utilizada pela Criteria</param>
+            <returns>Página com as instâncias da Entidade da página atual</returns>
+        </member>
+        <member name="M:SQFramework.Spring.Data.Hibernate.RepositoryBase`1.Page(NHibernate.Criterion.DetachedCriteria,SQFramework.Data.Pagging.PageMessage,System.String)">
+            <summary>
+            Executa a paginação baseado em uma criteria, informações da paginação e ordenação
+            </summary>
+            <param name="criteria">Criteria a ser executada</param>
+            <param name="pageMessage">Informações da paginação</param>
+            <param name="fieldCount">Campo a ser contado para calcular o total de registros</param>
+            <returns>Página com as instâncias da Entidade da página atual</returns>
+        </member>
+        <member name="M:SQFramework.Spring.Data.Hibernate.RepositoryBase`1.Page(NHibernate.Criterion.DetachedCriteria,SQFramework.Data.Pagging.PageMessage,System.String,NHibernate.Criterion.Order)">
+            <summary>
+            Executa a paginação baseado em uma criteria, informações da paginação e ordenação
+            </summary>
+            <param name="criteria">Criteria a ser executada</param>
+            <param name="pageMessage">Informações da paginação</param>
+            <param name="fieldCount">Campo a ser contado para calcular o total de registros</param>
+            <param name="order">Ordenação a ser utilizada pela Criteria</param>
+            <returns>Página com as instâncias da Entidade da página atual</returns>
+        </member>
+        <member name="M:SQFramework.Spring.Data.Hibernate.RepositoryBase`1.Page``1(NHibernate.Criterion.DetachedCriteria,SQFramework.Data.Pagging.PageMessage,System.String)">
+            <summary>
+            Executa a paginação baseado em uma criteria, informações da paginação e ordenação
+            </summary>
+            <typeparam name="TEntity">Tipo a ser paginado</typeparam>
+            <param name="criteria">Criteria a ser executada</param>
+            <param name="pageMessage">Informações da paginação</param>
+            <param name="fieldCount">Campo a ser contado para calcular o total de registros</param>
+            <returns>Página com as instâncias do tipo TEntity da página atual</returns>
+        </member>
+        <member name="M:SQFramework.Spring.Data.Hibernate.RepositoryBase`1.Page``1(NHibernate.Criterion.DetachedCriteria,System.Int32,System.Int32,System.String,System.Boolean)">
+            <summary>
+            Executa a paginação baseado em uma criteria, informações da paginação e ordenação
+            </summary>
+            <typeparam name="TEntity">Tipo a ser paginado</typeparam>
+            <param name="criteria">Criteria a ser executada</param>
+            <param name="startIndex">Registro inicial</param>
+            <param name="pageSize">Tamanho da página</param>
+            <param name="orderProperty">Propriedade utilizada para ordenação</param>
+            <param name="orderAscending">Ordenação ascendente?</param>
+            <returns>Página com as instâncias do tipo TEntity</returns>
+        </member>
+        <member name="M:SQFramework.Spring.Data.Hibernate.RepositoryBase`1.Page``1(NHibernate.Criterion.DetachedCriteria,SQFramework.Data.Pagging.PageMessage,System.String,NHibernate.Criterion.Order)">
+            <summary>
+            Executa a paginação baseado em uma criteria, informações da paginação e ordenação
+            </summary>
+            <typeparam name="TEntity">Tipo a ser paginado</typeparam>
+            <param name="criteria">Criteria a ser executada</param>
+            <param name="pageMessage">Informações da paginação</param>
+            <param name="fieldCount">Campo a ser contado para calcular o total de registros</param>
+            <param name="order">Ordenação a ser utilizada pela Criteria</param>
+            <returns>Página com as instâncias do tipo TEntity da página atual</returns>
+        </member>
+        <member name="M:SQFramework.Spring.Data.Hibernate.RepositoryBase`1.Page``1(NHibernate.ISQLQuery,NHibernate.ISQLQuery,SQFramework.Data.Pagging.PageMessage)">
+            <summary>
+            Executa a paginação baseado em uma Query SQL, informações da paginação e ordenação
+            </summary>
+            <typeparam name="TypeTransformer">Tipo para o qual será transformado</typeparam>
+            <param name="sqlQuery">Query SQL a ser executada</param>
+            <param name="sqlQueryCount">Quer SQL a ser executada pela ordenação</param>
+            <param name="pageMessage">Informações da paginação</param>
+            <returns>Página com as instâncias do tipo TypeTransformer da página atual</returns>
+        </member>
+        <member name="M:SQFramework.Spring.Data.Hibernate.RepositoryBase`1.Page(NHibernate.Criterion.DetachedCriteria,SQFramework.Data.Pagging.PageMessage)">
+            <summary>
+            Executa a paginação baseado em uma criteria, informações da paginação e ordenação
+            </summary>
+            <param name="criteria">Criteria a ser executada</param>
+            <param name="pageMessage">Informações da paginação</param>
+            <returns>Página com as instâncias da Entidade da página atual</returns>
+        </member>
+        <member name="M:SQFramework.Spring.Data.Hibernate.RepositoryBase`1.List(NHibernate.Criterion.DetachedCriteria)">
+            <summary>
+            Retorna lista de instâncias da Entidade, utilizando a Criteria para filtrar
+            </summary>
+            <param name="criteria">Instância da Criteria a ser executada</param>
+            <returns>Lista de instâncias da Entidade</returns>
+        </member>
+        <member name="M:SQFramework.Spring.Data.Hibernate.RepositoryBase`1.List(NHibernate.Criterion.DetachedCriteria,System.Collections.Generic.Dictionary{System.String,NHibernate.LockMode})">
+            <summary>
+            Retorna lista de instâncias da Entidade, utilizando a Criteria para filtrar
+            </summary>
+            <param name="criteria">Instância da Criteria a ser executada</param>
+            <param name="locks">Lista de locks a serem realizados na Query por Alias</param>
+            <returns>Lista de instâncias da Entidade</returns>
+        </member>
+        <member name="M:SQFramework.Spring.Data.Hibernate.RepositoryBase`1.List(NHibernate.Criterion.DetachedCriteria,NHibernate.Transform.IResultTransformer)">
+            <summary>
+            Retorna lista de instâncias da Entidade, utilizando a Criteria para filtrar
+            </summary>
+            <param name="criteria">Instância da Criteria a ser executada</param>
+            <param name="resultTransformer">Instância do transformador a ser utilizado</param>
+            <returns>Lista de instâncias da Entidade</returns>
+        </member>
+        <member name="M:SQFramework.Spring.Data.Hibernate.RepositoryBase`1.List(NHibernate.Criterion.DetachedCriteria,NHibernate.Transform.IResultTransformer,System.Collections.Generic.Dictionary{System.String,NHibernate.LockMode})">
+            <summary>
+            Retorna lista de instâncias da Entidade, utilizando a Criteria para filtrar
+            </summary>
+            <param name="criteria">Instância da Criteria a ser executada</param>
+            <param name="resultTransformer">Instância do transformador a ser utilizado</param>
+            <param name="locks">Lista de locks a serem realizados na Query por Alias</param>
+            <returns>Lista de instâncias da Entidade</returns>
+        </member>
+        <member name="M:SQFramework.Spring.Data.Hibernate.RepositoryBase`1.List(System.String,System.Object)">
+            <summary>
+            Retorna lista de instâncias da Entidade, utilizando uma propriedade como filtro
+            </summary>
+            <param name="property">Propriedade a ser filtrada</param>
+            <param name="key">Valor a ser utilizado para filtrar a Propriedade</param>
+            <returns>Lista de instâncias da Entidade</returns>
+        </member>
+        <member name="M:SQFramework.Spring.Data.Hibernate.RepositoryBase`1.List``1(System.String,System.Object)">
+            <summary>
+            Retorna lista de instâncias do tipo TEntity, utilizando uma propriedade como filtro
+            </summary>
+            <typeparam name="TEntity">Tipo do resultado da consulta</typeparam>
+            <param name="property">Propriedade a ser filtrada</param>
+            <param name="key">Valor a ser utilizado para filtrar a Propriedade</param>
+            <returns>Lista de instâncias do tipo TEntity</returns>
+        </member>
+        <member name="M:SQFramework.Spring.Data.Hibernate.RepositoryBase`1.List(NHibernate.Criterion.DetachedCriteria,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Retorna lista de instâncias da Entidade, utilizando a Criteria para filtrar
+            </summary>
+            <param name="criteria">Instância da Criteria a ser executada</param>
+            <param name="actualPage">Página atual</param>
+            <param name="rowsPerPage">Registros por página</param>
+            <param name="rowsCount">Quantidade total de registros</param>
+            <returns>Lista de instâncias da Entidade</returns>
+        </member>
+        <member name="M:SQFramework.Spring.Data.Hibernate.RepositoryBase`1.Update(`0)">
+            <summary>
+            Persiste as informações modificadas da Entidade
+            </summary>
+            <param name="dominio"></param>
+        </member>
+        <member name="M:SQFramework.Spring.Data.Hibernate.RepositoryBase`1.Save(`0)">
+            <summary>
+            Persiste as informações modificadas da Entidade ou inclui a Entidade dependendo de seu estado
+            </summary>
+            <param name="dominio"></param>
+        </member>
+        <member name="M:SQFramework.Spring.Data.Hibernate.RepositoryBase`1.Delete(`0)">
+            <summary>
+            Exclui a Entidade
+            </summary>
+            <param name="dominio"></param>
+        </member>
+        <member name="M:SQFramework.Spring.Data.Hibernate.RepositoryBase`1.Delete(System.String)">
+            <summary>
+            Exclui a Entidade utilizando uma Query como filtro
+            </summary>
+            <param name="query"></param>
+        </member>
+        <member name="M:SQFramework.Spring.Data.Hibernate.RepositoryBase`1.Load(`0,System.Object)">
+            <summary>
+            Carrega uma Entidade com o ID informado
+            </summary>
+            <param name="entity">Instância da Entidade</param>
+            <param name="id">ID da Entidade</param>
+        </member>
+        <member name="M:SQFramework.Spring.Data.Hibernate.RepositoryBase`1.IsAttached(`0)">
+            <summary>
+            Determina se uma instância está atachada a Sessão atual
+            </summary>
+            <param name="instance">Instância a ser verificada</param>
+            <returns></returns>
+        </member>
+        <member name="M:SQFramework.Spring.Data.Hibernate.RepositoryBaseNonGeneric.Count(NHibernate.Criterion.DetachedCriteria,System.String)">
+            <summary>
+            Retorna quantidade de registros de uma criteria
+            </summary>
+            <param name="criteria">Instância da Criteria a ser executada</param>
+            <param name="field">Campo da chave primária</param>
+            <returns>Quantidade de registros</returns>
+        </member>
+        <member name="M:SQFramework.Spring.Data.Hibernate.RepositoryBaseNonGeneric.List(NHibernate.Criterion.DetachedCriteria,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Retorna lista de instâncias do retorno da Criteria, utilizando a Criteria para filtrar
+            </summary>
+            <param name="criteria">Instância da Criteria a ser executada</param>
+            <param name="actualPage">Página atual</param>
+            <param name="rowsPerPage">Registros por página</param>
+            <param name="rowsCount">Quantidade total de registros</param>
+            <returns>Lista de instâncias do retorno da Criteria</returns>
+        </member>
+    </members>
+</doc>

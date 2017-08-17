@@ -25,5 +25,6 @@ namespace LojaProduto.Presentation.Models
         public string NomeImagem { get; set; }
 
         public int IdProduto { get; set; }
+
     }
 }

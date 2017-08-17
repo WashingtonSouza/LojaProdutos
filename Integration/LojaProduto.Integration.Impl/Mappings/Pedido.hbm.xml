@@ -15,7 +15,7 @@
 
         <many-to-one name="cliente" column="ClienteId" access="field" class="Cliente" not-null="true" />
 
-        <bag name="itensPedidos" cascade="all-delete-orphan" access="field" lazy="true" inverse="true">
+        <bag name="itensPedidos" cascade="all" lazy="false" access="field" inverse="true">
             <key column="PedidoId" not-null="true" />
             <one-to-many class="ItensPedido" />
         </bag>
